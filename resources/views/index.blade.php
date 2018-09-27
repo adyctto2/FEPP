@@ -31,7 +31,7 @@
 					<div class="navbar-brand">
 						<a href="#home">
 							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo.png" alt="logo">
+							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -129,7 +129,7 @@
 				<!-- /about -->
 
 			</div>
-			
+
 		</div>
 		<!-- /Container -->
 		<div id="testimonial" class="section md-padding">
@@ -139,17 +139,17 @@
 				<div class="overlay"></div>
 			</div>
 			<!-- /Background Image -->
-	
+
 			<!-- Container -->
 			<div class="container">
-	
+
 				<!-- Row -->
 				<div class="row">
-	
+
 					<!-- Testimonial slider -->
 					<div class="col-md-10 col-md-offset-1">
 						<div id="testimonial-slider" class="owl-carousel owl-theme">
-	
+
 							<!-- testimonial -->
 							<div class="testimonial">
 								<div class="testimonial-meta">
@@ -192,17 +192,17 @@
 								<p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p>
 							</div>
 							<!-- /testimonial -->
-	
+
 						</div>
 					</div>
 					<!-- /Testimonial slider -->
-	
+
 				</div>
 				<!-- /Row -->
-	
+
 			</div>
 			<!-- /Container -->
-	
+
 		</div>
 	</div>
 	<!-- /About -->
@@ -212,7 +212,7 @@
 
 	<!-- Portfolio -->
 	<div id="portfolio" class="section md-padding bg-grey">
-		
+
 		<!-- Container -->
 		<div class="container">
 
@@ -250,7 +250,7 @@
 					</div>
 				</div>
 				<!-- /Work -->
-			
+
 				<div class="col-md-3 col-xs-4 work">
 					<img class="img-responsive" src="./img/work2.jpg" alt="">
 					<div class="overlay"></div>
@@ -285,7 +285,7 @@
 					</div>
 				</div>
 				<!-- /Work -->
-			
+
 				<div class="col-md-3 col-xs-4 work">
 					<img class="img-responsive" src="./img/work2.jpg" alt="">
 					<div class="overlay"></div>
@@ -495,14 +495,23 @@
 
 		<!-- Background Image -->
 		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
-			<div class="overlay"></div>
+			<div class="overlay">
+
+			</div>
 		</div>
 		<!-- /Background Image -->
 
 		<!-- Container -->
 		<div class="container">
 
+			<div class="Row">
+					<div class="number">
+						<i class="fa fa-users"></i><br>
+						<span class="white-text">Eres nuestro visitante numero:</span>
+						<h3 class="white-text"><span class="counter">451</span></h3>
+					</div>
 
+			</div>
 		</div>
 		<!-- /Container -->
 
@@ -540,6 +549,10 @@
 						<i class="fa fa-map-marker"></i>
 						<h3>Direccion</h3>
 						<p>Potosí -  Bolivia</p>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+						  Google Maps
+						</button>
+
 					</div>
 				</div>
 			</div>
@@ -551,6 +564,23 @@
 	</div>
 	<!-- /Contact -->
 
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalCenterTitle">NUESTRA UBICACIÓN</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1879.5177971405635!2d-65.75773924195988!3d-19.58297569669979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f94e7422d0f36d%3A0xe1cd4f1bd9b7e37!2sFederaci%C3%B3n+de+Empresarios+Privados+de+Potos%C3%AD!5e0!3m2!1ses-419!2sbo!4v1538018386096" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<!-- Footer -->
 	<footer id="footer" class="sm-padding bg-dark">
@@ -618,6 +648,7 @@
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 
