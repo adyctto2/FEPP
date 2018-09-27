@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="{{asset('img/logo.png')}}">
 	<title>Federacion de Empresarios Privados Potosí</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />

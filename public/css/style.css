@@ -263,6 +263,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 20%;
 }
 .navbar-brand {
     padding: 0;
