@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="{{asset('img/logo.png')}}">
+	<link rel="shortcut icon" href="{{asset('img/icon.png')}}">
 	<title>Federacion de Empresarios Privados Potosí</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
@@ -18,7 +18,7 @@
 
 <body>
 	<header id="home">
-		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+		<div class="bg-img" style="background-image: url('./img/background1.jpg'); width: 100%;">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -31,8 +31,8 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="#home">
-							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
+							<img class="logo" src="img/logo-alt.png" alt="logo">
+							<img class="logo-alt" src="img/logo.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -47,7 +47,14 @@
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">La F.E.P.P.</a></li>
+					<li class="titulos"><a href="#about">La F.E.P.P.</a>
+						<ul class="submenu">
+							<li>Mision</li>
+							<li>Vision</li>
+							<li>Objetivo</li>
+						</ul>
+					</li>
+					
 					<li><a href="#portfolio">Entidades Afiliadas</a></li>
 					<li><a href="#service">Eventos</a></li>
 					<li><a href="#team">Noticias</a></li>
@@ -68,13 +75,13 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<img class="img-responsive" src="./img/logoPrincipal.png" alt="">
-							<a href="#about"><button type="button" name="button" class = "main-btn btn-danger">INGRESAR</button></a>
+							<h1>FEDERACIÓN DE EMPRESARIOS <br><strong>PRIVADOS POTOSÍ</strong></h1>
 						</div>
 					</div>
 					<!-- /home content -->
 
 				</div>
+				
 			</div>
 		</div>
 		<!-- /home wrapper -->
@@ -136,7 +143,7 @@
 		<div id="testimonial" class="section md-padding">
 
 			<!-- Background Image -->
-			<div class="bg-img" style="background-image: url('./img/background3.jpg');">
+			<div class="bg-img" style="background-image: url('./img/background3.jpg'); width: 100%;">
 				<div class="overlay"></div>
 			</div>
 			<!-- /Background Image -->

@@ -268,7 +268,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .navbar-brand {
     padding: 0;
 }
-
 .navbar-brand .logo, .navbar-brand .logo-alt {
     max-height: 50px;
     display: block;
@@ -307,7 +306,25 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     transition: 0.2s padding;
     z-index: 999;
 }
-
+.titulos:hover > ul{
+    display: block;    
+}
+.titulos .submenu{
+    display: none;
+    position:absolute;
+    margin: 0px;
+    border-bottom: 1px black solid;
+    background: rgba(0, 0, 0, 0.233);
+    width: 200px;
+    color: white;
+}
+.titulos .submenu li{
+    
+    border-bottom: 1px black solid;
+}
+.submenu li:hover{
+    color: #095507;
+}
 #nav.navbar {
     border: none;
     border-radius: 0;
@@ -343,6 +360,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         color: #10161A;
         padding: 15px 0px;
     }
+    
     #nav.nav-transparent:not(.fixed-nav) .main-nav>li>a {
         color: #fff;
     }
@@ -588,18 +606,31 @@ header {
 }
 
 #home .home-wrapper {
-    position: absolute;
-    left: 0px;
+    position: relative;
+    left: -33%;
     right: 0px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    text-align: center;
 }
 
 .home-content h1 {
   text-transform: uppercase;
+  text-align: right;
+  color: #c08c3a;
+  animation: inicio 3s 1;
+}
+@keyframes inicio{
+    20%{
+        display: initial;
+    }
+    25%{
+        font-size: 60px;
+    }
+}
+.home-content h1 strong{
+    color: white;
 }
 .home-content button {
   margin-top: 20px;
