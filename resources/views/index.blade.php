@@ -47,16 +47,9 @@
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Inicio</a></li>
-					<li class="titulos"><a href="#about">La F.E.P.P.</a>
-						<ul class="submenu">
-							<li>Mision</li>
-							<li>Vision</li>
-							<li>Objetivo</li>
-						</ul>
-					</li>
-					
+					<li class="titulos"><a href="#about">La F.E.P.P. </a></li>
 					<li><a href="#portfolio">Entidades Afiliadas</a></li>
-					<li><a href="#service">Eventos</a></li>
+					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="#team">Noticias</a></li>
 					<li><a href="#">FEIPOBOL 2018</a></li>
 					<li><a href="#contacto">Contacto</a></li>
@@ -75,7 +68,7 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1>FEDERACIÓN DE EMPRESARIOS <br><strong>PRIVADOS POTOSÍ</strong></h1>
+							<h1>FEDERACIÓN DE EMPRESARIOS <br><strong>PRIVADOS DE POTOSÍ</strong></h1>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -89,6 +82,16 @@
 	</header>
 	<!-- /Header -->
 
+	<div class="nav-social">
+		<a href="" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true" ></i>
+		</a>
+		<a href="" target="_blank" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i>
+		</a>
+		<a href="" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
+		</a>
+		<a href="" target="_blank" class="instragram"><i class="fa fa-instagram" aria-hidden="true"></i>
+		</a>
+	</div>
 	<!-- About -->
 	<div id="about" class="section md-padding">
 
@@ -99,41 +102,54 @@
 			<div class="row">
 
 				<!-- Section header -->
-				<div class="section-header text-center">
-					<img class="img-responsive img-center" src="./img/logoFepp.png" alt="">
-					<h1>FEDERACIÓN DE EMPRESARIOS PRIVADOS POTOSÍ</h1>
-					<h3>La  FEPP  se  constituye  en  una  institución  que  no  desarrolla  actividades  político partidarias, con un Comité Ejecutivo renovado con el único objetivo de trabajar de manera transparente en beneficio del sector privado, compartiendo sus conocimientos y habilidades necesarias para promover eficazmente la creatividad y la innovación empresarial</h3>
+				<div class="section-header">
+					<h2 class="des">La  Federación de Empresarios Privados de Potosí  se  constituye  en  una  institución  que  no  desarrolla  actividades  político partidarias, con un Comité Ejecutivo renovado con el único objetivo de trabajar de manera transparente en beneficio del sector privado, compartiendo sus conocimientos y habilidades necesarias para promover eficazmente la creatividad y la innovación empresarial</h2>
 				</div>
 				<!-- /Section header -->
 
 				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<h3>MISIÓN</h3>
-						<p>Ser una entidad que concentre al sector empresarial privado, promoviendo el fortalecimiento y desarrollo institucional, velando los intereses jurídicos, económicos, sociales de nuestros afiliados, generando participación activa en el progreso departamental y nacional.</p>
-						<a href="#">Leer mas</a>
+				<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					<div class="col-md-4">
+						<div class="about">
+							<h3>MISIÓN</h3>
+							<div class="collapse" id="collapseExample">
+								<div class="card card-body">
+										<p>Ser una entidad que concentre al sector empresarial privado, promoviendo el fortalecimiento y desarrollo institucional, velando los intereses jurídicos, económicos, sociales de nuestros afiliados, generando participación activa en el progreso departamental y nacional.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				</a>
 				<!-- /about -->
 
 				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<h3>VISIÓN</h3>
-						<p>Ser una entidad líder representativa e influyente, prestigiosa y solvente, reconocida por su contribución al desarrollo productivo, económico social y turístico del Departamento de Potosí.</p>
-						<a href="#">Leer mas</a>
+				<a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+					<div class="col-md-4">
+						<div class="about">
+							<h3>VISIÓN</h3>
+							<div class="collapse" id="collapseExample1">
+								<div class="card card-body">
+										<p>Ser una entidad líder representativa e influyente, prestigiosa y solvente, reconocida por su contribución al desarrollo productivo, económico social y turístico del Departamento de Potosí.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				</a>
 				<!-- /about -->
 
 				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<h3>OBJETIVO</h3>
-						<p>Promover la participación del sector empresarial en aspectos de interés local y regional, que coadyuve al desarrollo productivo, económico social y turístico del departamento, sustentando la filosofía de la libre empresa y la economía del mercado, como bases esenciales de dicho proceso.</p>
-						<a href="#">Leer mas</a>
+				<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+					<div class="col-md-4">
+						<div class="about">
+							<h3>OBJETIVO</h3>
+							<div class="collapse" id="collapseExample2">
+								<div class="card card-body">
+									<p>Promover la participación del sector empresarial en aspectos de interés local y regional, que coadyuve al desarrollo productivo, económico social y turístico del departamento, sustentando la filosofía de la libre empresa y la economía del mercado, como bases esenciales de dicho proceso.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				</a>
 				<!-- /about -->
 
 			</div>
@@ -161,50 +177,57 @@
 							<!-- testimonial -->
 							<div class="testimonial">
 								<div class="testimonial-meta">
-									<img src="./img/perso1.jpg" alt="">
-									<h3 class="white-text">Juan Perez</h3>
-									<span>PRESIDENTE COMITE EJECUTIVO</span>
+									<img src="./img/p1.png" alt="">
+									<h3 class="white-text">Oscar Gregorio Gardeazabal Paputsachis</h3>
+									<span>PRESIDENTE</span>
 								</div>
-								<p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p>
+								<!-- <p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p> -->
 							</div>
 							<div class="testimonial">
 								<div class="testimonial-meta">
-									<img src="./img/perso1.jpg" alt="">
-									<h3 class="white-text">Pedro Lopez</h3>
-									<span>PRESIDENTE COMITE EJECUTIVO</span>
+									<img src="./img/p2.png" alt="">
+									<h3 class="white-text">Ricardo Cruz Limachi</h3>
+									<span>PRIMER VICEPRESIDENTE</span>
 								</div>
-								<p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p>
+								<!-- <p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p> -->
 							</div>
 							<div class="testimonial">
 								<div class="testimonial-meta">
-									<img src="./img/perso1.jpg" alt="">
-									<h3 class="white-text">Ramiro Ramirez</h3>
-									<span>PRESIDENTE COMITE EJECUTIVO</span>
+									<img src="./img/p3.png" alt="">
+									<h3 class="white-text">Edwin Ugarte La Torre</h3>
+									<span>SEGUNDO VICEPRESIDENTE</span>
 								</div>
-								<p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p>
+								<!-- <p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p> -->
 							</div>
 							<div class="testimonial">
 								<div class="testimonial-meta">
-									<img src="./img/perso1.jpg" alt="">
-									<h3 class="white-text">Camila Caballero</h3>
-									<span>PRESIDENTE COMITE EJECUTIVO</span>
+									<img src="./img/p4.png" alt="">
+									<h3 class="white-text">Gunnar Armijo Cassis </h3>
+									<span>TESORERO</span>
 								</div>
-								<p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p>
+								<!-- <p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p> -->
 							</div>
 							<div class="testimonial">
 								<div class="testimonial-meta">
-									<img src="./img/perso1.jpg" alt="">
-									<h3 class="white-text">Maria Martinez</h3>
-									<span>PRESIDENTE COMITE EJECUTIVO</span>
+									<img src="./img/p5.png" alt="">
+									<h3 class="white-text">Roberto Pinto Thaine </h3>
+									<span>REPRESENTANTE NACIONAL</span>
 								</div>
-								<p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p>
+								<!-- <p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p> -->
+							</div>
+							<div class="testimonial">
+								<div class="testimonial-meta">
+									<img src="./img/p6.png" alt="">
+									<h3 class="white-text">Romer Armando Gutiérrez Suyo </h3>
+									<span>GERENTE GENERAL</span>
+								</div>
+								<!-- <p class="white-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar</p> -->
 							</div>
 							<!-- /testimonial -->
 
 						</div>
 					</div>
 					<!-- /Testimonial slider -->
-
 				</div>
 				<!-- /Row -->
 
@@ -220,95 +243,80 @@
 
 	<!-- Portfolio -->
 	<div id="portfolio" class="section md-padding bg-grey">
-
-		<!-- Container -->
 		<div class="container">
 
 			<!-- Row -->
 			<div class="row">
-
-				<!-- Section header -->
 				<div class="section-header text-center">
 					<h2 class="title">Entidades Afiliadas</h2>
 				</div>
-				<!-- /Section header -->
-
-				<!-- Work -->
-				<div class="col-md-3 col-xs-4 work">
-					<img class="img-responsive" src="./img/work1.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<h3>INFOCAL POTOSI</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/logos/alinvest.png" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+									<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+									<a  style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+									<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>Al - Invest 5.0</h3>
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
-
-				<!-- Work -->
-				<div class="col-md-3 col-xs-4 work">
-					<img class="img-responsive" src="./img/work2.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<h3>CADECO POTOSI</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/logos/cepb.png" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+									<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+									<a  style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+									<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>Confederación de Empresarios Privados de Bolivia</h3>
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
-
-				<div class="col-md-3 col-xs-4 work">
-					<img class="img-responsive" src="./img/work2.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<h3>CADECO POTOSI</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/logos/msc.png" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+									<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+									<a  style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+									<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>Minera San Cristobal S.A.</h3>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-xs-4 work">
-					<img class="img-responsive" src="./img/work1.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<h3>INFOCAL POTOSI</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
+				<div class="col-sm-3">
+					<div class="team list">
+						<div class="team-img">
+							<i class="fa fa-list-alt icon" aria-hidden="true"></i>
 						</div>
-					</div>
-				</div>
-				<!-- /Work -->
-
-				<!-- Work -->
-				<div class="col-md-3 col-xs-4 work">
-					<img class="img-responsive" src="./img/work2.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<h3>CADECO POTOSI</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
-
-				<div class="col-md-3 col-xs-4 work">
-					<img class="img-responsive" src="./img/work2.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<h3>CADECO POTOSI</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
+						<div class="team-content">
+							<a href="{{ route('entidades') }}" class="btn btn-primary">Ver todo</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- /Row -->
 
-		</div>
-		<!-- /Container -->
+		</div>		
 
 	</div>
 	<!-- /Portfolio -->
@@ -542,27 +550,27 @@
 					<div class="contact">
 						<i class="fa fa-phone"></i>
 						<h3>Telefono</h3>
-						<p>62-24565</p>
+						<p>62 2 2625</p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Correo Electronico</h3>
-						<p>fepp@gmail.com</p>
+						<p>feppotosi@gmail.com </p>
 					</div>
 				</div>
+				
+				<a href="" data-toggle="modal" data-target="#exampleModalCenter">
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
 						<h3>Direccion</h3>
-						<p>Potosí -  Bolivia</p>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-						  Google Maps
-						</button>
+						<p>Av. Serrudo # 127 Edificio Renovación Piso #2 </p>
 
 					</div>
 				</div>
+				</a>
 			</div>
 			<!-- /Row -->
 
@@ -603,7 +611,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
@@ -611,9 +619,7 @@
 					<ul class="footer-follow">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->

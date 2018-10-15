@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/entidades', 'EntidadesController@index')
+    ->name('entidades');
+
+Route::get('/memorias', 'MemoriasController@index')
+    ->name('memorias');    
