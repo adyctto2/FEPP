@@ -10,24 +10,6 @@
 					<div class="menu-form">
 											@foreach ($entidades as $entidad)
                         <a href="{{ route('entidadeshow', ['id' =>  $entidad->id]) }}">{{ $entidad->nombre }}</a>
-                        <!-- <a href="">BANCO BISA</a>
-                        <a href="">BANCO NACIONAL DE BOLIVIA</a>
-                        <a href="">CADECO</a>
-                        <a href="">CADEMIN</a>
-                        <a href="">CAMARA TEXTIL</a>
-                        <a href="">CAMARA GRAFICA</a>
-                        <a href="">CEPB</a>
-                        <a href="">CLAUDIA HOTEL</a>
-                        <a href="">CERVECERIA NACIONAL POTOSI</a>
-                        <a href="">CAMARA HOTELERA</a>
-                        <a href="">LA PREDILECTA</a>
-                        <a href="">CAINCO</a>
-                        <a href="">CONSULTORA CONTABLE</a>
-                        <a href="">HOTEL GRAN LIBERTADOR</a>
-                        <a href="">OBSERVATORIO RSE</a>
-                        <a href="">SAN BARTOLOME</a>
-                        <a href="">SAN CRISTOBAL</a>
-                        <a href="">EL POTOSI</a> -->
 												@endforeach
                     </div>
 				</div>
