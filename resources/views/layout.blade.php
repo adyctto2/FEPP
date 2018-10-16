@@ -42,12 +42,13 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li class="titulos"><a href="#about">La F.E.P.P. </a></li>
+					<li class="titulos"><a href="{{ route('sobre' )}}">La F.E.P.P. </a></li>
 					<li><a href="{{ route('entidades') }}">Entidades Afiliadas</a></li>
 					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="#team">Noticias</a></li>
-					<li><a href="#">FEIPOBOL 2018</a></li>
-					<li><a href="#contacto">Contacto</a></li>
+					<li><a href="{{ route('feipobol')}}"  target="_blank">FEIPOBOL 2018</a></li>
+					<li><a href="">Cursos</a></li>
+					<li><a href="{{ route('contacto')}}">Contacto</a></li>
 				</ul>
 				<!-- /Main navigation -->
 

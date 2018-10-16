@@ -22,7 +22,6 @@
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
-
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 			<div class="container">
@@ -51,7 +50,8 @@
 					<li><a href="#portfolio">Entidades Afiliadas</a></li>
 					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="#team">Noticias</a></li>
-					<li><a href="#">FEIPOBOL 2018</a></li>
+					<li><a href="{{route('feipobol')}}"  target="_blank">FEIPOBOL 2018</a></li>
+					<li><a href="">Cursos</a></li>
 					<li><a href="#contacto">Contacto</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -336,82 +336,6 @@
 		<!-- /Container -->
 
 	</div>
-	<!-- Service -->
-	<div id="service" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Eventos</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- service -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog1.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>18 Octubre de 2018</li>
-							</ul>
-							<h3>evento 1 prueba</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Leer Completo</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog2.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>18 Octubre de 2018</li>
-							</ul>
-							<h3>evento 2 prueba</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Leer Completo</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive"  src="./img/blog3.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>18 Octubre de 2018</li>
-							</ul>
-							<h3>Evento 3 prueba</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Leer Completo</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Service -->
 
 	<div id="numbers" class="section sm-padding">
 
@@ -447,14 +371,14 @@
 				<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog1.jpg" alt="">
+							<img class="img-responsive" src="{{ asset('img/noticias/noticia1.jpg')}}" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>18 Octubre de 2018</li>
+								<li><i class="fa fa-clock-o"></i>5 de octubre a las 23:42</li>
 							</ul>
 							<h3>Noticia 1 prueba</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<p>En Potosí la Federación de Empresarios Privados se compromete con la niñez en riesgo. #MeImportan.</p>
 							<a href="blog-single.html">Leer Completo</a>
 						</div>
 					</div>
@@ -495,13 +419,17 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<!-- /Row -->
-
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<a href="" class="btn btn-success btn-lg btn-block"> Ver todo</a>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
 		</div>
-		<!-- /Container -->
-
+		<!-- /Container --> 
 	</div>
 	<!-- /Team -->
 

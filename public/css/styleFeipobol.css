@@ -1,0 +1,13 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+}
+.color{
+    background: rgba(0, 0, 0, 0.432);
+}
+.mover{
+    float: right !important; 
+}

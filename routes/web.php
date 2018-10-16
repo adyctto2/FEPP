@@ -20,3 +20,14 @@ Route::get('/entidades', 'EntidadesController@index')
 
 Route::get('/memorias', 'MemoriasController@index')
     ->name('memorias');    
+
+Route::get('/about', 'AboutController@index')
+    ->name('sobre');    
+
+    
+Route::get('/contacto', 'ContactoController@index')
+->name('contacto');    
+
+
+Route::get('/feipobol', 'FeipobolController@index')
+->name('feipobol');    
