@@ -18,8 +18,13 @@ Route::get('/', function () {
 Route::get('/entidades', 'EntidadesController@index')
     ->name('entidades');
 
+Route::get('/entidades/{ent}', 'EntidadesController@show')
+                  ->where('entidad', '[0-9]+')
+                  ->name('entidadeshow');
+
+
 Route::get('/memorias', 'MemoriasController@index')
-    ->name('memorias');    
+->name('memorias');    
 
 Route::get('/about', 'AboutController@index')
     ->name('sobre');    
