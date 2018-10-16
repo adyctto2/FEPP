@@ -17,7 +17,7 @@
 <body>
 <header>
   
-  <nav class="navbar navbar-expand-lg navbar-dark color">
+  <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="{{ asset('img/logos/feipobol.png')}}" height="50" alt="mdb logo" class="d-inline-block align-top" alt="FEIPOBOL 2018">
@@ -61,14 +61,14 @@
   </div>
   <!-- Collapsible content -->  
 </nav>
-<section class="portada">
-  <video autoplay>
-    <source src="{{asset('videos/intro.mp4')}}" type="video/mp4">
-  </video>
-</section>
 </header>
 <!--/.Navbar-->
 
+<section class="portada">
+    <video autoplay>
+      <source src="{{asset('videos/intro.mp4')}}" type="video/mp4">
+    </video>
+  </section>
   
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->

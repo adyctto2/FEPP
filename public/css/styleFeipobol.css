@@ -11,3 +11,7 @@ body {
 .mover{
     float: right !important; 
 }
+.portada video{
+    width: 100%;
+    background-size: cover;
+}
