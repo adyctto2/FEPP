@@ -10,21 +10,22 @@ class EntidadesController extends Controller
 {
   public function index()
   {
-    $entidades = Entidades::all()->sortbyDesc('id');
+    $entidades = Entidades::all();
+    $ent1 = Entidades::find(1);
 
     // dd($entidades);
 
-    $titulo="Entidades Afiliadas";
-    return view('entidades.index', compact('titulo', 'entidades'));
+    $titulo="CONSEJO DIRECTIVO";
+    return view('entidades.index', compact('titulo', 'entidades','ent1'));
 
   }
   public function show($id)
   {
     $ent = Entidades::findOrFail($id);
     $entidades = Entidades::get();
-
+    $ent1 = Entidades::find(1);
     // dd($entidadd);
-    $titulo="Entidades Afiliadas";
-    return view('entidades.show', compact('titulo', 'ent','entidades'));
+    $titulo="CONSEJO DIRECTIVO";
+    return view('entidades.show', compact('titulo', 'ent','entidades','ent1'));
   }
 }

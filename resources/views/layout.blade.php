@@ -43,7 +43,7 @@
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li class="titulos"><a href="{{ route('sobre' )}}">La F.E.P.P. </a></li>
-					<li><a href="{{ route('entidades') }}">Entidades Afiliadas</a></li>
+					<li><a href="{{ route('entidades') }}">Consejo Directivo</a></li>
 					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="{{ route('noticias') }}">Noticias</a></li>
 					<li><a href="{{ route('feipobol')}}"  target="_blank">FEIPOBOL 2018</a></li>
@@ -78,7 +78,7 @@
 
                         <!-- footer logo -->
                         <div class="footer-logo">
-                            <a href="/"><img src="img/logo.png" alt="logo"></a>
+                            <a href="/"><img src="{{asset('img/logo.png')}}" alt="logo"></a>
                         </div>
                         <!-- /footer logo -->
 
@@ -93,7 +93,7 @@
 
                         <!-- footer copyright -->
                         <div class="footer-copyright">
-                            <p>Copyright © 2018. Todos los derechos reservados F.E.P.P. diseñado por <a href="https://adyctto.com" target="_blank">I S & T</a></p>
+                            <p>Copyright © 2018. Todos los derechos reservados F.E.P.P. desarrollado por <a href="https://adyctto.com" target="_blank">I S & T</a></p>
                         </div>
                         <!-- /footer copyright -->
 
