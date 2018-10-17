@@ -14,6 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -48,10 +49,10 @@
 					<li><a href="#home">Inicio</a></li>
 					<li class="titulos"><a href="#about">La F.E.P.P. </a></li>
 					<li><a href="#portfolio">Entidades Afiliadas</a></li>
+					<li><a href="#myCarousel">Cursos</a></li>
 					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="#team">Noticias</a></li>
 					<li><a href="{{route('feipobol')}}"  target="_blank">FEIPOBOL 2018</a></li>
-					<li><a href="">Cursos</a></li>
 					<li><a href="#contacto">Contacto</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -319,41 +320,57 @@
 		</div>		
 
 	</div>
-	<!-- /Portfolio -->
-	<div id="numbers" class="section sm-padding">
-
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
-			<div class="overlay"></div>
+	<!-- Cursos -->
+	<div id="myCarousel" class="carousel slide curso" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+	
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+	
+			<div class="item active">
+			<img src="{{asset('img/cursos/curso1.png')}}" alt="Los Angeles" style="width:100%;">
+			<div class="carousel-caption">
+				<h3 class="titulo">Curso de técnico certificado de fibra óptica</h3>
+				<p class="date">Proximamente</p>
+				<p>Es una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.</p>
+				<a href="{{route('cursos')}}" class="btn btn-primary">Saber mas</a>
+			</div>
+			</div>
+	
+			<div class="item">
+			<img src="{{asset('img/blog2.jpg')}}" alt="Chicago" style="width:100%;">
+			<div class="carousel-caption">
+				<h3 class="titulo">Chicago</h3>
+				<p>Thank you, Chicago!</p>
+			</div>
+			</div>
+		
+			<div class="item">
+			<img src="{{asset('img/blog3.jpg')}}" alt="New York" style="width:100%;">
+			<div class="carousel-caption">
+				<h3 class="titulo">Curso de técnico certificado de fibra óptica</h3>
+				<p>We love the Big Apple!</p>
+			</div>
+			</div>
+		
 		</div>
-		<!-- /Background Image -->
-
-		<!-- Container -->
-		<div class="container">
-
-
+	
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
 		</div>
-		<!-- /Container -->
-
-	</div>
-
-	<div id="numbers" class="section sm-padding">
-
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
-			<div class="overlay"></div>
-		</div>
-		<!-- /Background Image -->
-
-		<!-- Container -->
-		<div class="container">
-
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-
+	
 	<!-- Team -->
 	<div id="team" class="section md-padding">
 
@@ -424,7 +441,7 @@
 			<div class="row">
 				<div class="col-md-5"></div>
 				<div class="col-md-2">
-					<a href="" class="btn btn-success btn-lg btn-block"> Ver todo</a>
+					<a href="{{ route('noticias')}}" class="btn btn-success btn-lg btn-block"> Ver todo</a>
 				</div>
 				<div class="col-md-5"></div>
 			</div>
@@ -585,8 +602,10 @@
 	<!-- /Preloader -->
 
 	<!-- jQuery Plugins -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

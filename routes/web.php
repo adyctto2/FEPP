@@ -36,3 +36,9 @@ Route::get('/contacto', 'ContactoController@index')
 
 Route::get('/feipobol', 'FeipobolController@index')
 ->name('feipobol');    
+
+Route::get('/noticias', 'NoticiaController@index')
+->name('noticias');    
+
+Route::get('/cursos', 'CursoController@index')
+->name('cursos');    

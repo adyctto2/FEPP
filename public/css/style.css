@@ -51,7 +51,6 @@ body {
     overflow-x: hidden;
     color: #868F9B;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -86,7 +85,16 @@ a {
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }
-
+hr{
+    border: 1px solid rgb(53, 52, 52);
+    width: 80%;
+    display:  none;
+}
+@media only screen and (max-width: 767px) {
+    hr{
+        display: block;
+    }
+}
 a:hover, a:focus {
     text-decoration: none;
     outline: none;
@@ -1218,16 +1226,43 @@ header {
 /*------------------------------------*\
 	Blog
 \*------------------------------------*/
-
+.noticias{
+    
+    overflow: scroll;
+    height: 100vh;
+}
+.noticia-header{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.noticia-contenido{
+    margin: 10px;
+    display: inline-block;
+}
+.noticia-contenido p{
+    text-align: justify;
+}
+.noticia-header div{
+    background: rgb(117, 117, 117) !important;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    color: white
+}
 .blog {
     background-color: #FFF;
     margin: 15px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
 }
-
+.images{
+    width: 100% !important;
+}
 .blog .blog-content {
-    padding: 20px 20px 40px;
+    padding: 10px 10px 10px;
 }
-
+.blog .blog-content h3{
+    color: #095507;
+}
 .blog .blog-meta {
     margin-bottom: 20px;
 }
@@ -1415,9 +1450,44 @@ header {
 }
 
 
+
+/* cursos*/
+
+.fecha{
+    border-right: 3px solid rgba(0, 0, 0, 0.116);
+    text-align: right;
+}
+.curso .carousel-inner img{
+    height: 100vh;
+}
+.curso .carousel-caption{
+    background: rgba(0, 0, 0, 0.747) !important;
+}
+.curso .carousel-caption h3{
+    color: white !important;
+    text-transform: uppercase;
+}
+.curso .carousel-caption .date
+{
+    font-size: 13px;
+    background: red;
+    width: 20%;
+    border-radius: 1rem;
+    margin-left: 40%;
+}
+@media only screen and (max-width: 767px) {
+    .curso .carousel-caption .date
+    {
+        font-size: 10px;
+        background: red;
+        width: 25%;
+    }
+}
 /*------------------------------------*\
 	Blog sidebar
 \*------------------------------------*/
+
+
 
 #aside .widget {
     margin-bottom: 40px;
