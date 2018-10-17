@@ -7,13 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="{{asset('img/icon.png')}}">
 	<title>Federacion de Empresarios Privados Potosí</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
-	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link href="{{asset('https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round')}}" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/owl.carousel.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/owl.theme.default.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" />
+	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Inicio</a></li>
 					<li class="titulos"><a href="#about">La F.E.P.P. </a></li>
-					<li><a href="#portfolio">Entidades Afiliadas</a></li>
+					<li><a href="#portfolio">Consejo Directivo</a></li>
 					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="#team">Noticias</a></li>
 					<li><a href="{{route('feipobol')}}"  target="_blank">FEIPOBOL 2018</a></li>
@@ -74,7 +74,7 @@
 					<!-- /home content -->
 
 				</div>
-				
+
 			</div>
 		</div>
 		<!-- /home wrapper -->
@@ -158,6 +158,7 @@
 		<!-- /Container -->
 		<div id="testimonial" class="section md-padding">
 
+				<h2 class="white-text" style="text-align: center;" >COMITÉ EJECUTIVO</h2>
 			<!-- Background Image -->
 			<div class="bg-img" style="background-image: url('./img/background3.jpg'); width: 100%;">
 				<div class="overlay"></div>
@@ -166,14 +167,12 @@
 
 			<!-- Container -->
 			<div class="container">
-
 				<!-- Row -->
 				<div class="row">
 
 					<!-- Testimonial slider -->
 					<div class="col-md-10 col-md-offset-1">
 						<div id="testimonial-slider" class="owl-carousel owl-theme">
-
 							<!-- testimonial -->
 							<div class="testimonial">
 								<div class="testimonial-meta">
@@ -248,75 +247,76 @@
 			<!-- Row -->
 			<div class="row">
 				<div class="section-header text-center">
-					<h2 class="title">Entidades Afiliadas</h2>
+					<h2 class="title">CONSEJO DIRECTIVO</h2>
 				</div>
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/logos/alinvest.png" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-									<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
-									<a  style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-									<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+
+					<div class="col-sm-3">
+						<div class="team">
+							<div class="team-img">
+								<img class="img-responsive" src="{{asset('img/entidades/'. $ent1->img)}}" alt="">
+								<div class="overlay">
+									<div class="team-social">
+										<a href="{{$ent1->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a href="{{$ent1->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a href="{{$ent1->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="team-content">
-							<h3>Al - Invest 5.0</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/logos/cepb.png" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-									<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
-									<a  style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-									<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
-								</div>
+							<div class="team-content">
+								<h3>{{ $ent1->nombre}}</h3>
 							</div>
 						</div>
-						<div class="team-content">
-							<h3>Confederación de Empresarios Privados de Bolivia</h3>
-						</div>
 					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/logos/msc.png" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-									<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
-									<a  style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-									<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+					<div class="col-sm-3">
+						<div class="team">
+							<div class="team-img">
+								<img class="img-responsive" src="{{asset('img/entidades/'. $ent2->img)}}" alt="">
+								<div class="overlay">
+									<div class="team-social">
+										<a href="{{$ent2->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a href="{{$ent2->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a href="{{$ent2->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="team-content">
-							<h3>Minera San Cristobal S.A.</h3>
+							<div class="team-content">
+								<h3>{{ $ent1->nombre}}</h3>
+							</div>
 						</div>
 					</div>
-				</div>
+					<div class="col-sm-3">
+						<div class="team">
+							<div class="team-img">
+								<img class="img-responsive" src="{{asset('img/entidades/'. $ent3->img)}}" alt="">
+								<div class="overlay">
+									<div class="team-social">
+										<a href="{{$ent3->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a href="{{$ent3->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a href="{{$ent3->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="team-content">
+								<h3>{{ $ent3->nombre}}</h3>
+							</div>
+						</div>
+					</div>
 				<div class="col-sm-3">
 					<div class="team list">
 						<div class="team-img">
-							<i class="fa fa-list-alt icon" aria-hidden="true"></i>
+							<i class="fa fa-plus-square-o" aria-hidden="true"></i>
 						</div>
 						<div class="team-content">
-							<a href="{{ route('entidades') }}" class="btn btn-primary">Ver todo</a>
+							<a href="{{ route('entidades') }}" class="btn btn-primary">Ver todos</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-		</div>		
+		</div>
 
 	</div>
 	<!-- /Portfolio -->
@@ -429,7 +429,7 @@
 				<div class="col-md-5"></div>
 			</div>
 		</div>
-		<!-- /Container --> 
+		<!-- /Container -->
 	</div>
 	<!-- /Team -->
 
@@ -472,28 +472,28 @@
 
 				<!-- Section-header -->
 				<div class="section-header text-center">
-					<h2 class="title">Contactanos</h2>
+					<h2 class="title">Contáctanos</h2>
 				</div>
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-phone"></i>
-						<h3>Telefono</h3>
-						<p>62 2 2625</p>
+						<h3>Teléfono</h3>
+						<p>+(591) 2 622-2625</p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
-						<h3>Correo Electronico</h3>
+						<h3>Correo Electrónico</h3>
 						<p>feppotosi@gmail.com </p>
 					</div>
 				</div>
-				
+
 				<a href="" data-toggle="modal" data-target="#exampleModalCenter">
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
-						<h3>Direccion</h3>
+						<h3>Dirección</h3>
 						<p>Av. Serrudo # 127 Edificio Renovación Piso #2 </p>
 
 					</div>
@@ -539,7 +539,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+						<a href="index.html"><img src="{{asset('img/logo.png')}}" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
@@ -554,7 +554,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2018. Todos los derechos reservados F.E.P.P. diseñado por <a href="https://adyctto.com" target="_blank">I S & T</a></p>
+						<p>Copyright © 2018. Todos los derechos reservados F.E.P.P. desarrollado por <a href="https://adyctto.com" target="_blank">I S & T</a></p>
 					</div>
 					<!-- /footer copyright -->
 

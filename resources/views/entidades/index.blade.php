@@ -18,15 +18,15 @@
 
 
 				<div class="col-sm-3">
-                        <img src="{{ asset('img/logos/alinvest.png')}}"  class="img-thumbnail" alt="Al-Invest">
+                        <img src="{{ asset('img/entidades/'. $ent1->img)}}"  class="img-thumbnail" alt="Al-Invest">
 				</div>
                 <DIV class="col-sm-5 descripcion">
-                    <h2>{{$entidad->nombre }}</h2>
-                    <P>{{ $entidad->descripcion }}</P>
-										<p><strong>Gerente: </strong>{{ $entidad->gerente}}</p>
-										<p><strong>Presidente: </strong>{{$entidad->presidente}}</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i><strong>  {{ $entidad->telefono }} | </strong><i class="fa fa-envelope-o" aria-hidden="true"></i><strong> {{ $entidad-> email}}</strong> | <i class="fa fa-map-marker" aria-hidden="true"></i>   {{ $entidad->direccion}}</p>
-                    <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a> | <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a> | <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <h2>{{$ent1->nombre }}</h2>
+                    <P>{{ $ent1->descripcion }}</P>
+										<!-- <p><strong>Gerente: </strong>{{ $entidad->gerente}}</p>
+										<p><strong>Presidente: </strong>{{$entidad->presidente}}</p> -->
+                    <p><i class="fa fa-phone" aria-hidden="true"></i><strong>  {{ $ent1->telefono }} | </strong><i class="fa fa-envelope-o" aria-hidden="true"></i><strong> {{ $ent1-> email}}</strong> | <i class="fa fa-map-marker" aria-hidden="true"></i>   {{ $ent1->direccion}}</p>
+                    <a href="{{ $ent1->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a> | <a href="{{ $ent1->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a> | <a href="{{ $ent1->twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </DIV>
                 <div class="col-sm-1"></div>
             </div>

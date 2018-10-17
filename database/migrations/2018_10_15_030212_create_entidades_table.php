@@ -16,12 +16,12 @@ class CreateEntidadesTable extends Migration
         Schema::create('entidades', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre')->unique();
-            $table->string('descripcion');
+            $table->text('descripcion');
             $table->string('img');
             $table->string('gerente');
             $table->string('presidente');
             $table->string('telefono');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('direccion');
             $table->string('website');
             $table->string('facebook');

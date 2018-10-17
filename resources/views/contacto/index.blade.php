@@ -15,23 +15,23 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-phone"></i>
-						<h3>Telefono</h3>
-						<p>62 2 2625</p>
+						<h3>Teléfono</h3>
+						<p>+(591) 2 622-2625</p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
-						<h3>Correo Electronico</h3>
+						<h3>Correo Electrónico</h3>
 						<p>feppotosi@gmail.com </p>
 					</div>
 				</div>
-				
+
 				<a href="" data-toggle="modal" data-target="#exampleModalCenter">
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
-						<h3>Direccion</h3>
+						<h3>Dirección</h3>
 						<p>Av. Serrudo # 127 Edificio Renovación Piso #2 </p>
 
 					</div>

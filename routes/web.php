@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PrincipalController@entidadeShow')
+    ->name('principal');
 
 Route::get('/entidades', 'EntidadesController@index')
     ->name('entidades');
@@ -24,15 +23,15 @@ Route::get('/entidades/{ent}', 'EntidadesController@show')
 
 
 Route::get('/memorias', 'MemoriasController@index')
-->name('memorias');    
+->name('memorias');
 
 Route::get('/about', 'AboutController@index')
-    ->name('sobre');    
+    ->name('sobre');
 
-    
+
 Route::get('/contacto', 'ContactoController@index')
-->name('contacto');    
+->name('contacto');
 
 
 Route::get('/feipobol', 'FeipobolController@index')
-->name('feipobol');    
+->name('feipobol');
