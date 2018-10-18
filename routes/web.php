@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PrincipalController@entidadeShow')
+Route::get('/', 'PrincipalController@Show')
     ->name('principal');
 
 Route::get('/entidades', 'EntidadesController@index')
@@ -36,8 +36,11 @@ Route::get('/contacto', 'ContactoController@index')
 Route::get('/feipobol', 'FeipobolController@index')
 ->name('feipobol');
 
-Route::get('/noticias', 'NoticiaController@index')
-->name('noticias');    
+Route::get('/noticias', 'NoticiasController@index')
+->name('noticias');
+
+Route::get('/noticias/{not}', 'NoticiasController@show')
+->name('noticiaShow');
 
 Route::get('/cursos', 'CursoController@index')
-->name('cursos');    
+->name('cursos');

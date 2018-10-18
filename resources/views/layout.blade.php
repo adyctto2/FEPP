@@ -14,6 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" />
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/styleNoticias.css')}}" />
 </head>
 
 <body>
