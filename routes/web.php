@@ -42,5 +42,8 @@ Route::get('/noticias', 'NoticiasController@index')
 Route::get('/noticias/{not}', 'NoticiasController@show')
 ->name('noticiaShow');
 
-Route::get('/cursos', 'CursoController@index')
+Route::get('/cursos', 'CursosController@index')
 ->name('cursos');
+
+Route::get('/cursos/{id}', 'CursosController@show')
+->name('cursoShow');

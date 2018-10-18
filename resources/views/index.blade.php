@@ -350,28 +350,30 @@
 		<div class="carousel-inner">
 
 			<div class="item active">
-			<img src="{{asset('img/cursos/curso1.png')}}" alt="Los Angeles" style="width:100%;">
+			<img src="{{asset('img/cursos/'.$curso1->imagen)}}" alt="Los Angeles" style="width:100%;">
 			<div class="carousel-caption">
-				<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{route('cursos')}}"><h3 class="titulo">Curso de técnico certificado en fibra óptica</h3></a></MARQUEE>
+				<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso1->id]) }}"><h3 class="titulo">{{$curso1->titulo}}</h3></a></MARQUEE>
 				<p class="date">Proximamente</p>
-				<p>Es una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.</p>
-				<!-- <a href="{{route('cursos')}}" class="btn btn-primary">Saber mas</a> -->
+				<p>{{$curso1->subtitulo}}</p>
+
 			</div>
 			</div>
 
 			<div class="item">
-			<img src="{{asset('img/blog2.jpg')}}" alt="Chicago" style="width:100%;">
-			<div class="carousel-caption">
-				<h3 class="titulo">Chicago</h3>
-				<p>Thank you, Chicago!</p>
-			</div>
-			</div>
+				<img src="{{asset('img/cursos/'.$curso2->imagen)}}" alt="Los Angeles" style="width:100%;">
+				<div class="carousel-caption">
+					<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso2->id]) }}"><h3 class="titulo">{{$curso2->titulo}}</h3></a></MARQUEE>
+					<p class="date">Proximamente</p>
+					<p>{{$curso2->subtitulo}}</p>
+				</div>
+				</div>
 
 		<div class="item">
-			<img src="{{asset('img/blog3.jpg')}}" alt="New York" style="width:100%;">
+			<img src="{{asset('img/cursos/'.$curso3->imagen)}}" alt="Los Angeles" style="width:100%;">
 			<div class="carousel-caption">
-				<h3 class="titulo">Curso de técnico certificado de fibra óptica</h3>
-				<p>We love the Big Apple!</p>
+				<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso3->id]) }}"><h3 class="titulo">{{$curso3->titulo}}</h3></a></MARQUEE>
+				<p class="date">Proximamente</p>
+				<p>{{$curso3->subtitulo}}</p>
 			</div>
 			</div>
 
