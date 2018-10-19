@@ -38,20 +38,17 @@
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">FEIPOBOL 2018</a>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" id="feipobol" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEIPOBOL 2018</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
+            <a class="dropdown-item" href="#">Acerca de</a>
+            <a class="dropdown-item" href="#">Venta de Stands</a>
+            <a class="dropdown-item" href="#">Expositores</a>
+            <a class="dropdown-item" href="#">Información</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-scroll href="#noticias">Noticias</a>
-        </li>
-        
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Servicios</a>
-          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Venta de Stands</a>
-          </div>
         </li>
         
         <li class="nav-item">
@@ -67,6 +64,7 @@
   </div>
   <!-- Collapsible content -->  
 </nav>
+
 <div class="view fondo" id="inicio">
   <!-- Mask & flexbox options-->
   <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
@@ -132,6 +130,7 @@
 </div>
 </header>
 <!--/.Navbar-->
+
 <div class="container" id="noticias">
   <section class="my-5">
 

@@ -92,6 +92,12 @@ h6 {
 #noticias h2{
   color: black;
 }
+.titulos h2{
+  color: black;
+}
 #noticias .contenido p{
   text-align: justify;
+}
+.video{
+  height: 100vh;
 }
