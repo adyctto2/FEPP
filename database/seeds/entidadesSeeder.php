@@ -31,7 +31,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'BANCO BISA S.A.',
           'descripcion' => 'Desde nuestra fundación, el 5 de julio de 1963, en Banco BISA asumimos como compromiso de vida, promover el desarrollo nacional y satisfacer las necesidades de nuestros clientes con oportunidad y calidad, guiados por cinco valores fundamentales: Calidad, Prudencia, Compromiso, Coordinación e Innovación.',
-          'img' => '1.jpg',
+          'img' => '1.png',
           'gerente' => '',
           'presidente' => 'Julio Cesar León Prado',
           'telefono' => '800-10-5555',
@@ -87,7 +87,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'CAMARA DEPARTAMENTAL DE MINERÍA',
           'descripcion' => 'La Cámara Departamental de Minería de Potosí, nació con personalidad propia el 20 de enero de 1953 en sustitución a la Asociación Departamental de Mineros que emergió el 10 de diciembre de 1934, en cumplimiento al D.S. Nº 8327 de 5 de marzo de 1953. CADEMIN está constituida por todas la personas naturales o jurídicas en su condición de productores de minerales, industriales de plantas de concentración y plantas de tratamiento que llenen los requisitos de inscripción de acuerdo al art. 5 del D.L. Nº 07921 de 13 de noviembre de 1953.',
-          'img' => '5.jpg',
+          'img' => '5.png',
           'gerente' => '',
           'presidente' => 'Óscar Gardeazaval',
           'telefono' => '+(591) 2 622-4563',
@@ -101,7 +101,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'CAMARA DEPARTAMENTAL DE CONSTRUCCIÓN',
           'descripcion' => 'Institución que agrupa empresas constructoras del departamento de Potosí',
-          'img' => '6.jpg',
+          'img' => '6.png',
           'gerente' => '',
           'presidente' => 'Ing. David Velasquez',
           'telefono' => '+(591) 2 622-7124',
@@ -144,7 +144,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'HOTEL CLAUDIA',
           'descripcion' => 'Desde la montaña más generosa del mundo nace Hotel Claudia. Se ubica a sólo cuatro manzanos del centro histórico en una avenida arbolada y de fácil acceso. Con el objetivo de ofrecer el mejor servicio en hotelería en la ciudad de Potosí.',
-          'img' => '9.jpg',
+          'img' => '9.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '+(591) 2 622-2242',
@@ -158,7 +158,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'INGENIO MINERO DEL SUR',
           'descripcion' => 'Explotación de minas y canteras',
-          'img' => '0.jpg',
+          'img' => '0.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '+(591) 2 622-7793',
@@ -172,7 +172,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'HOTEL SAN ANTONIO',
           'descripcion' => 'Complejo hotelero en la Ciudad de Potosi',
-          'img' => '0.jpg',
+          'img' => '0.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '+(591) 2 622-3566',
@@ -214,7 +214,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'FABRICA DE ROPA MARIO SPORT',
           'descripcion' => '',
-          'img' => '0.jpg',
+          'img' => '0.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '+(591) 2 624-2155',
@@ -228,7 +228,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'EMPRESA DE EVENTOS FINADEMPO',
           'descripcion' => '',
-          'img' => '0.jpg',
+          'img' => '0.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '+(591) 2 624-9752',
@@ -242,7 +242,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'PERIODICO EL POTOSI',
           'descripcion' => 'Medio de comunicación y noticias',
-          'img' => '12.jpg',
+          'img' => '12.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '+(591) 4 622-7835',
@@ -256,7 +256,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'LABORATORIO QUIMICO SEQUIRCOMIN',
           'descripcion' => '',
-          'img' => '0.jpg',
+          'img' => '0.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '',
@@ -271,7 +271,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'INDUSTRIAS GRAFICAS LA PREDILECTA',
           'descripcion' => '',
-          'img' => '13.jpg',
+          'img' => '13.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '',
@@ -287,7 +287,7 @@ class entidadesSeeder extends Seeder
         Entidades::create([
           'nombre' => 'FUNDACIÓN MUJER',
           'descripcion' => '',
-          'img' => '0.jpg',
+          'img' => '0.png',
           'gerente' => '',
           'presidente' => '',
           'telefono' => '',
