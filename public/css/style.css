@@ -137,6 +137,12 @@ ul, ol {
     padding-bottom: 120px;
 }
 
+.md-padding2 {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+
 .sm-padding {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -175,7 +181,7 @@ ul, ol {
     opacity: 10px;
 }
 .descripcion{
-    padding: 15px;
+    padding: 0 15px 0px 15px;
     text-align: justify;
     margin: 1rem ;
 }

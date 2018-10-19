@@ -1,6 +1,6 @@
 @extends('layout')
 @section('formularios')
-<div id="contacto" class="section md-padding">
+<div id="contacto" class="section md-padding2">
 
 		<!-- Container -->
 		<div class="container">

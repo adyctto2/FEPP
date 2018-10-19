@@ -20,7 +20,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="{{ asset('img/logos/feipobol.png')}}" height="35" alt="mdb logo" class="d-inline-block align-top" alt="FEIPOBOL 2018">
+        <img src="{{ asset('img/logos/feipobol.png')}}" height="35" class="d-inline-block align-top" alt="FEIPOBOL 2018">
       </a>
       <!-- Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -34,15 +34,15 @@
       <!-- Links -->
       <ul class=" navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio
+          <a class="nav-link" href="#inicio">Inicio
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de</a>
+          <a class="nav-link" href="#">FEIPOBOL 2018</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Noticias</a>
+          <a class="nav-link" data-scroll href="#noticias">Noticias</a>
         </li>
         
         <!-- Dropdown -->
@@ -67,7 +67,7 @@
   </div>
   <!-- Collapsible content -->  
 </nav>
-<div class="view" style="">
+<div class="view fondo" id="inicio">
   <!-- Mask & flexbox options-->
   <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
     <!-- Content -->
@@ -132,27 +132,88 @@
 </div>
 </header>
 <!--/.Navbar-->
+<div class="container" id="noticias">
+  <section class="my-5">
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Noticias FEIPOBOL</h2>
+    <!-- Section description -->
+
+    <!-- Grid row -->
+    <div class="row wow fadeInLeft">
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-7 contenido">
+        <h3 class="font-weight-bold mb-3"><strong>Alguna noticia de la Feipobol</strong></h3>
+        <!-- Excerpt -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corporis nostrum quis neque error officia placeat, perferendis dolor nemo reiciendis, earum nihil iusto impedit deserunt exercitationem praesentium maiores architecto incidunt!</p>
+        <!-- Post data -->
+        <p>por <a><strong>Guido Lopez</strong></a>, 19/08/2018</p>
+        <!-- Read more button -->
+        <a class="btn btn-success btn-md">Leer mas</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row wow fadeInRight">
+  
+      <!-- Grid column -->
+      <div class="col-lg-7 contenido">
+  
+        <h3 class="font-weight-bold mb-3"><strong>Otra noticia importante</strong></h3>
+        <!-- Excerpt -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quam veritatis magnam laudantium, suscipit laborum consectetur quia labore quod, aut odit quis? Mollitia amet neque consequatur dolore nobis nisi minima!</p>
+        <!-- Post data -->
+        <p>por: <a><strong>Anemix Otaq</strong></a>, 14/08/2018</p>
+        <!-- Read more button -->
+        <a class="btn btn-pink btn-md mb-lg-0 mb-4">leer mas</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+    <hr class="my-5">
+  
+ 
+  
+  </section>
+</div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -160,5 +221,12 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    new WOW().init();
+    var scroll = new SmoothScroll('a[href*="#"]',{
+      offset : 80
+    });
+  </script>
 </body>
 </html>

@@ -9,7 +9,7 @@ body {
     background: rgba(255, 255, 255, 0.089);
 }
 .top-nav-collapse{
-    background: rgba(0, 0, 0, 0.856);
+    background: rgb(0, 0, 0);
 }
 .portada video{
     width: 100%;
@@ -23,10 +23,10 @@ body {
     margin-top: 15%;
 }
 ul li a:hover{
-    background: rgba(255, 0, 0, 0.685) ;
+    background: rgba(253, 0, 0, 0.774) ;
 }
 ul li div a:hover{
-    background: rgba(253, 0, 0, 0.774) !important;
+    background: rgba(170, 170, 170, 0.774) !important;
     color: white !important;
 }
 .logo{
@@ -37,7 +37,7 @@ ul li div a:hover{
 html,
 body,
 header,
-.view {
+.fondo {
   height: 100%;
   background-image: url("../img/portada.jpg");
   background-repeat: no-repeat; background-size: cover; background-position: center center;
@@ -47,9 +47,12 @@ header,
   html,
   body,
   header,
-  .view {
-    height: 1000px;
+  .fondo {
+    height: 100vh;
+    
+    
   }
+
 }
 @media (min-width: 800px) and (max-width: 850px) {
   html,
@@ -68,7 +71,7 @@ header,
 
 .rgba-gradient {
   background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(255, 0, 0, 0.048) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.116) 100%)));
+  background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.116) 100%));
   background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
 }
 
@@ -85,4 +88,10 @@ header,
 }
 h6 {
   line-height: 1.7;
+}
+#noticias h2{
+  color: black;
+}
+#noticias .contenido p{
+  text-align: justify;
 }

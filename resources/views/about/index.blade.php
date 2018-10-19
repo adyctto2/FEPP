@@ -1,6 +1,6 @@
 @extends('layout')
 @section('formularios')
-<div id="portfolio" class="section md-padding bg-grey">
+<div id="portfolio" class="section md-padding2 bg-grey">
 		<div>
             <div class="row">
                 <div class="col-sm-3">
@@ -16,7 +16,10 @@
 				</div>
                 <DIV class="col-sm-8 descripcion">
                     <h2 id="titulo"></h2>
-                    <div id="contenido"></div>
+                    <div id="contenido">
+                        <p>La Federación de Empresarios Privados de Potosí, se constituye en una institución que no desarrolla actividades político partidarias, con un Comité Ejecutivo renovado con el único objetivo de trabajar  de manera transparente en beneficio del sector privado, compartiendo sus conocimientos y habilidades necesarias para promover eficazmente la creatividad y la innovación empresarial.</p>
+                        <p>Ahora más que nunca esta fortalecida institucionalmente, por dos razones fundamentales, la primera por el apoyo de sus afiladas y el trabajo transparente que se realiza en el desarrollo de todas las actividades y la segunda razón es por el buen relacionamiento institucional que se tiene con el sector privado y público a nivel local, nacional e internacional, demostrando que la FEPP no desarrolla actividades político-partidarias, al  buscar alternativas de desarrollo para nuestro departamento y el país.</p>
+                    </div>
                 </DIV>
                 <div class="col-sm-1"></div>
             </div>
