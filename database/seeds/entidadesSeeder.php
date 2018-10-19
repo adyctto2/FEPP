@@ -15,8 +15,6 @@ class entidadesSeeder extends Seeder
         // DB::table('entidades')->truncate();
         //
 
-
-
         // DB::table('entidades')->insert([
         //   'nombre' => 'Minera San Cristobal S.A.',
         //   'descripcion' => 'Mineria a nivel internacional',

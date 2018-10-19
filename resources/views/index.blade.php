@@ -14,6 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" />
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/styleNoticias.css')}}" />
 </head>
 
 <body>
@@ -83,7 +84,7 @@
 	<!-- /Header -->
 
 	<div class="nav-social">
-		<a href="" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true" ></i>
+		<a href="{{asset('https://www.facebook.com/pages/category/Public-Relations-Agency/Federaci%C3%B3n-de-Empresarios-Privados-de-Potos%C3%AD-228826603847142/')}}" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true" ></i>
 		</a>
 		<a href="" target="_blank" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i>
 		</a>
@@ -264,7 +265,7 @@
 								</div>
 							</div>
 							<div class="team-content">
-								<h3>{{ $ent1->nombre}}</h3>
+								<a href="{{ route('entidadeshow', ['id' =>  $ent1->id]) }}"><h3>{{ $ent1->nombre}}</h3></a>
 							</div>
 						</div>
 					</div>
@@ -282,7 +283,7 @@
 								</div>
 							</div>
 							<div class="team-content">
-								<h3>{{ $ent1->nombre}}</h3>
+								<a href="{{ route('entidadeshow', ['id' =>  $ent2->id]) }}"><h3>{{ $ent2->nombre}}</h3></a>
 							</div>
 						</div>
 					</div>
@@ -300,20 +301,37 @@
 								</div>
 							</div>
 							<div class="team-content">
-								<h3>{{ $ent3->nombre}}</h3>
+								<a href="{{ route('entidadeshow', ['id' =>  $ent3->id]) }}"><h3>{{ $ent3->nombre}}</h3></a>
 							</div>
 						</div>
 					</div>
-				<div class="col-sm-3">
-					<div class="team list">
-						<div class="team-img">
-							<i class="fa fa-plus-square-o" aria-hidden="true"></i>
-						</div>
-						<div class="team-content">
-							<a href="{{ route('entidades') }}" class="btn btn-primary">Ver todos</a>
+					<div class="col-sm-3">
+						<div class="team">
+							<div class="team-img">
+								<img class="img-responsive" src="{{asset('img/entidades/'. $ent4->img)}}" alt="">
+								<div class="overlay">
+									<div class="team-social">
+										<a href="{{$ent4->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a href="{{$ent4->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a href="{{$ent4->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="team-content">
+								<a href="{{ route('entidadeshow', ['id' =>  $ent4->id]) }}"><h3>{{ $ent4->nombre}}</h3></a>
+							</div>
 						</div>
 					</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<a href="{{ route('entidades')}}" class="btn btn-success btn-lg btn-block"> Ver todos</a>
 				</div>
+				<div class="col-md-5"></div>
 			</div>
 
 		</div>
@@ -327,38 +345,40 @@
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
-	
+
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
-	
+
 			<div class="item active">
-			<img src="{{asset('img/cursos/curso1.png')}}" alt="Los Angeles" style="width:100%;">
+			<img src="{{asset('img/cursos/'.$curso1->imagen)}}" alt="Los Angeles" style="width:100%;">
 			<div class="carousel-caption">
-				<h3 class="titulo">Curso de técnico certificado de fibra óptica</h3>
+				<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso1->id]) }}"><h3 class="titulo">{{$curso1->titulo}}</h3></a></MARQUEE>
 				<p class="date">Proximamente</p>
-				<p>Es una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.</p>
-				<a href="{{route('cursos')}}" class="btn btn-primary">Saber mas</a>
+				<p>{{$curso1->subtitulo}}</p>
+
 			</div>
 			</div>
-	
+
 			<div class="item">
-			<img src="{{asset('img/blog2.jpg')}}" alt="Chicago" style="width:100%;">
+				<img src="{{asset('img/cursos/'.$curso2->imagen)}}" alt="Los Angeles" style="width:100%;">
+				<div class="carousel-caption">
+					<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso2->id]) }}"><h3 class="titulo">{{$curso2->titulo}}</h3></a></MARQUEE>
+					<p class="date">Proximamente</p>
+					<p>{{$curso2->subtitulo}}</p>
+				</div>
+				</div>
+
+		<div class="item">
+			<img src="{{asset('img/cursos/'.$curso3->imagen)}}" alt="Los Angeles" style="width:100%;">
 			<div class="carousel-caption">
-				<h3 class="titulo">Chicago</h3>
-				<p>Thank you, Chicago!</p>
+				<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso3->id]) }}"><h3 class="titulo">{{$curso3->titulo}}</h3></a></MARQUEE>
+				<p class="date">Proximamente</p>
+				<p>{{$curso3->subtitulo}}</p>
 			</div>
 			</div>
-		
-			<div class="item">
-			<img src="{{asset('img/blog3.jpg')}}" alt="New York" style="width:100%;">
-			<div class="carousel-caption">
-				<h3 class="titulo">Curso de técnico certificado de fibra óptica</h3>
-				<p>We love the Big Apple!</p>
-			</div>
-			</div>
-		
+
 		</div>
-	
+
 		<!-- Left and right controls -->
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>
@@ -369,7 +389,7 @@
 			<span class="sr-only">Next</span>
 		</a>
 		</div>
-	
+
 	<!-- Team -->
 	<div id="team" class="section md-padding">
 
@@ -381,60 +401,62 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Noticias</h2>
+					<h2 class="title">NOTICIAS</h2>
 				</div>
 				<!-- service -->
-				<div class="col-md-4">
+				<div class="col-md-4 ">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="{{ asset('img/noticias/noticia1.jpg')}}" alt="">
+							<img class="img-responsive" src="{{ asset('img/noticias/'. $not1->imagen)}}" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>5 de octubre a las 23:42</li>
+								<li><i class="fa fa-clock-o"></i>{{$not1->fecha}}</li>
 							</ul>
-							<h3>Noticia 1 prueba</h3>
-							<p>En Potosí la Federación de Empresarios Privados se compromete con la niñez en riesgo. #MeImportan.</p>
-							<a href="blog-single.html">Leer Completo</a>
+							<a href="{{ route('noticiaShow', ['id' =>  $not1->id]) }}"><h3 ALIGN="justify">{{$not1->titulo}}</h3></a>
+							<p class="cortar">{{$not1->descripcion}}</p>
+							<!-- <a href="blog-single.html">Leer Completo</a> -->
 						</div>
 					</div>
 				</div>
 				<!-- /blog -->
 
 				<!-- blog -->
-				<div class="col-md-4">
+				<div class="col-md-4 ">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog2.jpg" alt="">
+							<img class="img-responsive" src="{{ asset('img/noticias/'. $not2->imagen)}}" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>18 Octubre de 2018</li>
+								<li><i class="fa fa-clock-o"></i>{{$not2->fecha}}</li>
 							</ul>
-							<h3>Noticia 2 prueba</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Leer Completo</a>
+							<a href="{{ route('noticiaShow', ['id' =>  $not2->id]) }}"><h3 ALIGN="justify">{{$not2->titulo}}</h3></a>
+							<p class="cortar">{{$not2->descripcion}}</p>
+							<!-- <a href="blog-single.html">Leer Completo</a> -->
 						</div>
 					</div>
 				</div>
 				<!-- /blog -->
 
 				<!-- blog -->
-				<div class="col-md-4">
+				<div class="col-md-4 ">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive"  src="./img/blog3.jpg" alt="">
+							<img class="img-responsive" src="{{ asset('img/noticias/'. $not3->imagen)}}" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>18 Octubre de 2018</li>
+								<li><i class="fa fa-clock-o"></i>{{$not2->fecha}}</li>
 							</ul>
-							<h3>Noticia 3 prueba</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Leer Completo</a>
+							<a href="{{ route('noticiaShow', ['id' =>  $not3->id]) }}"><h3 ALIGN="justify">{{$not3->titulo}}</h3></a>
+							<p class="cortar">{{$not3->descripcion}}</p>
+							<!-- <a href="blog-single.html">Leer Completo</a> -->
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 			<!-- /Row -->
 			<div class="row">
@@ -488,7 +510,7 @@
 
 				<!-- Section-header -->
 				<div class="section-header text-center">
-					<h2 class="title">Contáctanos</h2>
+					<h2 class="title">CONTÁCTANOS</h2>
 				</div>
 				<div class="col-sm-4">
 					<div class="contact">
@@ -561,7 +583,7 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="{{asset('https://www.facebook.com/pages/category/Public-Relations-Agency/Federaci%C3%B3n-de-Empresarios-Privados-de-Potos%C3%AD-228826603847142/')}}"target="_blank"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
