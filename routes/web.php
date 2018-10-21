@@ -33,7 +33,7 @@ Route::get('/contacto', 'ContactoController@index')
 ->name('contacto');
 
 
-Route::get('/feipobol', 'FeipobolController@index')
+Route::get('/feipobol', 'FeipobolController@show')
 ->name('feipobol');
 
 Route::get('/noticias', 'NoticiasController@index')

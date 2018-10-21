@@ -85,7 +85,7 @@
 
                         <!-- footer follow -->
                         <ul class="footer-follow">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="{{asset('https://www.facebook.com/pages/category/Public-Relations-Agency/Federaci%C3%B3n-de-Empresarios-Privados-de-Potos%C3%AD-228826603847142/')}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa fa-youtube"></i></a></li>

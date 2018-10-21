@@ -7,7 +7,7 @@
                     <img src="{{asset('img/noticias/'.$not->imagen)}}"  class=" images" alt="">
                     <section class="noticia-header">
                         <div class="col-sm-4"><i class="fa fa-calendar" aria-hidden="true"></i>{{$not->fecha}}</div>
-                        <div class="col-sm-4"><i class="fa fa-eye" aria-hidden="true"></i>  451 vistas</div>
+                        <div class="col-sm-4"><i class="fa fa-eye" aria-hidden="true"></i> {{$variable->total_visitas}} vistas</div>
                         <div class="col-sm-4"><i class="fa fa-file-archive-o" aria-hidden="true"></i>  fuente: <a href="">{{$not->fuente}}</a></div>
                     </section>
                     <section class="noticia-contenido">
@@ -33,6 +33,7 @@
                             </div>
                             <div class="blog-content">
                                 <h5 ALIGN="justify">{{$noticia->titulo}}</h5>
+                              
                             </div>
                         </div>
                     </a>
