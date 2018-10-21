@@ -27,8 +27,23 @@ class PrincipalController extends Controller
     $curso3 = Cursos::find(3);
     $curso4 = Cursos::find(4);
     // dd($entidades);
-    //
+
+    // $variable = Noticias::find($id);
+    // if(Cache::has($id)==false){
+    //     Cache::add($id,'contador',0.30);
+    //     $variable->total_visitas++;
+    //     $variable->save();
+    //   }
+
+
     // $titulo="Entidades Afiliadas";
     return view('index', compact('ent1', 'ent2','ent3','ent4','not1', 'not2','not3','not4','curso1','curso2','curso3','curso4'));
+  }
+  public function getHome()
+  {
+
+    return response(view('index'))->cookie('cookie1', 'valor','60');
+
+    //return view('index')
   }
 }

@@ -20,6 +20,7 @@ class CreateNoticiasTable extends Migration
             $table->date('fecha');
             $table->string('fuente');
             $table->text('descripcion');
+            $table->integer('total_visitas');
             $table->timestamps();
         });
     }

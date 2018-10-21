@@ -257,10 +257,10 @@
 								<img class="img-responsive" src="{{asset('img/entidades/'. $ent1->img)}}" alt="">
 								<div class="overlay">
 									<div class="team-social">
-										<a href="{{$ent1->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a href="{{$ent1->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a href="{{$ent1->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+										<a target="_blank" href="{{$ent1->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a target="_blank" href="{{$ent1->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<atarget="_blank" href="{{$ent1->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
@@ -275,10 +275,10 @@
 								<img class="img-responsive" src="{{asset('img/entidades/'. $ent2->img)}}" alt="">
 								<div class="overlay">
 									<div class="team-social">
-										<a href="{{$ent2->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a href="{{$ent2->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a href="{{$ent2->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+										<a target="_blank" href="{{$ent2->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a target="_blank" href="{{$ent2->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a target="_blank" href="{{$ent2->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
@@ -293,10 +293,10 @@
 								<img class="img-responsive" src="{{asset('img/entidades/'. $ent3->img)}}" alt="">
 								<div class="overlay">
 									<div class="team-social">
-										<a href="{{$ent3->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a href="{{$ent3->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a href="{{$ent3->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+										<a target="_blank" href="{{$ent3->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a target="_blank" href="{{$ent3->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a target="_blank" href="{{$ent3->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
@@ -311,10 +311,10 @@
 								<img class="img-responsive" src="{{asset('img/entidades/'. $ent4->img)}}" alt="">
 								<div class="overlay">
 									<div class="team-social">
-										<a href="{{$ent4->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a href="{{$ent4->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a href="{{$ent4->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+										<a  href="{{$ent4->facebook}}" target="_blank" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a  href="{{$ent4->website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a  href="{{$ent4->twitter}}" target="_blank" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a style="background-color: #cc181e;" target="_blank"><i class="fa fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
@@ -326,13 +326,13 @@
 
 			</div>
 
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-5"></div>
 				<div class="col-md-2">
 					<a href="{{ route('entidades')}}" class="btn btn-success btn-lg btn-block"> Ver todos</a>
 				</div>
 				<div class="col-md-5"></div>
-			</div>
+			</div> -->
 
 		</div>
 
@@ -352,7 +352,7 @@
 			<div class="item active">
 			<img src="{{asset('img/cursos/'.$curso1->imagen)}}" alt="Los Angeles" style="width:100%;">
 			<div class="carousel-caption">
-				<MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=15><a href="{{ route('cursoShow', ['id' =>  $curso1->id]) }}"><h3 class="titulo">{{$curso1->titulo}}</h3></a></MARQUEE>
+				<a href="{{ route('cursoShow', ['id' =>  $curso1->id]) }}"><h3 class="titulo">{{$curso1->titulo}}</h3></a>
 				<p class="date">Proximamente</p>
 				<p>{{$curso1->subtitulo}}</p>
 
@@ -459,13 +459,7 @@
 
 			</div>
 			<!-- /Row -->
-			<div class="row">
-				<div class="col-md-5"></div>
-				<div class="col-md-2">
-					<a href="{{ route('noticias')}}" class="btn btn-success btn-lg btn-block"> Ver todo</a>
-				</div>
-				<div class="col-md-5"></div>
-			</div>
+			
 		</div>
 		<!-- /Container -->
 	</div>
@@ -490,8 +484,9 @@
 					<div class="number">
 						<i class="fa fa-users"></i><br>
 						<span class="white-text">Eres nuestro visitante numero:</span>
-						<h3 class="white-text"><span class="counter">451</span></h3>
+						<h3 class="white-text"><span class="counter">40</span></h3>
 					</div>
+
 
 			</div>
 		</div>
@@ -583,7 +578,7 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="{{asset('https://www.facebook.com/pages/category/Public-Relations-Agency/Federaci%C3%B3n-de-Empresarios-Privados-de-Potos%C3%AD-228826603847142/')}}"target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="{{asset('https://www.facebook.com/pages/category/Public-Relations-Agency/Federaci%C3%B3n-de-Empresarios-Privados-de-Potos%C3%AD-228826603847142/')}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
