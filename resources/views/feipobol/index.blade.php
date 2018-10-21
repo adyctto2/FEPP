@@ -455,8 +455,176 @@
 <div id="estadisticas" >
   <div class="container">
       <h2 class="h1-responsive font-weight-bold text-center my-5">RESULTADOS FEIPOBOL 2017</h2>
-      <div></div>
-  <div class="grafico1" id="grafico1"></div>
+      <div  class="row">
+        <div class="col-md-4">
+          <h3>Expositores y stands que participaron</h3>
+          <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">DETALLE</th>
+                  <th scope="col">STANDS</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="col">Minería</th>
+                      <th scope="col">6</th>
+                    </tr>
+                <tr>
+                  <th scope="col">Industria y Construcción</th>
+                  <th scope="col">19</th>
+                </tr>
+                <tr>
+                  <td>Servicios y Comercio</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>Gastronomía y Bebidas</td>
+                  <td>30 </td>
+                </tr>
+                <tr>
+                    <th scope="col">Vehículos y Motos</th>
+                    <th scope="col">6</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">Empresas Publicas y Turísticas</th>
+                    <th scope="col">12</th>
+                  </tr>
+                  <tr>
+                    <td>MIMYPES</td>
+                    <td>102</td>
+                  </tr>
+                  <tr>
+                    <td>RSE</td>
+                    <td>7 </td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                  
+                  <tr>
+                      <td>TOTAL</td>
+                      <td>214</td>
+                    </tr>
+              </tfoot>
+          </table>
+          <div class="grafico1" id="grafico1"></div>
+        </div>
+       <div class="col-md-4">
+          <h3>Expositores y stands que participaron</h3>
+          <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">DETALLE</th>
+                  <th scope="col">STANDS</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="col">Minería</th>
+                      <th scope="col">6</th>
+                    </tr>
+                <tr>
+                  <th scope="col">Industria y Construcción</th>
+                  <th scope="col">19</th>
+                </tr>
+                <tr>
+                  <td>Servicios y Comercio</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>Gastronomía y Bebidas</td>
+                  <td>30 </td>
+                </tr>
+                <tr>
+                    <th scope="col">Vehículos y Motos</th>
+                    <th scope="col">6</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">Empresas Publicas y Turísticas</th>
+                    <th scope="col">12</th>
+                  </tr>
+                  <tr>
+                    <td>MIMYPES</td>
+                    <td>102</td>
+                  </tr>
+                  <tr>
+                    <td>RSE</td>
+                    <td>7 </td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                  
+                  <tr>
+                      <td>TOTAL</td>
+                      <td>214</td>
+                    </tr>
+              </tfoot>
+          </table>
+          <div class="grafico1" id="grafico1"></div>
+        </div>
+
+       </div>
+       <div class="col-md-4">
+          <h3>Expositores y stands que participaron</h3>
+          <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">DETALLE</th>
+                  <th scope="col">STANDS</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="col">Minería</th>
+                      <th scope="col">6</th>
+                    </tr>
+                <tr>
+                  <th scope="col">Industria y Construcción</th>
+                  <th scope="col">19</th>
+                </tr>
+                <tr>
+                  <td>Servicios y Comercio</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>Gastronomía y Bebidas</td>
+                  <td>30 </td>
+                </tr>
+                <tr>
+                    <th scope="col">Vehículos y Motos</th>
+                    <th scope="col">6</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">Empresas Publicas y Turísticas</th>
+                    <th scope="col">12</th>
+                  </tr>
+                  <tr>
+                    <td>MIMYPES</td>
+                    <td>102</td>
+                  </tr>
+                  <tr>
+                    <td>RSE</td>
+                    <td>7 </td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                  
+                  <tr>
+                      <td>TOTAL</td>
+                      <td>214</td>
+                    </tr>
+              </tfoot>
+          </table>
+          <div class="grafico1" id="grafico1"></div>
+        </div>
+
+      </div>
   </div>
 </div>
 
