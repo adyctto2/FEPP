@@ -251,42 +251,43 @@
 					<h2 class="title">CONSEJO DIRECTIVO</h2>
 				</div>
 
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="{{asset('img/entidades/'. $ent2->img)}}" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a target="_blank" href="{{$ent2->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+									<a target="_blank" href="{{$ent2->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+									<a target="_blank" href="{{$ent2->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+									<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<a href="{{ route('entidadeshow', ['id' =>  $ent2->id]) }}"><h3>{{ $ent2->nombre}}</h3></a>
+						</div>
+					</div>
+				</div>
 					<div class="col-sm-3">
 						<div class="team">
 							<div class="team-img">
-								<img class="img-responsive" src="{{asset('img/entidades/'. $ent1->img)}}" alt="">
+								<img class="img-responsive" src="{{asset('img/entidades/'. $ent4->img)}}" alt="">
 								<div class="overlay">
 									<div class="team-social">
-										<a target="_blank" href="{{$ent1->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a target="_blank" href="{{$ent1->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<atarget="_blank" href="{{$ent1->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a target="_blank" href="{{$ent4->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a target="_blank" href="{{$ent4->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<atarget="_blank" href="{{$ent4->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
 										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
 							<div class="team-content">
-								<a href="{{ route('entidadeshow', ['id' =>  $ent1->id]) }}"><h3>{{ $ent1->nombre}}</h3></a>
+								<a href="{{ route('entidadeshow', ['id' =>  $ent4->id]) }}"><h3>{{ $ent4->nombre}}</h3></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="team">
-							<div class="team-img">
-								<img class="img-responsive" src="{{asset('img/entidades/'. $ent2->img)}}" alt="">
-								<div class="overlay">
-									<div class="team-social">
-										<a target="_blank" href="{{$ent2->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a target="_blank" href="{{$ent2->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a target="_blank" href="{{$ent2->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="team-content">
-								<a href="{{ route('entidadeshow', ['id' =>  $ent2->id]) }}"><h3>{{ $ent2->nombre}}</h3></a>
-							</div>
-						</div>
-					</div>
+
 					<div class="col-sm-3">
 						<div class="team">
 							<div class="team-img">
@@ -308,31 +309,27 @@
 					<div class="col-sm-3">
 						<div class="team">
 							<div class="team-img">
-								<img class="img-responsive" src="{{asset('img/entidades/'. $ent4->img)}}" alt="">
+									<img class="img-responsive" src="{{asset('img/entidades/'. $ent1->img)}}" alt="">
 								<div class="overlay">
 									<div class="team-social">
-										<a  href="{{$ent4->facebook}}" target="_blank" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a  href="{{$ent4->website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a  href="{{$ent4->twitter}}" target="_blank" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
+										<a  href="{{$ent1->facebook}}" target="_blank" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
+										<a  href="{{$ent1->website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+										<a  href="{{$ent1->twitter}}" target="_blank" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
 										<a style="background-color: #cc181e;" target="_blank"><i class="fa fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
 							<div class="team-content">
-								<a href="{{ route('entidadeshow', ['id' =>  $ent4->id]) }}"><h3>{{ $ent4->nombre}}</h3></a>
+								<a href="{{ route('entidadeshow', ['id' =>  $ent1->id]) }}"><h3>{{ $ent1->nombre}}</h3></a>
+									<a href="{{ route('entidades')}}"><small>Ver todos >> </small></a>
 							</div>
+
 						</div>
 					</div>
 
 			</div>
 
-			<!-- <div class="row">
-				<div class="col-md-5"></div>
-				<div class="col-md-2">
-					<a href="{{ route('entidades')}}" class="btn btn-success btn-lg btn-block"> Ver todos</a>
-				</div>
-				<div class="col-md-5"></div>
-			</div> -->
+			
 
 		</div>
 
@@ -459,7 +456,7 @@
 
 			</div>
 			<!-- /Row -->
-			
+
 		</div>
 		<!-- /Container -->
 	</div>

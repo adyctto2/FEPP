@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#inicio">
         <img src="{{ asset('img/logos/feipobol.png')}}" height="35" class="d-inline-block align-top" alt="FEIPOBOL 2018">
       </a>
       <!-- Collapse button -->
@@ -42,7 +43,7 @@
         <li class="nav-item dropdown" >
           <a class="nav-link dropdown-toggle" id="feipobol" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEIPOBOL 2018</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
-            <a class="dropdown-item" href="#">Acerca de</a>
+            <a class="dropdown-item" href="{{ route('feipobolAbout')}}">Acerca de</a>
             <a class="dropdown-item" href="#">Venta de Stands</a>
             <a class="dropdown-item" href="#expositores">Expositores</a>
             <a class="dropdown-item" href="#estadisticas">Resultados Feipobol</a>
@@ -55,7 +56,7 @@
         <li class="nav-item">
           <a class="nav-link" data-scroll href="#noticias">Noticias</a>
         </li>
-        
+
         <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" id="galeria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="galeria">
@@ -73,9 +74,8 @@
   </div>
   <!-- Collapsible content -->
 </nav>
-
 <header>
-  
+
 <div class="view fondo" id="inicio">
   <!-- Mask & flexbox options-->
   <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
@@ -89,7 +89,7 @@
           <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
           <h6 class="mb-3 wow fadeInLeft web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
           <h6 class="mb-3 wow fadeInLeft mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
-          
+
           <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Saber mas</a>
         </div>
         <!--Grid column-->
@@ -295,7 +295,7 @@
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
   <div class="container expositor-mobil">
@@ -333,7 +333,7 @@
             </div>
           </div>
       </div>
-      
+
       <div class="carousel-item">
           <div class="card" >
             <img class="card-img-top" src="{{ asset('img/expositores/2.png')}}"  alt="Card image cap">
@@ -502,7 +502,7 @@
                   </tr>
               </tbody>
               <tfoot>
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>214</td>
@@ -557,7 +557,7 @@
                   </tr>
               </tbody>
               <tfoot>
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>214</td>
@@ -614,7 +614,7 @@
                   </tr>
               </tbody>
               <tfoot>
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>214</td>
@@ -632,7 +632,7 @@
 <div id="NFeria">
   <div class="trasparente">
 
-    
+
     <div class="contenido">
         <h2 class="h1-responsive font-weight-bold text-center ">Noches de Feria</h2>
         <p>Muy pronto</p>
@@ -728,7 +728,7 @@
           <div class="">
               <h2 class="h1-responsive font-weight-bold text-center ">Galeria de Fotos</h2>
           </div>
-          
+
           <div class="row no-gutters">
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
               <a class="lightbox" href="{{ asset('img/galeria/1.jpg') }}">
@@ -739,8 +739,8 @@
                 </span>
               </a>
             </div>
-            
-            
+
+
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
               <a class="lightbox" href="{{ asset('img/galeria/2.jpg') }}">
                 <img class="img-fluid image" src="{{ asset('img/galeria/2.jpg') }}">
@@ -750,8 +750,8 @@
                 </span>
               </a>
             </div>
-            
-            
+
+
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
               <a class="lightbox" href="{{ asset('img/galeria/3.jpg') }}">
                 <img class="img-fluid image" src="{{ asset('img/galeria/3.jpg') }}">
@@ -761,7 +761,7 @@
                 </span>
               </a>
             </div>
-            
+
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
               <a class="lightbox" href="{{ asset('img/galeria/4.jpg') }}">
                 <img class="img-fluid image" src="{{ asset('img/galeria/4.jpg') }}">
@@ -771,8 +771,8 @@
                 </span>
               </a>
             </div>
-            
-            
+
+
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
               <a class="lightbox" href="{{ asset('img/galeria/5.jpg') }}">
                 <img class="img-fluid image" src="{{ asset('img/galeria/5.jpg') }}">
@@ -782,8 +782,8 @@
                 </span>
               </a>
             </div>
-            
-            
+
+
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
               <a class="lightbox" href="{{ asset('img/galeria/6.jpg') }}">
                 <img class="img-fluid image" src="{{ asset('img/galeria/6.jpg') }}">
@@ -793,7 +793,7 @@
                 </span>
               </a>
             </div>
-            
+
           </div>
         </div>
 
@@ -879,7 +879,7 @@
     var pausa = document.querySelector("#close");
     pausa.addEventListener(('click'),function(){
       $("#video").empty();
-      
+
     });
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
 

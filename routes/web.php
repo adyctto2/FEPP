@@ -33,9 +33,6 @@ Route::get('/contacto', 'ContactoController@index')
 ->name('contacto');
 
 
-Route::get('/feipobol', 'FeipobolController@show')
-->name('feipobol');
-
 Route::get('/noticias', 'NoticiasController@index')
 ->name('noticias');
 
@@ -47,3 +44,9 @@ Route::get('/cursos', 'CursosController@index')
 
 Route::get('/cursos/{id}', 'CursosController@show')
 ->name('cursoShow');
+
+Route::get('/feipobol', 'FeipobolController@show')
+->name('feipobol');
+
+Route::get('/feipobol/acercade', 'FeipobolAboutController@index')
+->name('feipobolAbout');
