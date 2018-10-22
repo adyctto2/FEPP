@@ -164,17 +164,17 @@
         div2 = document.createElement("img");
         div2.setAttribute("src", img);
         div1.appendChild(div2);
-        
+
         div2 = document.createElement("h3");
         div2.setAttribute("class", "white-text");
         div2.appendChild(texto(nombre));
         div2.style.color = "#323333";
         div1.appendChild(div2);
-        
+
         div2 = document.createElement("span");
         div2.appendChild(texto(cargo));
         div1.appendChild(div2);
-        
+
     }
 </script>
 @endsection
