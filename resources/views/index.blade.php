@@ -14,7 +14,6 @@
 	<link type="text/css" rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" />
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
-	<link type="text/css" rel="stylesheet" href="{{asset('css/styleNoticias.css')}}" />
 </head>
 
 <body>
@@ -50,9 +49,8 @@
 					<li class="titulos"><a href="#about">La F.E.P.P. </a></li>
 					<li><a href="#portfolio">Consejo Directivo</a></li>
 					<li><a href="#myCarousel">Cursos</a></li>
-					<li><a href="{{ route('memorias') }}">Memorias</a></li>
 					<li><a href="#team">Noticias</a></li>
-					<li><a href="{{route('feipobol')}}"  target="_blank">FEIPOBOL 2018</a></li>
+					<li><a href="{{route('feipobol')}}"  target="_blank">FEIPOBOL</a></li>
 					<li><a href="#contacto">Contacto</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -625,7 +623,17 @@
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
+	<script>
+		window.addEventListener('load', ()=>{
+			var dat = document.querySelectorAll(".cortar");
+			var texto = dat[0].innerHTML.substr(0,100);
+			dat[0].innerHTML = texto+" ...";
+			var texto = dat[1].innerHTML.substr(0,100);
+			dat[1].innerHTML = texto+" ...";
+			var texto = dat[2].innerHTML.substr(0,100);
+			dat[2].innerHTML = texto+" ...";
+		});
+	</script>
 
 </body>
 

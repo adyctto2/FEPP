@@ -39,6 +39,9 @@ Route::get('/feipobol', 'FeipobolController@show')
 Route::get('/noticias', 'NoticiasController@index')
 ->name('noticias');
 
+Route::get('feipobol/noticias', 'NoticiasController@index2')
+->name('fnoticias');
+
 Route::get('/noticias/{not}', 'NoticiasController@show')
 ->name('noticiaShow');
 

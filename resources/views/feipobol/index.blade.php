@@ -65,7 +65,7 @@
           </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" href="#contacto">Contactos</a>
           </li>
 
       </ul>
@@ -74,7 +74,6 @@
   <!-- Collapsible content -->
 </nav>
 
-<header>
   
 <div class="view fondo" id="inicio">
   <!-- Mask & flexbox options-->
@@ -450,16 +449,18 @@
 
 </div>
 
+<div class="entre-pagina">
+</div>
 
 <!-- carousel para moviles -->
 <div id="estadisticas" >
   <div class="container">
-      <h2 class="h1-responsive font-weight-bold text-center my-5">RESULTADOS FEIPOBOL 2017</h2>
+      <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017</h2>
       <div  class="row">
         <div class="col-md-4">
           <h3>Expositores y stands que participaron</h3>
-          <table class="table table-dark">
-              <thead>
+          <table class="table table-hover">
+              <thead class="thead-dark">
                 <tr>
                   <th scope="col">DETALLE</th>
                   <th scope="col">STANDS</th>
@@ -479,15 +480,13 @@
                   <td>32</td>
                 </tr>
                 <tr>
-                  <td>Gastronomía y Bebidas</td>
-                  <td>30 </td>
+                  <td scope="col">Gastronomía y Bebidas</td>
+                  <td scope="col">30 </td>
                 </tr>
                 <tr>
                     <th scope="col">Vehículos y Motos</th>
                     <th scope="col">6</th>
                   </tr>
-                </thead>
-                <tbody>
                   <tr>
                     <th scope="col">Empresas Publicas y Turísticas</th>
                     <th scope="col">12</th>
@@ -501,7 +500,7 @@
                     <td>7 </td>
                   </tr>
               </tbody>
-              <tfoot>
+              <tfoot class="bg-info">
                   
                   <tr>
                       <td>TOTAL</td>
@@ -512,116 +511,82 @@
           <div class="grafico1" id="grafico1"></div>
         </div>
        <div class="col-md-4">
-          <h3>Expositores y stands que participaron</h3>
-          <table class="table table-dark">
-              <thead>
+          <h3>Visitantes</h3>
+          <table class="table table-hover">
+              <thead class="thead-dark">
                 <tr>
                   <th scope="col">DETALLE</th>
-                  <th scope="col">STANDS</th>
+                  <th scope="col">NUMERO DE PERSONAS</th>
                 </tr>
               </thead>
               <tbody>
                   <tr>
-                      <th scope="col">Minería</th>
-                      <th scope="col">6</th>
+                      <th scope="col">Personas que pagaron su boleto</th>
+                      <th scope="col">19000</th>
                     </tr>
                 <tr>
-                  <th scope="col">Industria y Construcción</th>
-                  <th scope="col">19</th>
+                  <th scope="col">Invitados</th>
+                  <th scope="col">2577</th>
                 </tr>
                 <tr>
-                  <td>Servicios y Comercio</td>
-                  <td>32</td>
+                  <td>Prensa</td>
+                  <td>155</td>
                 </tr>
                 <tr>
-                  <td>Gastronomía y Bebidas</td>
-                  <td>30 </td>
+                  <td>Niños</td>
+                  <td>7526</td>
                 </tr>
                 <tr>
-                    <th scope="col">Vehículos y Motos</th>
-                    <th scope="col">6</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="col">Empresas Publicas y Turísticas</th>
-                    <th scope="col">12</th>
-                  </tr>
-                  <tr>
-                    <td>MIMYPES</td>
-                    <td>102</td>
-                  </tr>
-                  <tr>
-                    <td>RSE</td>
-                    <td>7 </td>
-                  </tr>
+                  <th scope="col">Expositores</th>
+                  <th scope="col">8720</th>
+                </tr>
               </tbody>
-              <tfoot>
+              <tfoot class="bg-info">
                   
                   <tr>
                       <td>TOTAL</td>
-                      <td>214</td>
+                      <td>37978</td>
                     </tr>
               </tfoot>
           </table>
-          <div class="grafico1" id="grafico1"></div>
+          <div class="grafico1" id="grafico2"></div>
         </div>
-
-       </div>
        <div class="col-md-4">
-          <h3>Expositores y stands que participaron</h3>
-          <table class="table table-dark">
-              <thead>
+          <h3>Rueda de negocios</h3>
+          <table class="table table-hover">
+              <thead class="thead-dark">
                 <tr>
                   <th scope="col">DETALLE</th>
-                  <th scope="col">STANDS</th>
+                  <th scope="col">TOTAL $us.</th>
                 </tr>
               </thead>
               <tbody>
                   <tr>
-                      <th scope="col">Minería</th>
-                      <th scope="col">6</th>
+                      <th scope="col">Construcción</th>
+                      <th scope="col">33’908,987.79</th>
                     </tr>
                 <tr>
-                  <th scope="col">Industria y Construcción</th>
-                  <th scope="col">19</th>
+                  <th scope="col">Automotor y Comercio</th>
+                  <th scope="col">6’540,133.72</th>
                 </tr>
                 <tr>
-                  <td>Servicios y Comercio</td>
-                  <td>32</td>
+                  <td>Servicios y Banca</td>
+                  <td>12’892,904.10</td>
                 </tr>
                 <tr>
-                  <td>Gastronomía y Bebidas</td>
-                  <td>30 </td>
+                  <td>MIPYMES</td>
+                  <td>3’410,145.48</td>
                 </tr>
-                <tr>
-                    <th scope="col">Vehículos y Motos</th>
-                    <th scope="col">6</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="col">Empresas Publicas y Turísticas</th>
-                    <th scope="col">12</th>
-                  </tr>
-                  <tr>
-                    <td>MIMYPES</td>
-                    <td>102</td>
-                  </tr>
-                  <tr>
-                    <td>RSE</td>
-                    <td>7 </td>
-                  </tr>
               </tbody>
-              <tfoot>
+              <tfoot class="bg-info">
                   
                   <tr>
                       <td>TOTAL</td>
-                      <td>214</td>
+                      <td>56’716,171.09</td>
                     </tr>
               </tfoot>
           </table>
-          <div class="grafico1" id="grafico1"></div>
+          <div class="grafico1" id="grafico3"></div>
         </div>
 
       </div>
@@ -670,11 +635,11 @@
       <div class="col-lg-7 contenido">
         <h3 class="font-weight-bold mb-3"><strong>{{$not1->titulo}}</strong></h3>
         <!-- Excerpt -->
-        <p>{{$not1->descripcion}}</p>
+        <p class="desc-noticia">{{$not1->descripcion}}</p>
         <!-- Post data -->
         <p>Fuente: <a><strong>{{$not1->fuente}}</strong></a>, {{$not1->fecha}}</p>
         <!-- Read more button -->
-        <a class="btn btn-success btn-md" href="">Leer mas</a>
+        <a class="btn btn-success btn-md" href="{{ route('fnoticias')}}">Leer mas</a>
 
       </div>
       <!-- Grid column -->
@@ -692,7 +657,7 @@
 
         <h3 class="font-weight-bold mb-3"><strong>{{$not2->titulo}}</strong></h3>
         <!-- Excerpt -->
-        <p>{{$not2->descripcion}}</p>
+        <p class="desc-noticia">{{$not2->descripcion}}</p>
         <!-- Post data -->
         <p>Fuente: <a><strong>{{$not2->fuente}}</strong></a>, {{$not2->fecha}}</p>
         <!-- Read more button -->
@@ -719,8 +684,6 @@
   </section>
 </div>
 
-<div class="entre-pagina">
-</div>
 
 <div id="fotos">
     <section class="gallery-block compact-gallery">
@@ -801,10 +764,166 @@
       </section>
 </div>
 
-<div id="Videos">
-
-
+<div class="entre-pagina">
 </div>
+
+<div id="Videos">
+  <div class="container">
+    <h2 class="h1-responsive font-weight-bold text-center ">Galeria de Videos</h2>
+    <div class="row">
+      <div class="col-md-9" id="principal">
+        <iframe  src="https://www.youtube.com/embed/x4K6mLncJuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-3" id="secundario">
+          <a href="#principal" id="video1">
+            <div>
+              <img src="{{ asset('img/blog1.jpg')}}" alt="">
+              <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+          </a>
+          <a href="#principal" id="video2">
+            <div>
+              <img src="{{ asset('img/blog2.jpg')}}" alt="">
+              <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+          </a>
+          <a href="#principal" id="video3">
+            <div>
+              <img src="{{ asset('img/blog3.jpg')}}" alt="">
+              <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+          </a>
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer font-small special-color" id="contacto">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
+
+        <ul class="list-unstyled">
+          
+            <a href="#!" class="organiza">
+              <img src="{{asset('img/icon.png')}}" alt="">
+              <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
+            </a>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
+          </li>
+          <li>
+              <a href="#!" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
+          </li>
+          <li>
+              <a href="#!" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">CONTACTOS</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"><i><i class="fa fa-map-marker" aria-hidden="true"></i>
+            </i><br> Campo Ferial Multipropósito (Av. Sevilla)
+            Ciudad Potosi, Potosi, Bolivia</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-phone" aria-hidden="true"></i>
+              <br> (+591) 2-62-22625
+            </a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <br> feipobol@gmail.com
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">REDES SOCIALES</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-youtube-play red-social youtube" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-twitter red-social twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-instagram red-social instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      Todos los derechos reservados Federación de Empresarios Privados de Potosí <br>
+      desarrollado por <a href="">I S & T</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
 
 
 
@@ -868,8 +987,9 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.src.js"></script>
+  <script src="{{ asset('js/graficos.js')}}"></script>
   <script>
     new WOW().init();
     var scroll = new SmoothScroll('a[href*="#"]',{
@@ -883,59 +1003,32 @@
     });
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
 
+    var video1 = "https://www.youtube.com/embed/2Vv-BfVoq4g";
+    var video2 = "https://www.youtube.com/embed/wDjeBNv6ip0";
+    var video3 = "https://www.youtube.com/embed/x4K6mLncJuc";
 
-
-    // Build the chart
-Highcharts.chart('grafico1', {
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
-    },
-    title: {
-        text: 'Browser market shares in January, 2018'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: false
-            },
-            showInLegend: true
-        }
-    },
-    series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'Chrome',
-            y: 61.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Internet Explorer',
-            y: 11.84
-        }, {
-            name: 'Firefox',
-            y: 10.85
-        }, {
-            name: 'Edge',
-            y: 4.67
-        }, {
-            name: 'Safari',
-            y: 4.18
-        }, {
-            name: 'Other',
-            y: 7.05
-        }]
-    }]
-});
-
+    
+    var principal = document.querySelector("#principal");
+    var v1 = document.querySelector("#video1");
+    console.log(v1)
+    var v2 = document.querySelector("#video2");
+    var v3 = document.querySelector("#video3");
+    v1.addEventListener(("click"), function(){
+      $("#principal iframe").attr("src",video1);
+    });
+    v2.addEventListener(("click"), function(){
+      $("#principal iframe").attr("src",video2);
+    });
+    v3.addEventListener(("click"), function(){
+      $("#principal iframe").attr("src",video3);
+    });
+    window.addEventListener('load', function(){
+      var text= document.querySelectorAll(".desc-noticia");
+      var descripcion =text[0].innerHTML;
+      text[0].innerHTML = descripcion.substr(0,250)+"...";
+      var descripcion =text[1].innerHTML;
+      text[1].innerHTML = descripcion.substr(0,250)+"...";
+    });
   </script>
 </body>
 </html>

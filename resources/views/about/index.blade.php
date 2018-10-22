@@ -10,8 +10,8 @@
                         <a href="#" id="vision"><strong>Vision</strong></a>
                         <a href="#" id="objetivo"><strong>Objetivo</strong></a>
                         <a href="#" id="valores"><strong>Valores</strong></a>
-                        <a href="#" id="cd"><strong>Consejo Directivo</strong></a>
-                        <a href="#" id="ce"><strong>Comite Ejecutivo</strong></a>
+                        <a href="#" id="mi"><strong>Memorias Institucional</strong></a>
+                        <a href="#" id="ce"><strong>Consejo Directivo</strong></a>
                     </div>
 				</div>
                 <DIV class="col-sm-8 descripcion">
@@ -127,7 +127,21 @@
     }
     op[5].addEventListener(('click'),function(){
         $("#contenido").empty();
-        titulo.innerHTML = "Consejo Directivo";
+        titulo.innerHTML = "Memoria Institucional";
+         let div1 = document.createElement("div");
+        div1.setAttribute("class","testimonial");
+        contenido.appendChild(div1);
+        let div2 = document.createElement("div");
+        div2.setAttribute("class", "testimonial-meta");
+        div1.appendChild(div2);
+        div1 = div2;
+        
+        div2 = document.createElement("a");
+        div2.setAttribute("href", "doc/RevistaFinal.pdf");
+        div2.setAttribute("class", "btn btn-primary");
+        div2.setAttribute("target", "_blank");
+        div2.appendChild(texto("Descargar Memoria Insitucional 2016 - 2017"));
+        div1.appendChild(div2);
     });
     op[6].addEventListener(('click'),function(){
         $("#contenido").empty();

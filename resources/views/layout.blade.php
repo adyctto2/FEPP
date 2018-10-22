@@ -60,7 +60,7 @@
 
     <main>
 
-        <div class="section">
+        <div class="section" id="expositores">
             @yield('formularios')
         </div>
     </main>
