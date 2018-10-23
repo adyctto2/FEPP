@@ -29,7 +29,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{ route('feipobol') }}"">
         <img src="{{ asset('img/logos/feipobol.png')}}" height="35" class="d-inline-block align-top" alt="FEIPOBOL 2018">
       </a>
       <!-- Collapse button -->
@@ -44,7 +44,7 @@
       <!-- Links -->
       <ul class=" navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#inicio">Inicio
+          <a class="nav-link" href="{{ route('feipobol') }}">Inicio
             <span class="sr-only">(current)</span>
           </a>
         </li>
@@ -52,13 +52,13 @@
           <a class="nav-link dropdown-toggle" id="feipobol" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEIPOBOL 2018</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
             <a class="dropdown-item" href="#">Acerca de</a>
-            <a class="dropdown-item" href="#">Venta de Stands</a>
+            <a class="dropdown-item" href="{{ route('ventas')}}">Venta de Stands</a>
             <a class="dropdown-item" href="#expositores">Expositores</a>
-            <a class="dropdown-item" href="#estadisticas">Resultados Feipobol</a>
+            <a class="dropdown-item" href="{{ route('resultados')}}">Resultados Feipobol</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-scroll href="#NFeria">Noches de Feria</a>
+          <a class="nav-link" data-scroll href="{{ route('nferia')}}">Noches de Feria</a>
         </li>
 
         <li class="nav-item">
@@ -230,7 +230,8 @@
     var scroll = new SmoothScroll('a[href*="#"]',{
       offset : 60
     });
-    
+    baguetteBox.run('.compact-gallery',{animation:'slideIn'});
+
   </script>
 </body>
 </html>

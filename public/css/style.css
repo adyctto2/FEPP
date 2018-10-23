@@ -44,6 +44,11 @@ Table OF Contents
 
 /* -- typography -- */
 
+h1,h2 bg-{
+        animation-duration: 4s;
+        animation-delay: 2s;
+}
+
 body {
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
@@ -723,7 +728,17 @@ header {
 .home-content button {
   margin-top: 20px;
 }
-
+.home-content a img{
+    width: 40%;
+    transition: .5s ease;
+}
+.home-content a{
+    color: white;
+    font-size: 20px;
+}
+.home-content a img:hover{
+    width: 42%;
+}
 .header-wrapper h2 {
     display: inline-block;
     margin-bottom: 0px;

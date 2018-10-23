@@ -53,3 +53,12 @@ Route::get('/feipobol', 'FeipobolController@show')
 
 Route::get('/feipobol/acercade', 'FeipobolAboutController@index')
 ->name('feipobolAbout');
+
+Route::get('/feipobol/StandsVentas', 'VentasController@index')
+->name('ventas');
+
+Route::get('/feipobol/resultados', 'ResultadosController@index')
+->name('resultados');
+
+Route::get('/feipobol/noches-de-feria', 'NferiaController@index')
+->name('nferia');

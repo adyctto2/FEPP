@@ -14,11 +14,12 @@
 	<link type="text/css" rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" />
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/animate.css')}}" />
 </head>
 
 <body>
 	<header id="home">
-		<div class="bg-img" style="background-image: url('./img/background1.jpg'); width: 100%;">
+		<div class="bg-img " style="background-image: url('./img/background1.jpg'); width: 100%;">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -67,7 +68,8 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1>FEDERACIÓN DE EMPRESARIOS <br><strong>PRIVADOS DE POTOSÍ</strong></h1>
+							<h1 class=" animated zoomIn">FEDERACIÓN DE EMPRESARIOS <br><strong>PRIVADOS DE POTOSÍ</strong></h1>
+							<a href="{{ route('feipobol')}}" target="_blank"> <img src="{{asset('img/logoPrincipal.png')}}" alt=""> 2018</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -102,7 +104,7 @@
 
 				<!-- Section header -->
 				<div class="section-header">
-					<h2 class="des">La  Federación de Empresarios Privados de Potosí  se  constituye  en  una  institución  que  no  desarrolla  actividades  político partidarias, con un Comité Ejecutivo renovado con el único objetivo de trabajar de manera transparente en beneficio del sector privado, compartiendo sus conocimientos y habilidades necesarias para promover eficazmente la creatividad y la innovación empresarial</h2>
+					<h2 class="des animated zoomIn">La  Federación de Empresarios Privados de Potosí  se  constituye  en  una  institución  que  no  desarrolla  actividades  político partidarias, con un Comité Ejecutivo renovado con el único objetivo de trabajar de manera transparente en beneficio del sector privado, compartiendo sus conocimientos y habilidades necesarias para promover eficazmente la creatividad y la innovación empresarial</h2>
 				</div>
 				<!-- /Section header -->
 

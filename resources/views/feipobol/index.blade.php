@@ -44,7 +44,7 @@
           <a class="nav-link dropdown-toggle" id="feipobol" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEIPOBOL 2018</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
             <a class="dropdown-item" href="{{ route('feipobolAbout')}}">Acerca de</a>
-            <a class="dropdown-item" href="#">Venta de Stands</a>
+            <a class="dropdown-item" href="{{ route('ventas')}}">Venta de Stands</a>
             <a class="dropdown-item" href="#expositores">Expositores</a>
             <a class="dropdown-item" href="#estadisticas">Resultados Feipobol</a>
           </div>
