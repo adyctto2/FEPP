@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateContadorTable extends Migration
+class CreateFotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateContadorTable extends Migration
      */
     public function up()
     {
-        Schema::create('contador', function (Blueprint $table) {
+        Schema::create('fotos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ip');
-            $table->DateTime('fecha');
+            $table->string('nombre');
+            $table->string('img');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateContadorTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contador');
+        Schema::dropIfExists('fotos');
     }
 }

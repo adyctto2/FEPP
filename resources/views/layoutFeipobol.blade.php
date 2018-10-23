@@ -14,10 +14,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
   <link rel="stylesheet" href="{{ asset('css/styleFeipobol.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/styleNoticias.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/animate.min.css')}}">
+
+
   <style>
     html,
     body,
-    header {    
+    header {
         background: #f1f1f1;
         height: 80px;
         background-image: none;
@@ -29,7 +33,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{route('feipobol')}}">
         <img src="{{ asset('img/logos/feipobol.png')}}" height="35" class="d-inline-block align-top" alt="FEIPOBOL 2018">
       </a>
       <!-- Collapse button -->
@@ -44,27 +48,27 @@
       <!-- Links -->
       <ul class=" navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#inicio">Inicio
+          <a class="nav-link" href="{{route('feipobol')}}">Inicio
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item dropdown" >
           <a class="nav-link dropdown-toggle" id="feipobol" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEIPOBOL 2018</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
-            <a class="dropdown-item" href="#">Acerca de</a>
-            <a class="dropdown-item" href="#">Venta de Stands</a>
-            <a class="dropdown-item" href="#expositores">Expositores</a>
-            <a class="dropdown-item" href="#estadisticas">Resultados Feipobol</a>
+            <a class="dropdown-item" href="">Acerca de</a>
+            <a class="dropdown-item" href="">Venta de Stands</a>
+            <a class="dropdown-item" href="">Expositores</a>
+            <a class="dropdown-item" href="estadisticas">Resultados Feipobol</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-scroll href="#NFeria">Noches de Feria</a>
+          <a class="nav-link" data-scroll href="">Noches de Feria</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" data-scroll href="#noticias">Noticias</a>
+          <a class="nav-link" data-scroll href="{{route('fnoticias', ['id' =>  $not1->id] )}}">Noticias</a>
         </li>
-        
+
         <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" id="galeria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="galeria">
@@ -107,7 +111,7 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
         <ul class="list-unstyled">
-          
+
             <a href="#!" class="organiza">
               <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
@@ -123,7 +127,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
@@ -147,7 +151,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">CONTACTOS</h5>
 
         <ul class="list-unstyled">
@@ -177,7 +181,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">REDES SOCIALES</h5>
 
         <ul class="list-unstyled">
@@ -230,7 +234,8 @@
     var scroll = new SmoothScroll('a[href*="#"]',{
       offset : 60
     });
-    
+
   </script>
+
 </body>
 </html>

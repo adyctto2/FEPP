@@ -327,7 +327,7 @@
 
 			</div>
 
-			
+
 
 		</div>
 
@@ -479,7 +479,7 @@
 					<div class="number">
 						<i class="fa fa-users"></i><br>
 						<span class="white-text">Eres nuestro visitante numero:</span>
-						<h3 class="white-text"><span class="counter">40</span></h3>
+						<h3 class="white-text"><span class="counter">{{ $count}}</span></h3>
 					</div>
 
 

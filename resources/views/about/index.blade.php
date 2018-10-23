@@ -10,7 +10,7 @@
                         <a href="#" id="vision"><strong>Vision</strong></a>
                         <a href="#" id="objetivo"><strong>Objetivo</strong></a>
                         <a href="#" id="valores"><strong>Valores</strong></a>
-                        <a href="#" id="mi"><strong>Memorias Institucional</strong></a>
+                        <a href="#" id="mi"><strong>Memoria Institucional</strong></a>
                         <a href="#" id="ce"><strong>Consejo Directivo</strong></a>
                     </div>
 				</div>
@@ -135,7 +135,7 @@
         div2.setAttribute("class", "testimonial-meta");
         div1.appendChild(div2);
         div1 = div2;
-        
+
         div2 = document.createElement("a");
         div2.setAttribute("href", "doc/RevistaFinal.pdf");
         div2.setAttribute("class", "btn btn-primary");
