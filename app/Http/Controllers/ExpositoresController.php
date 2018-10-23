@@ -10,18 +10,22 @@ class ExpositoresController extends Controller
 {
   public function index()
   {
-    return view('feipobol.expositores');
+      $exp1=Expositores::find(1);
+      $expo= Expositores::all();
+
+    return view('feipobol.expositores', compact('expo','exp1'));
   }
 
 
 
   public function show($id)
   {
-    $ent = Expositores::findOrFail($id);
+    $exp1 = Expositores::findOrFail($id);
+    $expo= Expositores::all();
     // $entidades = Entidades::get();
     // $ent1 = Entidades::find(1);
     // dd($entidadd);
     // $titulo="CONSEJO DIRECTIVO";
-    return view('feipobol.expositores', compact( 'ent','entidades','ent1'));
+    return view('feipobol.expositores', compact( 'exp1','expo'));
   }
 }

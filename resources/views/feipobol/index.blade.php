@@ -90,7 +90,7 @@
           <h6 class="mb-3 wow fadeInLeft web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
           <h6 class="mb-3 wow fadeInLeft mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
 
-          <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Saber mas</a>
+          <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s" href="{{ route('feipobolAbout')}}">Saber mas</a>
         </div>
         <!--Grid column-->
         <!--Grid column-->
@@ -118,8 +118,8 @@
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
                   </a>
-                  <a class="p-2 m-2 li-ic">
-                    <i class="fa fa-facebook white-text"> </i>
+                  <a class="p-2 m-2 li-ic" href="{{asset('https://www.facebook.com/Feipobol/')}}" target="_blank">
+                    <i class="fa fa-facebook white-text" > </i>
                   </a>
                   <a class="p-2 m-2 ins-ic">
                     <i class="fa fa-instagram white-text"> </i>
@@ -161,7 +161,7 @@
               <div class="card">
                 <img class="card-img-top" src="{{ asset('img/expositores/'.$exp->img)}}" alt="Card image cap">
                 <div class="card-body">
-                  <a><h5 class="card-title" ALIGN="center">{{$exp->nombre}}</h5></a>
+                  <a href="{{route('expositoresShow', ['id'=>$exp->id])}}"><h5 class="card-title" ALIGN="center">{{$exp->nombre}}</h5></a>
                     <div class="inline-ul text-center d-flex card-text justify-content-center">
                       <a class="p-2 m-2 tw-ic">
                         <i class="fa fa-twitter white-text"></i>
@@ -191,7 +191,7 @@
               <div class="card">
                 <img class="card-img-top" src="{{ asset('img/expositores/'.$exp1->img)}}"  alt="Card image cap">
                 <div class="card-body">
-                  <a><h5 class="card-title" ALIGN="center">{{$exp1->nombre}}</h5></a>
+                  <a href="{{route('expositoresShow', ['id'=>$exp1->id])}}"><h5 class="card-title" ALIGN="center">{{$exp1->nombre}}</h5></a>
                     <div class="inline-ul text-center d-flex card-text justify-content-center">
                       <a class="p-2 m-2 tw-ic">
                         <i class="fa fa-twitter white-text"></i>
@@ -235,9 +235,9 @@
           <div class="card">
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp2->img)}}" alt="Card image cap">
             <div class="card-body">
-              <a href="{{ route('expositoresShow',['id' => $exp2->id])}}"><h5 class="card-title" align="center">{{$exp2->nombre}}</h5></a>
+              <a href="{{route('expositoresShow', ['id'=>$exp2->id])}}"><h5 class="card-title" align="center">{{$exp2->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
-                  <a class="p-2 m-2 tw-ic">
+                  <a  class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
                   </a>
                   <a class="p-2 m-2 li-ic">
@@ -750,7 +750,7 @@
 
         <ul class="list-unstyled">
 
-            <a href="#!" class="organiza">
+            <a href="http://www.fepp.com.bo" target="_blank" class="organiza">
               <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
             </a>
@@ -773,10 +773,10 @@
             <a href="#!" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
           </li>
           <li>
-              <a href="#!" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
+              <a href="http://potosina.bo/" target="_blank" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
           </li>
           <li>
-              <a href="#!" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
+              <a href="http://potosi.bo/" target="_blank" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
           </li>
         </ul>
 
@@ -824,7 +824,7 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/Feipobol/" target="_blank"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
             </a>
           </li>
           <li>
