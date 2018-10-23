@@ -55,7 +55,7 @@
         <li class="nav-item dropdown" >
           <a class="nav-link dropdown-toggle" id="feipobol" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEIPOBOL 2018</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
-            <a class="dropdown-item" href="#">Acerca de</a>
+            <a class="dropdown-item" href="{{ route('feipobolAbout')}}">Acerca de</a>
             <a class="dropdown-item" href="{{ route('ventas')}}">Venta de Stands</a>
             <a class="dropdown-item" href="{{route('expositores')}}">Expositores</a>
             <a class="dropdown-item" href="{{ route('resultados')}}">Resultados Feipobol</a>
@@ -108,6 +108,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
         <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s">
