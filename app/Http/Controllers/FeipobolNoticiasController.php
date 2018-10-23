@@ -25,4 +25,21 @@ class FeipobolNoticiasController extends Controller
        $not2 = Noticias::where('titulo','like','%feipobol%')->get()->last();
     return view('feipobol.noticias', compact('titulo','not','variable', 'noticias','not1','not2','notis'));
   }
+
+  public function index()
+  {
+    $not = Noticias::where('titulo','like','%feipobol%')->get()->first();
+    $notis = Noticias::where('titulo','like','%feipobol%')->get();
+    $id=$not->id;
+    // dd($id);
+    $variable = Noticias::find($id);
+    if(Cache::has($id)==false){
+        Cache::add($id,'contador',0.30);
+        $variable->total_visitas++;
+        $variable->save();
+      }
+
+
+    return view('feipobol.noticias', compact('not','variable','notis'));
+  }
 }

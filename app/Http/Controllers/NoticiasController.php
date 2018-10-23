@@ -18,15 +18,10 @@ class NoticiasController extends Controller
 
 
     return view('noticias.index', compact('titulo','noticias','not1'));
-    
+
 
   }
-  public function index2(){
-    $titulo="prueba ";
 
-
-    return view('feipobol.noticias', compact('titulo'));
-  }
   public function show($id)
   {
     $not = Noticias::findOrFail($id);

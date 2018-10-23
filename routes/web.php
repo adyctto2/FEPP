@@ -36,8 +36,18 @@ Route::get('/contacto', 'ContactoController@index')
 Route::get('/noticias', 'NoticiasController@index')
 ->name('noticias');
 
+Route::get('feipobol/noticias', 'FeipobolNoticiasController@index')
+->name('fnoticiasShow');
+
 Route::get('feipobol/noticias/{id}', 'FeipobolNoticiasController@show')
 ->name('fnoticias');
+
+Route::get('feipobol/expositores', 'ExpositoresController@index')
+->name('expositores');
+
+Route::get('feipobol/expositores/{id}', 'ExpositoresController@show')
+->name('expositoresShow');
+
 
 Route::get('/noticias/{not}', 'NoticiasController@show')
 ->name('noticiaShow');
