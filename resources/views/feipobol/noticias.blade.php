@@ -18,7 +18,7 @@
 
             <div class="card-body">
                 <h3 class="font-weight-bold" ALIGN="justify">{{$not->titulo}}</h3>
-                <p class="font-weight-light" ALIGN="justify">{{$not->descripcion}}</p>
+                <p class="font-weight-light" ALIGN="justify">{!! nl2br(e($not->descripcion)) !!}</p>
             </div>
 
       </div>
@@ -45,7 +45,7 @@
 
 
                   </div>
-
+                  
                 <!-- </div> -->
         </div>
 

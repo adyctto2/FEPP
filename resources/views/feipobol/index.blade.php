@@ -235,7 +235,7 @@
           <div class="card">
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp2->img)}}" alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title" align="center">{{$exp2->nombre}}</h5></a>
+              <a href="{{ route('expositoresShow',['id' => $exp2->id])}}"><h5 class="card-title" align="center">{{$exp2->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -259,7 +259,7 @@
           <div class="card" >
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp3->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title" align="center">{{$exp3->nombre}}</h5></a>
+              <a  href="{{ route('expositores', ['id' =>  $exp3->id]) }}"><h5 class="card-title" align="center">{{$exp3->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -282,7 +282,7 @@
           <div class="card" >
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp4->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title" align="center">{{$exp4->nombre}}</h5></a>
+              <a href="{{ route('expositores', ['id' =>  $exp4->id]) }}"><h5 class="card-title" align="center">{{$exp4->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -306,7 +306,7 @@
           <div class="card" >
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp5->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title" align="center">{{$exp5->nombre}}</h5></a>
+              <a href="{{ route('expositores', ['id' =>  $exp5->id]) }}"><h5 class="card-title" align="center">{{$exp5->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -329,7 +329,7 @@
           <div class="card" >
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp6->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title" align="center">{{$exp6->nombre}}</h5></a>
+              <a href="{{ route('expositores', ['id' =>  $exp6->id]) }}"><h5 class="card-title" align="center">{{$exp6->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -352,7 +352,7 @@
           <div class="card" >
             <img class="card-img-top" src="{{ asset('img/expositores/'.$exp7->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title" align="center">{{$exp7->nombre}}</h5></a>
+              <a href="{{ route('expositores', ['id' =>  $exp7->id]) }}"><h5 class="card-title" align="center">{{$exp7->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>

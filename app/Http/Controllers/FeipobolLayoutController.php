@@ -9,7 +9,7 @@ class FeipobolLayoutController extends Controller
   public function show($id)
   {
 
-    $not1 = Noticias::find(1);
+    $not1 = Noticias::where('titulo','like','%feipobol%')->get()->first();
 
 
 
@@ -22,5 +22,11 @@ class FeipobolLayoutController extends Controller
     return view('layoutFeipobol', compact('noticias','not1','not', 'variable'));
 
 
+  }
+
+  public function index()
+  {
+    $not1 = Noticias::where('titulo','like','%feipobol%')->get()->first();
+    return view('feipobol.noticias');
   }
 }

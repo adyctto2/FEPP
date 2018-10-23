@@ -57,7 +57,7 @@
           <div class="dropdown-menu dropdown-primary" aria-labelledby="feipobol">
             <a class="dropdown-item" href="#">Acerca de</a>
             <a class="dropdown-item" href="{{ route('ventas')}}">Venta de Stands</a>
-            <a class="dropdown-item" href="#expositores">Expositores</a>
+            <a class="dropdown-item" href="{{route('expositores')}}">Expositores</a>
             <a class="dropdown-item" href="{{ route('resultados')}}">Resultados Feipobol</a>
           </div>
         </li>
@@ -66,7 +66,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" data-scroll href="{{route('fnoticias', ['id' =>  $not1->id] )}}">Noticias</a>
+          <a class="nav-link" data-scroll href="{{route('fnoticiasShow')}}">Noticias</a>
         </li>
 
         <li class="nav-item dropdown ">
