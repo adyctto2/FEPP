@@ -6,7 +6,7 @@
 
   <div class=" container ">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 wow slideInLeft" data-wow-delay="0.2s">
         <section class="row" >
           <img class="card-img-top" src="{{asset('img/noticias/'.$not->imagen)}}" alt="Card image cap">
 
@@ -25,7 +25,7 @@
       <!-- <div class="col-sm-">
 
       </div> -->
-        <div class="col-sm-4 blo ">
+        <div class="col-sm-4 blo wow slideInRight" data-wow-delay="0.2s">
           <div class="form-group">
               <!-- <input type="text" placeholder="Buscar" class="form-control"> -->
           </div>

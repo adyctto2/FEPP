@@ -1,7 +1,7 @@
 @extends('layoutFeipobol')
 @section('formularios')
 <div id="NFeria">
-        <div class="trasparente">
+        <div class="trasparente wow zoomIn" data-wow-delay="0.3s">
       
       
           <div class="contenido">

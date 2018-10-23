@@ -72,8 +72,8 @@
         <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" id="galeria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="galeria">
-              <a class="dropdown-item" href="#fotos">Fotos</a>
-              <a class="dropdown-item" href="#Videos">Videos</a>
+              <a class="dropdown-item" href="{{ route('fotos')}}">Fotos</a>
+              <a class="dropdown-item" href="{{ route('videos')}}">Videos</a>
             </div>
           </li>
 
@@ -110,9 +110,9 @@
         <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s">
 
-            <a href="#!" class="organiza">
+            <a href="{{route('principal')}}" class="organiza">
               <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
             </a>
@@ -131,14 +131,14 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+            <a href="{{asset('https://www.facebook.com/GobiernoAutonomoDepartamentalDePotosi/')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
           </li>
-          <li>
-              <a href="#!" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+              <a href="{{ asset('http://www.potosina.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
           </li>
-          <li>
-              <a href="#!" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+              <a href="{{ asset('http://www.potosi.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
           </li>
         </ul>
 
@@ -155,17 +155,17 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">CONTACTOS</h5>
 
         <ul class="list-unstyled">
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i><i class="fa fa-map-marker" aria-hidden="true"></i>
             </i><br> Campo Ferial Multipropósito (Av. Sevilla)
             Ciudad Potosi, Potosi, Bolivia</a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-phone" aria-hidden="true"></i>
               <br> (+591) 2-62-22625
             </a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>
               <br> feipobol@gmail.com
             </a>
@@ -185,17 +185,17 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">REDES SOCIALES</h5>
 
         <ul class="list-unstyled">
-          <li>
-            <a href="#!"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+            <a href="{{ asset('https://www.facebook.com/Feipobol')}}"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
             </a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-youtube-play red-social youtube" aria-hidden="true"></i></a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-twitter red-social twitter" aria-hidden="true"></i></a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-instagram red-social instagram" aria-hidden="true"></i></a>
           </li>
         </ul>
@@ -218,6 +218,7 @@
 </footer>
 
 
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -235,7 +236,25 @@
       offset : 60
     });
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
+    var video1 = "https://www.youtube.com/embed/2Vv-BfVoq4g";
+    var video2 = "https://www.youtube.com/embed/wDjeBNv6ip0";
+    var video3 = "https://www.youtube.com/embed/x4K6mLncJuc";
 
+
+    var principal = document.querySelector("#principal");
+    var v1 = document.querySelector("#video1");
+    console.log(v1)
+    var v2 = document.querySelector("#video2");
+    var v3 = document.querySelector("#video3");
+    v1.addEventListener(("click"), function(){
+      $("#principal iframe").attr("src",video1);
+    });
+    v2.addEventListener(("click"), function(){
+      $("#principal iframe").attr("src",video2);
+    });
+    v3.addEventListener(("click"), function(){
+      $("#principal iframe").attr("src",video3);
+    });
   </script>
 
 </body>

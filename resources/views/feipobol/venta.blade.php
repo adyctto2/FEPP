@@ -5,7 +5,7 @@
         
         <h2 class="h1-responsive text-center">Ejecutivos de Ventas</h2>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 wow zoomIn" data-wow-delay="0.2s">
                 <div class="card vendedor">
                     <div class="view overlay icono">
                             <i class="fa fa-user" aria-hidden="true"></i>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow zoomIn" data-wow-delay="0.2s">
                 <div class="card vendedor">
                     <div class="view overlay icono">
                             <i class="fa fa-user" aria-hidden="true"></i>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow zoomIn" data-wow-delay="0.2s">
                 <div class="card vendedor">
                     <div class="view overlay icono">
                             <i class="fa fa-user" aria-hidden="true"></i>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow zoomIn" data-wow-delay="0.2s">
                 <div class="card vendedor">
                     <div class="view overlay icono">
                             <i class="fa fa-user" aria-hidden="true"></i>
@@ -81,7 +81,7 @@
             </div>
         </div>
     </div>
-    <div id="fotos">
+    <div id="fotos" class="wow slideInUp" data-wow-delay="0.2s">
             <section class="gallery-block compact-gallery">
                 <div class="">
                   <div class="">
@@ -93,8 +93,8 @@
                       <a class="lightbox" href="{{ asset('img/mapas/1.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/1.png') }}">
                         <span class="description">
-                          <span class="description-heading">Lorem Ipsum</span>
-                          <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                          <span class="description-heading">Planta Baja</span>
+                          <span class="description-body">Sector de vehiculos y empresas grandes</span>
                         </span>
                       </a>
                     </div>
@@ -104,8 +104,8 @@
                       <a class="lightbox" href="{{ asset('img/mapas/2.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/2.png') }}">
                         <span class="description">
-                          <span class="description-heading">Lorem Ipsum</span>
-                          <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                          <span class="description-heading">Primer Piso</span>
+                          <span class="description-body">Sector de comidas y Empresas medianas</span>
                         </span>
                       </a>
                     </div>
@@ -115,18 +115,8 @@
                       <a class="lightbox" href="{{ asset('img/mapas/3.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/3.png') }}">
                         <span class="description">
-                          <span class="description-heading">Lorem Ipsum</span>
-                          <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </span>
-                      </a>
-                    </div>
-        
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                      <a class="lightbox" href="{{ asset('img/mapas/4.png') }}">
-                        <img class="img-fluid image" src="{{ asset('img/mapas/4.png') }}">
-                        <span class="description">
-                          <span class="description-heading">Lorem Ipsum</span>
-                          <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                          <span class="description-heading">Segundo piso</span>
+                          <span class="description-body">Secto de Medianas y Pequeñas Empresas</span>
                         </span>
                       </a>
                     </div>
@@ -136,19 +126,29 @@
                       <a class="lightbox" href="{{ asset('img/mapas/5.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/5.png') }}">
                         <span class="description">
-                          <span class="description-heading">Lorem Ipsum</span>
-                          <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                          <span class="description-heading">Tercer piso</span>
+                          <span class="description-body">Sala de conferencias, Churrasquerias</span>
                         </span>
                       </a>
                     </div>
         
         
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                      <a class="lightbox" href="{{ asset('img/mapas/4.png') }}">
+                        <img class="img-fluid image" src="{{ asset('img/mapas/4.png') }}">
+                        <span class="description">
+                          <span class="description-heading">Planta baja bloque 2</span>
+                          <span class="description-body">Bebidas</span>
+                        </span>
+                      </a>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/6.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/6.png') }}">
                         <span class="description">
-                          <span class="description-heading">Lorem Ipsum</span>
-                          <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                          <span class="description-heading">Primer piso bloque 2</span>
+                          <span class="description-body">Empresas medianas</span>
                         </span>
                       </a>
                     </div>

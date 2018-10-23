@@ -4,7 +4,7 @@
   <div class="container">
       <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017</h2>
       <div  class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s">
           <h3>Expositores y stands que participaron</h3>
           <table class="table table-hover">
               <thead class="thead-dark">
@@ -57,7 +57,7 @@
           </table>
           <div class="grafico1" id="grafico1"></div>
         </div>
-       <div class="col-md-4">
+       <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s">
           <h3>Visitantes</h3>
           <table class="table table-hover">
               <thead class="thead-dark">
@@ -98,7 +98,7 @@
           </table>
           <div class="grafico1" id="grafico2"></div>
         </div>
-       <div class="col-md-4">
+       <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s">
           <h3>Rueda de negocios</h3>
           <table class="table table-hover">
               <thead class="thead-dark">

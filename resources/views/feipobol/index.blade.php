@@ -145,7 +145,7 @@
 <!--/.Navbar-->
 <!-- carousel expositores con ordenadores -->
 <div class="" id="expositores">
-  <div class=" expositor-web container">
+  <div class=" expositor-web container wow fadeInUp" data-wow-delay="0.3s">
     <h2 class="h1-responsive font-weight-bold text-center my-5">Expositores</h2>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -387,7 +387,7 @@
   <div class="container">
       <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017</h2>
       <div  class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 wow zoomIn" data-wow-delay="0.3s">
           <h3>Expositores y stands que participaron</h3>
           <table class="table table-hover">
               <thead class="thead-dark">
@@ -440,7 +440,7 @@
           </table>
           <div class="grafico1" id="grafico1"></div>
         </div>
-       <div class="col-md-4">
+       <div class="col-md-4 wow zoomIn" data-wow-delay="0.3s">
           <h3>Visitantes</h3>
           <table class="table table-hover">
               <thead class="thead-dark">
@@ -481,7 +481,7 @@
           </table>
           <div class="grafico1" id="grafico2"></div>
         </div>
-       <div class="col-md-4">
+       <div class="col-md-4 wow zoomIn" data-wow-delay="0.3s">
           <h3>Rueda de negocios</h3>
           <table class="table table-hover">
               <thead class="thead-dark">
@@ -700,28 +700,28 @@
 
 <div id="Videos">
   <div class="container">
-    <h2 class="h1-responsive font-weight-bold text-center ">Galeria de Videos</h2>
+    <h2 class="h1-responsive font-weight-bold text-center wow zoomIn" data-wow-delay="0.3s">Galeria de Videos</h2>
     <div class="row">
-      <div class="col-md-9" id="principal">
+      <div class="col-md-9 wow slideInLeft" data-wow-delay="0.3s" id="principal">
         <iframe  src="https://www.youtube.com/embed/x4K6mLncJuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="col-md-3" id="secundario">
-          <a href="#principal" id="video1">
-            <div>
+          <a href="#principal" id="video1" >
+            <div class="wow slideInRight" data-wow-delay="0.3s">
               <img src="{{ asset('img/blog1.jpg')}}" alt="">
               <i class="fa fa-play" aria-hidden="true"></i>
 
             </div>
           </a>
-          <a href="#principal" id="video2">
-            <div>
+          <a href="#principal" id="video2" >
+            <div class="wow slideInRight" data-wow-delay="0.3s">
               <img src="{{ asset('img/blog2.jpg')}}" alt="">
               <i class="fa fa-play" aria-hidden="true"></i>
 
             </div>
           </a>
-          <a href="#principal" id="video3">
-            <div>
+          <a href="#principal" id="video3" >
+            <div class="wow slideInRight" data-wow-delay="0.3s">
               <img src="{{ asset('img/blog3.jpg')}}" alt="">
               <i class="fa fa-play" aria-hidden="true"></i>
 
@@ -748,9 +748,9 @@
         <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s">
 
-            <a href="#!" class="organiza">
+            <a href="{{route('principal')}}" class="organiza">
               <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
             </a>
@@ -769,14 +769,14 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+            <a href="{{asset('https://www.facebook.com/GobiernoAutonomoDepartamentalDePotosi/')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
           </li>
-          <li>
-              <a href="#!" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+              <a href="{{ asset('http://www.potosina.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
           </li>
-          <li>
-              <a href="#!" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+              <a href="{{ asset('http://www.potosi.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
           </li>
         </ul>
 
@@ -793,17 +793,17 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">CONTACTOS</h5>
 
         <ul class="list-unstyled">
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i><i class="fa fa-map-marker" aria-hidden="true"></i>
             </i><br> Campo Ferial Multipropósito (Av. Sevilla)
             Ciudad Potosi, Potosi, Bolivia</a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-phone" aria-hidden="true"></i>
               <br> (+591) 2-62-22625
             </a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>
               <br> feipobol@gmail.com
             </a>
@@ -823,17 +823,17 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">REDES SOCIALES</h5>
 
         <ul class="list-unstyled">
-          <li>
-            <a href="#!"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
+            <a href="{{ asset('https://www.facebook.com/Feipobol')}}"><i class="fa fa-facebook red-social facebook" aria-hidden="true"></i>
             </a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-youtube-play red-social youtube" aria-hidden="true"></i></a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-twitter red-social twitter" aria-hidden="true"></i></a>
           </li>
-          <li>
+          <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-instagram red-social instagram" aria-hidden="true"></i></a>
           </li>
         </ul>

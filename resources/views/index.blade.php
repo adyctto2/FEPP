@@ -519,7 +519,7 @@
 					</div>
 				</div>
 
-				<a href="" data-toggle="modal" data-target="#exampleModalCenter">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter">
 				<div class="col-sm-4">
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
@@ -569,7 +569,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="{{asset('img/logo.png')}}" alt="logo"></a>
+						<a href="{{route('principal')}}"><img src="{{asset('img/logo.png')}}" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
@@ -616,10 +616,9 @@
 
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+ 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
