@@ -75,7 +75,7 @@
   <!-- Collapsible content -->
 </nav>
 
-  
+
 <div class="view fondo" id="inicio">
   <!-- Mask & flexbox options-->
   <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
@@ -151,16 +151,17 @@
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
+
         <div class="carousel-item active">
           <div class="row formato" >
+              @foreach($expositores as $exp)
             <div class="col-sm-4">
               <div class="card">
-                <img class="card-img-top" src="{{ asset('img/expositores/1.png')}}" alt="Card image cap">
+                <img class="card-img-top" src="{{ asset('img/expositores/'.$exp->img)}}" alt="Card image cap">
                 <div class="card-body">
-                  <a><h5 class="card-title">Card title</h5></a>
+                  <a><h5 class="card-title" ALIGN="center">{{$exp->nombre}}</h5></a>
                     <div class="inline-ul text-center d-flex card-text justify-content-center">
                       <a class="p-2 m-2 tw-ic">
                         <i class="fa fa-twitter white-text"></i>
@@ -178,60 +179,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" >
-              <div class="card" >
-                <img class="card-img-top" src="{{ asset('img/expositores/2.png')}}"  alt="Card image cap">
-                <div class="card-body">
-                  <a><h5 class="card-title">Card title</h5></a>
-                    <div class="inline-ul text-center d-flex card-text justify-content-center">
-                      <a class="p-2 m-2 tw-ic">
-                        <i class="fa fa-twitter white-text"></i>
-                      </a>
-                      <a class="p-2 m-2 li-ic">
-                        <i class="fa fa-facebook white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-instagram white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-youtube white-text"> </i>
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4" >
-              <div class="card">
-                <img class="card-img-top" src="{{ asset('img/expositores/3.png')}}"  alt="Card image cap">
-                <div class="card-body">
-                  <a><h5 class="card-title">Card title</h5></a>
-                    <div class="inline-ul text-center d-flex card-text justify-content-center">
-                      <a class="p-2 m-2 tw-ic">
-                        <i class="fa fa-twitter white-text"></i>
-                      </a>
-                      <a class="p-2 m-2 li-ic">
-                        <i class="fa fa-facebook white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-instagram white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-youtube white-text"> </i>
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
+                @endforeach
+
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="row" >
+              @foreach($expositores1 as $exp1)
             <div class="col-sm-4">
               <div class="card">
-                <img class="card-img-top" src="{{ asset('img/expositores/4.png')}}"  alt="Card image cap">
+                <img class="card-img-top" src="{{ asset('img/expositores/'.$exp1->img)}}"  alt="Card image cap">
                 <div class="card-body">
-                  <a><h5 class="card-title">Card title</h5></a>
+                  <a><h5 class="card-title" ALIGN="center">{{$exp1->nombre}}</h5></a>
                     <div class="inline-ul text-center d-flex card-text justify-content-center">
                       <a class="p-2 m-2 tw-ic">
                         <i class="fa fa-twitter white-text"></i>
@@ -247,52 +207,12 @@
                       </a>
                     </div>
                 </div>
+
               </div>
             </div>
-            <div class="col-sm-4" >
-              <div class="card" >
-                <img class="card-img-top" src="{{ asset('img/expositores/5.png')}}"  alt="Card image cap">
-                <div class="card-body">
-                  <a><h5 class="card-title">Card title</h5></a>
-                    <div class="inline-ul text-center d-flex card-text justify-content-center">
-                      <a class="p-2 m-2 tw-ic">
-                        <i class="fa fa-twitter white-text"></i>
-                      </a>
-                      <a class="p-2 m-2 li-ic">
-                        <i class="fa fa-facebook white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-instagram white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-youtube white-text"> </i>
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4" >
-              <div class="card">
-                <img class="card-img-top" src="{{ asset('img/expositores/6.png')}}"  alt="Card image cap">
-                <div class="card-body">
-                  <a><h5 class="card-title">Card title</h5></a>
-                    <div class="inline-ul text-center d-flex card-text justify-content-center">
-                      <a class="p-2 m-2 tw-ic">
-                        <i class="fa fa-twitter white-text"></i>
-                      </a>
-                      <a class="p-2 m-2 li-ic">
-                        <i class="fa fa-facebook white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-instagram white-text"> </i>
-                      </a>
-                      <a class="p-2 m-2 ins-ic">
-                        <i class="fa fa-youtube white-text"> </i>
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
+                @endforeach
+
+
           </div>
         </div>
       </div>
@@ -313,9 +233,9 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card">
-            <img class="card-img-top" src="{{ asset('img/expositores/1.png')}}" alt="Card image cap">
+            <img class="card-img-top" src="{{ asset('img/expositores/'.$exp2->img)}}" alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title">Card title</h5></a>
+              <a><h5 class="card-title" align="center">{{$exp2->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -332,13 +252,14 @@
                 </div>
             </div>
           </div>
+
       </div>
 
       <div class="carousel-item">
           <div class="card" >
-            <img class="card-img-top" src="{{ asset('img/expositores/2.png')}}"  alt="Card image cap">
+            <img class="card-img-top" src="{{ asset('img/expositores/'.$exp3->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title">Card title</h5></a>
+              <a><h5 class="card-title" align="center">{{$exp3->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -355,12 +276,13 @@
                 </div>
             </div>
           </div>
+
       </div>
       <div class="carousel-item">
           <div class="card" >
-            <img class="card-img-top" src="{{ asset('img/expositores/3.png')}}"  alt="Card image cap">
+            <img class="card-img-top" src="{{ asset('img/expositores/'.$exp4->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title">Card title</h5></a>
+              <a><h5 class="card-title" align="center">{{$exp4->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -377,12 +299,37 @@
                 </div>
             </div>
           </div>
+
+      </div>
+
+      <div class="carousel-item">
+          <div class="card" >
+            <img class="card-img-top" src="{{ asset('img/expositores/'.$exp5->img)}}"  alt="Card image cap">
+            <div class="card-body">
+              <a><h5 class="card-title" align="center">{{$exp5->nombre}}</h5></a>
+                <div class="inline-ul text-center d-flex card-text justify-content-center">
+                  <a class="p-2 m-2 tw-ic">
+                    <i class="fa fa-twitter white-text"></i>
+                  </a>
+                  <a class="p-2 m-2 li-ic">
+                    <i class="fa fa-facebook white-text"> </i>
+                  </a>
+                  <a class="p-2 m-2 ins-ic">
+                    <i class="fa fa-instagram white-text"> </i>
+                  </a>
+                  <a class="p-2 m-2 ins-ic">
+                    <i class="fa fa-youtube white-text"> </i>
+                  </a>
+                </div>
+            </div>
+          </div>
+
       </div>
       <div class="carousel-item">
           <div class="card" >
-            <img class="card-img-top" src="{{ asset('img/expositores/4.png')}}"  alt="Card image cap">
+            <img class="card-img-top" src="{{ asset('img/expositores/'.$exp6->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title">Card title</h5></a>
+              <a><h5 class="card-title" align="center">{{$exp6->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -399,12 +346,13 @@
                 </div>
             </div>
           </div>
+
       </div>
       <div class="carousel-item">
           <div class="card" >
-            <img class="card-img-top" src="{{ asset('img/expositores/5.png')}}"  alt="Card image cap">
+            <img class="card-img-top" src="{{ asset('img/expositores/'.$exp7->img)}}"  alt="Card image cap">
             <div class="card-body">
-              <a><h5 class="card-title">Card title</h5></a>
+              <a><h5 class="card-title" align="center">{{$exp7->nombre}}</h5></a>
                 <div class="inline-ul text-center d-flex card-text justify-content-center">
                   <a class="p-2 m-2 tw-ic">
                     <i class="fa fa-twitter white-text"></i>
@@ -421,29 +369,10 @@
                 </div>
             </div>
           </div>
+
       </div>
-      <div class="carousel-item">
-          <div class="card" >
-            <img class="card-img-top" src="{{ asset('img/expositores/6.png')}}"  alt="Card image cap">
-            <div class="card-body">
-              <a><h5 class="card-title">Card title</h5></a>
-                <div class="inline-ul text-center d-flex card-text justify-content-center">
-                  <a class="p-2 m-2 tw-ic">
-                    <i class="fa fa-twitter white-text"></i>
-                  </a>
-                  <a class="p-2 m-2 li-ic">
-                    <i class="fa fa-facebook white-text"> </i>
-                  </a>
-                  <a class="p-2 m-2 ins-ic">
-                    <i class="fa fa-instagram white-text"> </i>
-                  </a>
-                  <a class="p-2 m-2 ins-ic">
-                    <i class="fa fa-youtube white-text"> </i>
-                  </a>
-                </div>
-            </div>
-          </div>
-      </div>
+
+
     </div>
   </div>
   </div>
@@ -502,7 +431,7 @@
                   </tr>
               </tbody>
               <tfoot class="bg-info">
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>214</td>
@@ -543,7 +472,7 @@
                 </tr>
               </tbody>
               <tfoot class="bg-info">
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>37978</td>
@@ -580,7 +509,7 @@
                 </tr>
               </tbody>
               <tfoot class="bg-info">
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>56’716,171.09</td>
@@ -640,7 +569,7 @@
         <!-- Post data -->
         <p>Fuente: <a><strong>{{$not1->fuente}}</strong></a>, {{$not1->fecha}}</p>
         <!-- Read more button -->
-        <a class="btn btn-success btn-md" href="{{ route('fnoticias')}}">Leer mas</a>
+        <a class="btn btn-success btn-md" href="{{ route('fnoticias',['id' =>  $not1->id])}}">Leer mas</a>
 
       </div>
       <!-- Grid column -->
@@ -662,7 +591,7 @@
         <!-- Post data -->
         <p>Fuente: <a><strong>{{$not2->fuente}}</strong></a>, {{$not2->fecha}}</p>
         <!-- Read more button -->
-        <a class="btn btn-pink btn-md mb-lg-0 mb-4">leer mas</a>
+        <a class="btn btn-pink btn-md mb-lg-0 mb-4" href="{{ route('fnoticias',['id' =>  $not2->id])}}">leer mas</a>
 
       </div>
       <!-- Grid column -->
@@ -690,70 +619,71 @@
     <section class="gallery-block compact-gallery">
         <div class="">
           <div class="">
-              <h2 class="h1-responsive font-weight-bold text-center ">Galeria de Fotos</h2>
+              <h2 class="h1-responsive font-weight-bold text-center ">GALERIA DE FOTOS</h2>
           </div>
 
           <div class="row no-gutters">
+
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="{{ asset('img/galeria/1.jpg') }}">
-                <img class="img-fluid image" src="{{ asset('img/galeria/1.jpg') }}">
+              <a class="lightbox" href="{{ asset('img/galeria/'.$f1->img) }}">
+                <img class="img-fluid image" src="{{ asset('img/galeria/'.$f1->img) }}">
                 <span class="description">
-                  <span class="description-heading">Lorem Ipsum</span>
-                  <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  <!-- <span class="description-heading">Lorem Ipsum</span> -->
+                  <span class="description-body">{{$f1->nombre}}</span>
                 </span>
               </a>
             </div>
 
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="{{ asset('img/galeria/2.jpg') }}">
-                <img class="img-fluid image" src="{{ asset('img/galeria/2.jpg') }}">
+              <a class="lightbox" href="{{ asset('img/galeria/'.$f2->img) }}">
+                <img class="img-fluid image" src="{{ asset('img/galeria/'.$f2->img) }}">
                 <span class="description">
-                  <span class="description-heading">Lorem Ipsum</span>
-                  <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  <!-- <span class="description-heading">Lorem Ipsum</span> -->
+                  <span class="description-body">{{$f2->nombre}}</span>
                 </span>
               </a>
             </div>
 
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="{{ asset('img/galeria/3.jpg') }}">
-                <img class="img-fluid image" src="{{ asset('img/galeria/3.jpg') }}">
+              <a class="lightbox" href="{{ asset('img/galeria/'.$f3->img) }}">
+                <img class="img-fluid image" src="{{ asset('img/galeria/'.$f3->img) }}">
                 <span class="description">
-                  <span class="description-heading">Lorem Ipsum</span>
-                  <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  <!-- <span class="description-heading">Lorem Ipsum</span> -->
+                  <span class="description-body">{{$f3->nombre}}</span>
                 </span>
               </a>
             </div>
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="{{ asset('img/galeria/4.jpg') }}">
-                <img class="img-fluid image" src="{{ asset('img/galeria/4.jpg') }}">
+              <a class="lightbox" href="{{ asset('img/galeria/'.$f4->img) }}">
+                <img class="img-fluid image" src="{{ asset('img/galeria/'.$f4->img) }}">
                 <span class="description">
-                  <span class="description-heading">Lorem Ipsum</span>
-                  <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                </span>
-              </a>
-            </div>
-
-
-            <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="{{ asset('img/galeria/5.jpg') }}">
-                <img class="img-fluid image" src="{{ asset('img/galeria/5.jpg') }}">
-                <span class="description">
-                  <span class="description-heading">Lorem Ipsum</span>
-                  <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  <!-- <span class="description-heading">Lorem Ipsum</span> -->
+                  <span class="description-body">{{$f4->nombre}}</span>
                 </span>
               </a>
             </div>
 
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="{{ asset('img/galeria/6.jpg') }}">
-                <img class="img-fluid image" src="{{ asset('img/galeria/6.jpg') }}">
+              <a class="lightbox" href="{{ asset('img/galeria/'.$f5->img) }}">
+                <img class="img-fluid image" src="{{ asset('img/galeria/'.$f5->img) }}">
                 <span class="description">
-                  <span class="description-heading">Lorem Ipsum</span>
-                  <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  <!-- <span class="description-heading">Lorem Ipsum</span> -->
+                  <span class="description-body">{{$f5->nombre}}</span>
+                </span>
+              </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+              <a class="lightbox" href="{{ asset('img/galeria/'.$f6->img) }}">
+                <img class="img-fluid image" src="{{ asset('img/galeria/'.$f6->img) }}">
+                <span class="description">
+                  <!-- <span class="description-heading">Lorem Ipsum</span> -->
+                  <span class="description-body">{{$f6->nombre}}</span>
                 </span>
               </a>
             </div>
@@ -761,7 +691,7 @@
           </div>
         </div>
 
-        <a href=""> Ver todo</a>
+        <!-- <a href=""> Ver todo</a> -->
       </section>
 </div>
 
@@ -797,7 +727,7 @@
 
             </div>
           </a>
-          
+
 
       </div>
     </div>
@@ -819,7 +749,7 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
         <ul class="list-unstyled">
-          
+
             <a href="#!" class="organiza">
               <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
@@ -835,7 +765,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
@@ -859,7 +789,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">CONTACTOS</h5>
 
         <ul class="list-unstyled">
@@ -889,7 +819,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">REDES SOCIALES</h5>
 
         <ul class="list-unstyled">
@@ -1008,7 +938,7 @@
     var video2 = "https://www.youtube.com/embed/wDjeBNv6ip0";
     var video3 = "https://www.youtube.com/embed/x4K6mLncJuc";
 
-    
+
     var principal = document.querySelector("#principal");
     var v1 = document.querySelector("#video1");
     console.log(v1)

@@ -14,10 +14,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
   <link rel="stylesheet" href="{{ asset('css/styleFeipobol.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/styleNoticias.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/animate.min.css')}}">
+
+
   <style>
     html,
     body,
-    header {    
+    header {
         background: #f1f1f1;
         height: 80px;
         background-image: none;
@@ -62,9 +66,9 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" data-scroll href="#noticias">Noticias</a>
+          <a class="nav-link" data-scroll href="{{route('fnoticias', ['id' =>  $not1->id] )}}">Noticias</a>
         </li>
-        
+
         <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" id="galeria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="galeria">
@@ -107,7 +111,7 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
         <ul class="list-unstyled">
-          
+
             <a href="#!" class="organiza">
               <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
@@ -123,7 +127,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
@@ -147,7 +151,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">CONTACTOS</h5>
 
         <ul class="list-unstyled">
@@ -177,7 +181,7 @@
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        
+
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">REDES SOCIALES</h5>
 
         <ul class="list-unstyled">
@@ -233,5 +237,6 @@
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
 
   </script>
+
 </body>
 </html>

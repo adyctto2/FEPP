@@ -7,6 +7,7 @@ use App\Noticias;
 use App\Cursos;
 use App\Contador;
 use Carbon\Carbon;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class PrincipalController extends Controller
@@ -25,6 +26,18 @@ class PrincipalController extends Controller
 // }
   public function Show()
   {
+    $clientIP = \ Request :: ip ();
+    $dta = new DateTime();
+    $dt=$dta->format('Y-m-d H:i:s');
+
+    $contador= new Contador;
+    $contador->ip=$clientIP;
+    $contador->fecha=$dt;
+    $contador->save();
+    $count = DB::table('contador')->count(DB::raw('id'));
+
+
+
     $ent1 = Entidades::find(1);
     $ent2 = Entidades::find(2);
     $ent3 = Entidades::find(7);
@@ -40,12 +53,6 @@ class PrincipalController extends Controller
     $curso3 = Cursos::find(3);
     $curso4 = Cursos::find(4);
     // dd($entidades);
-    //   $clientIP = \ Request :: ip ();
-    //   $fecha = Carbon::createFromFormat('d-m-Y', $request->fecha)->toDateString();
-    // $contador= new Contador;
-    //
-    // $contador->ip=$clientIP;
-    // $contador->fecha=$fecha;
 
 
     // $variable = Noticias::find($id);
@@ -56,7 +63,7 @@ class PrincipalController extends Controller
     //   }
 
     // $titulo="Entidades Afiliadas";
-    return view('index', compact('ent1', 'ent2','ent3','ent4','not1', 'not2','not3','not4','curso1','curso2','curso3','curso4'));
+    return view('index', compact('ent1', 'ent2','ent3','ent4','not1', 'not2','not3','not4','curso1','curso2','curso3','curso4', 'count'));
   }
   public function getHome()
   {

@@ -33,7 +33,7 @@
                             </div>
                             <div class="blog-content">
                                 <h5 ALIGN="justify">{{$noticia->titulo}}</h5>
-                              
+
                             </div>
                         </div>
                     </a>

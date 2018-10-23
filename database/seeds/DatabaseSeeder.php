@@ -15,11 +15,15 @@ class DatabaseSeeder extends Seeder
             'entidades',
             'noticias',
             'cursos',
+            'expositores',
+            'fotos',
         ]);
 
         $this->call(entidadesSeeder::class);
         $this->call(NoticiasSeeder::class);
         $this->call(CursosSeeder::class);
+        $this->call(ExpositoresSeeder::class);
+          $this->call(FotosSeeder::class);
     }
 
     public function truncateTables(array $tables)
