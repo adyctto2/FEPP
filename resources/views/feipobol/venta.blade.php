@@ -1,8 +1,8 @@
 @extends('layoutFeipobol')
 @section('formularios')
     <div class="container stands">
-        <h1 class="h1-responsive font-weight-bold text-center ">{{ $titulo }}</h1>
-        
+        <h1 class="h1-responsive font-weight-bold text-center ">{{ $titulo }} <hr> </h1>
+
         <h2 class="h1-responsive text-center">Ejecutivos de Ventas</h2>
         <div class="row">
             <div class="col-md-3 wow zoomIn" data-wow-delay="0.2s">
@@ -85,9 +85,10 @@
             <section class="gallery-block compact-gallery">
                 <div class="">
                   <div class="">
-                      <h2 class="h1-responsive font-weight-bold text-center ">Mapa de Stands</h2>
+                      <h2 class="h1-responsive font-weight-bold text-center ">Mapa de Stands <hr></h2>
+
                   </div>
-        
+
                   <div class="row no-gutters">
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/1.png') }}">
@@ -98,8 +99,8 @@
                         </span>
                       </a>
                     </div>
-        
-        
+
+
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/2.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/2.png') }}">
@@ -109,8 +110,8 @@
                         </span>
                       </a>
                     </div>
-        
-        
+
+
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/3.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/3.png') }}">
@@ -120,8 +121,8 @@
                         </span>
                       </a>
                     </div>
-        
-        
+
+
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/5.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/5.png') }}">
@@ -131,8 +132,8 @@
                         </span>
                       </a>
                     </div>
-        
-        
+
+
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/4.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/4.png') }}">
@@ -142,7 +143,7 @@
                         </span>
                       </a>
                     </div>
-        
+
                     <div class="col-md-6 col-lg-4 item zoom-on-hover">
                       <a class="lightbox" href="{{ asset('img/mapas/6.png') }}">
                         <img class="img-fluid image" src="{{ asset('img/mapas/6.png') }}">
@@ -152,12 +153,12 @@
                         </span>
                       </a>
                     </div>
-        
+
                   </div>
                 </div>
-        
+
                 <a href=""> Ver todo</a>
               </section>
         </div>
-        
+
 @endsection

@@ -24,9 +24,5 @@ class FeipobolLayoutController extends Controller
 
   }
 
-  public function index()
-  {
-    $not1 = Noticias::where('titulo','like','%feipobol%')->get()->first();
-    return view('feipobol.noticias');
-  }
+
 }

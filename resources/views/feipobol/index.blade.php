@@ -145,8 +145,8 @@
 <!--/.Navbar-->
 <!-- carousel expositores con ordenadores -->
 <div class="" id="expositores">
-  <div class=" expositor-web container wow fadeInUp" data-wow-delay="0.3s">
-    <h2 class="h1-responsive font-weight-bold text-center my-5">Expositores</h2>
+  <div class=" expositor-web container wow fadeInUp" data-wow-delay="0.3s"><br>
+    <h2 class="h1-responsive font-weight-bold text-center my-5">EXPOSITORES <hr></h2>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -219,8 +219,7 @@
     </div>
   </div>
   <div class="container expositor-mobil">
-
-    <h2 class="h1-responsive font-weight-bold text-center my-5">Expositores</h2>
+    <h2 class="h1-responsive font-weight-bold text-center my-5">EXPOSITORES <hr>  </h2>
     <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
@@ -386,6 +385,7 @@
 <div id="estadisticas" >
   <div class="container">
       <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017</h2>
+      <hr>
       <div  class="row">
         <div class="col-md-4 wow zoomIn" data-wow-delay="0.3s">
           <h3>Expositores y stands que participaron</h3>
@@ -529,7 +529,7 @@
 
 
     <div class="contenido">
-        <h2 class="h1-responsive font-weight-bold text-center ">Noches de Feria</h2>
+        <h2 class="h1-responsive font-weight-bold text-center ">NOCHES DE FERIA</h2>
         <p>Muy pronto</p>
     </div>
   </div>
@@ -543,7 +543,7 @@
     <!-- Section heading -->
     <h2 class="h1-responsive font-weight-bold text-center ">NOTICIAS</h2>
     <!-- Section description -->
-
+    <hr>
     <!-- Grid row -->
     <div class="row wow fadeInLeft">
 
@@ -563,7 +563,7 @@
 
       <!-- Grid column -->
       <div class="col-lg-7 contenido">
-        <h3 class="font-weight-bold mb-3"><strong>{{$not1->titulo}}</strong></h3>
+        <h3 class="font-weight-bold mb-3" ALIGN="justify"><strong>{{$not1->titulo}}</strong></h3>
         <!-- Excerpt -->
         <p class="desc-noticia">{{$not1->descripcion}}</p>
         <!-- Post data -->
@@ -585,7 +585,7 @@
       <!-- Grid column -->
       <div class="col-lg-7 contenido">
 
-        <h3 class="font-weight-bold mb-3"><strong>{{$not2->titulo}}</strong></h3>
+        <h3 class="font-weight-bold mb-3" ALIGN="justify"><strong>{{$not2->titulo}}</strong></h3>
         <!-- Excerpt -->
         <p class="desc-noticia">{{$not2->descripcion}}</p>
         <!-- Post data -->
@@ -621,7 +621,7 @@
           <div class="">
               <h2 class="h1-responsive font-weight-bold text-center ">GALERIA DE FOTOS</h2>
           </div>
-
+          <hr>
           <div class="row no-gutters">
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -700,7 +700,9 @@
 
 <div id="Videos">
   <div class="container">
-    <h2 class="h1-responsive font-weight-bold text-center wow zoomIn" data-wow-delay="0.3s">Galeria de Videos</h2>
+    <h2 class="h1-responsive font-weight-bold text-center wow zoomIn" data-wow-delay="0.3s">GALERIA DE VIDEOS</h2>
+    <hr>
+    <br>
     <div class="row">
       <div class="col-md-9 wow slideInLeft" data-wow-delay="0.3s" id="principal">
         <iframe  src="https://www.youtube.com/embed/x4K6mLncJuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -737,8 +739,10 @@
 <footer class="page-footer font-small special-color" id="contacto">
 
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
 
+  <div class="container text-center text-md-left">
+    <br>
+    <br>
     <!-- Grid row -->
     <div class="row">
 
@@ -749,9 +753,11 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
         <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s">
-
+          <a href="{{route('principal')}}" target="_blank" class="organiza">
+            <img src="{{asset('img/icon.png')}}" alt="">
+          </a>
             <a href="{{route('principal')}}" target="_blank" class="organiza">
-              <img src="{{asset('img/icon.png')}}" alt="">
+
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
             </a>
         </ul>
@@ -798,11 +804,13 @@
             </i><br> Campo Ferial Multipropósito (Av. Sevilla)
             Ciudad Potosi, Potosi, Bolivia</a>
           </li>
+          <br>
           <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-phone" aria-hidden="true"></i>
               <br> (+591) 2-62-22625
             </a>
           </li>
+          <br>
           <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>
               <br> feipobol@gmail.com
@@ -846,10 +854,10 @@
 
   </div>
   <!-- Footer Links -->
-
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <br>
+  <div class="footer-copyright text-center py-3"><small>© 2018 Copyright:
       Todos los derechos reservados Federación de Empresarios Privados de Potosí <br>
-      desarrollado por <a href="">I S & T</a>
+      desarrollado por <a href="">I S & T </small></a>
   </div>
   <!-- Copyright -->
 

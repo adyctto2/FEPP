@@ -4,7 +4,7 @@
     <section class="gallery-block compact-gallery">
         <div class="">
           <div class="">
-              <h2 class="h1-responsive font-weight-bold text-center ">GALERIA DE FOTOS</h2>
+              <h2 class="h1-responsive font-weight-bold text-center ">GALERIA DE FOTOS <hr> </h2>
           </div>
 
           <div class="row no-gutters">

@@ -2,7 +2,7 @@
 @section('formularios')
 <div id="estadisticas" >
   <div class="container">
-      <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017</h2>
+      <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017 <hr> </h2>
       <div  class="row">
         <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s">
           <h3>Expositores y stands que participaron</h3>
@@ -48,7 +48,7 @@
                   </tr>
               </tbody>
               <tfoot class="bg-info">
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>214</td>
@@ -89,7 +89,7 @@
                 </tr>
               </tbody>
               <tfoot class="bg-info">
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>37978</td>
@@ -126,7 +126,7 @@
                 </tr>
               </tbody>
               <tfoot class="bg-info">
-                  
+
                   <tr>
                       <td>TOTAL</td>
                       <td>56’716,171.09</td>

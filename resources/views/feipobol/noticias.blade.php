@@ -7,7 +7,7 @@
   <div class=" container ">
     <div class="contenido">
       <p></p>
-        <h2 class="h1-responsive font-weight-bold text-center ">NOTICIAS FEIPOBOL</h2>
+        <h2 class="h1-responsive font-weight-bold text-center ">NOTICIAS FEIPOBOL <hr>  </h2>
         <p></p>
         <p></p>
     </div>
@@ -34,7 +34,7 @@
 
       <div class="col-sm-4 blo">
         <div class="form-group row wow slideInRight" data-wow-delay="0.2s">
-          <div id="globaln">
+          <div id="globaln" >
             <div id="mensajes">
               @foreach($notis as $noti)
                 <a href="{{ route('fnoticias', ['id' =>  $noti->id]) }}">

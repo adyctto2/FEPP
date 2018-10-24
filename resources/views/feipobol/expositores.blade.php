@@ -4,7 +4,7 @@
 
   <div class=" container ">
     <div class="contenido">
-        <h2 class="h1-responsive font-weight-bold text-center ">EXPOSITORES</h2>
+        <h2 class="h1-responsive font-weight-bold text-center ">EXPOSITORES <hr> </h2>
     </div>
 
     <div class="row">
@@ -20,6 +20,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-sm-1">
 
       </div>
