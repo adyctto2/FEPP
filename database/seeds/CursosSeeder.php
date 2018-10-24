@@ -14,7 +14,7 @@ class CursosSeeder extends Seeder
         Cursos::create([
           'titulo' => 'CURSO DE TÉCNICO CERTIFICADO EN FIBRA ÓPTICA',
           'subtitulo' => 'Una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.',
-          'imagen' => '1.png',
+          'imagen' => '1.jpg',
           'descripcion' => 'Consultrónica presenta este curso de técnico certificado de fibra óptica básico, desarrollado por The FOA – The Fiber Optic Association con el fin de proporcionar un programa de formación y certificación básico para todas aquellas personas que se inician en el mundo de la fibra óptica y quieren adquirir primeros conocimientos de esta nueva pero creciente tecnología y se dirige también a todas las personas que ya tienen conocimientos de la fibra óptica y quieren adquirir una certificación profesional de la prestigiosa organización The FOA.',
           'temario' => 'Introducción a la fibra óptica
           Características de las fibras ópticas
@@ -32,7 +32,7 @@ class CursosSeeder extends Seeder
         Cursos::create([
           'titulo' => 'CURSO DE TÉCNICO CERTIFICADO EN FIBRA ÓPTICA',
           'subtitulo' => 'Una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.',
-          'imagen' => '1.png',
+          'imagen' => '1.jpg',
           'descripcion' => 'Consultrónica presenta este curso de técnico certificado de fibra óptica básico, desarrollado por The FOA – The Fiber Optic Association con el fin de proporcionar un programa de formación y certificación básico para todas aquellas personas que se inician en el mundo de la fibra óptica y quieren adquirir primeros conocimientos de esta nueva pero creciente tecnología y se dirige también a todas las personas que ya tienen conocimientos de la fibra óptica y quieren adquirir una certificación profesional de la prestigiosa organización The FOA.',
           'temario' => 'Introducción a la fibra óptica
           Características de las fibras ópticas
@@ -49,7 +49,7 @@ class CursosSeeder extends Seeder
         Cursos::create([
           'titulo' => 'CURSO DE TÉCNICO CERTIFICADO EN FIBRA ÓPTICA',
           'subtitulo' => 'Una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.',
-          'imagen' => '1.png',
+          'imagen' => '1.jpg',
           'descripcion' => 'Consultrónica presenta este curso de técnico certificado de fibra óptica básico, desarrollado por The FOA – The Fiber Optic Association con el fin de proporcionar un programa de formación y certificación básico para todas aquellas personas que se inician en el mundo de la fibra óptica y quieren adquirir primeros conocimientos de esta nueva pero creciente tecnología y se dirige también a todas las personas que ya tienen conocimientos de la fibra óptica y quieren adquirir una certificación profesional de la prestigiosa organización The FOA.',
           'temario' => 'Introducción a la fibra óptica
           Características de las fibras ópticas
@@ -66,7 +66,7 @@ class CursosSeeder extends Seeder
         Cursos::create([
           'titulo' => 'CURSO DE TÉCNICO CERTIFICADO EN FIBRA ÓPTICA',
           'subtitulo' => 'Una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.',
-          'imagen' => '1.png',
+          'imagen' => '1.jpg',
           'descripcion' => 'Consultrónica presenta este curso de técnico certificado de fibra óptica básico, desarrollado por The FOA – The Fiber Optic Association con el fin de proporcionar un programa de formación y certificación básico para todas aquellas personas que se inician en el mundo de la fibra óptica y quieren adquirir primeros conocimientos de esta nueva pero creciente tecnología y se dirige también a todas las personas que ya tienen conocimientos de la fibra óptica y quieren adquirir una certificación profesional de la prestigiosa organización The FOA.',
           'temario' => 'Introducción a la fibra óptica
           Características de las fibras ópticas
@@ -83,7 +83,7 @@ class CursosSeeder extends Seeder
         Cursos::create([
           'titulo' => 'CURSO DE TÉCNICO CERTIFICADO EN FIBRA ÓPTICA',
           'subtitulo' => 'Una introducción completa al mundo de la fibra óptica y sirve al mismo tiempo como base y pre requisito para los cursos de especialista de The FOA.',
-          'imagen' => '1.png',
+          'imagen' => '1.jpg',
           'descripcion' => 'Consultrónica presenta este curso de técnico certificado de fibra óptica básico, desarrollado por The FOA – The Fiber Optic Association con el fin de proporcionar un programa de formación y certificación básico para todas aquellas personas que se inician en el mundo de la fibra óptica y quieren adquirir primeros conocimientos de esta nueva pero creciente tecnología y se dirige también a todas las personas que ya tienen conocimientos de la fibra óptica y quieren adquirir una certificación profesional de la prestigiosa organización The FOA.',
           'temario' => 'Introducción a la fibra óptica
           Características de las fibras ópticas

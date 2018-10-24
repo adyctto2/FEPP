@@ -140,4 +140,5 @@
   </div>
 </div>
 
+  <script src="{{ asset('js/graficos.js')}}"></script>
 @endsection

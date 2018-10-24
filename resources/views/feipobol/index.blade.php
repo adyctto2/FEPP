@@ -18,7 +18,6 @@
 </head>
 <body>
 <header>
-
   <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="#inicio">
@@ -91,6 +90,8 @@
           <h6 class="mb-3 wow fadeInLeft mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
 
           <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s" href="{{ route('feipobolAbout')}}">Saber mas</a>
+          <button type="button" class="btn btn-info wow fadeInLeft"  data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal">Ver Video</button>
+
         </div>
         <!--Grid column-->
         <!--Grid column-->
@@ -702,37 +703,13 @@
   <div class="container">
     <h2 class="h1-responsive font-weight-bold text-center wow zoomIn" data-wow-delay="0.3s">Galeria de Videos</h2>
     <div class="row">
-      <div class="col-md-9 wow slideInLeft" data-wow-delay="0.3s" id="principal">
+      <div class="col-md-12 wow zoomIn" data-wow-delay="0.3s" id="principal">
         <iframe  src="https://www.youtube.com/embed/x4K6mLncJuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-3" id="secundario">
-          <a href="#principal" id="video1" >
-            <div class="wow slideInRight" data-wow-delay="0.3s">
-              <img src="{{ asset('img/blog1.jpg')}}" alt="">
-              <i class="fa fa-play" aria-hidden="true"></i>
-
-            </div>
-          </a>
-          <a href="#principal" id="video2" >
-            <div class="wow slideInRight" data-wow-delay="0.3s">
-              <img src="{{ asset('img/blog2.jpg')}}" alt="">
-              <i class="fa fa-play" aria-hidden="true"></i>
-
-            </div>
-          </a>
-          <a href="#principal" id="video3" >
-            <div class="wow slideInRight" data-wow-delay="0.3s">
-              <img src="{{ asset('img/blog3.jpg')}}" alt="">
-              <i class="fa fa-play" aria-hidden="true"></i>
-
-            </div>
-          </a>
-
-
       </div>
     </div>
   </div>
 </div>
+
 
 <footer class="page-footer font-small special-color" id="contacto">
 
@@ -857,42 +834,9 @@
 
 
 
+<div class="preloader"><div class="loader"><img src="{{asset('img/logos/feipobol.png')}}" alt=""></div></div>
 
 
-<div class="modal fade right" id="modalRelatedContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-    <!--Content-->
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <p class="heading">Video Sugerido</p>
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="white-text">&times;</span>
-        </button>
-      </div>
-
-      <!--Body-->
-      <div class="modal-body">
-
-        <div class="row">
-          <div class="col-5">
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(55).jpg" class="img-fluid"
-               width="100%" height="100px" alt="">
-          </div>
-
-          <div class="col-7">
-            <p><strong>Spot Publicitario FEIPOBOL 2018</strong></p>
-            <button type="button" class="btn-outline-danger waves-effect btn-md btn-block"  data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal">Ver Video</button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
 <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content ">
@@ -934,31 +878,16 @@
     });
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
 
-    var video1 = "https://www.youtube.com/embed/2Vv-BfVoq4g";
-    var video2 = "https://www.youtube.com/embed/wDjeBNv6ip0";
-    var video3 = "https://www.youtube.com/embed/x4K6mLncJuc";
-
-
-    var principal = document.querySelector("#principal");
-    var v1 = document.querySelector("#video1");
-    console.log(v1)
-    var v2 = document.querySelector("#video2");
-    var v3 = document.querySelector("#video3");
-    v1.addEventListener(("click"), function(){
-      $("#principal iframe").attr("src",video1);
-    });
-    v2.addEventListener(("click"), function(){
-      $("#principal iframe").attr("src",video2);
-    });
-    v3.addEventListener(("click"), function(){
-      $("#principal iframe").attr("src",video3);
-    });
+  
     window.addEventListener('load', function(){
       var text= document.querySelectorAll(".desc-noticia");
       var descripcion =text[0].innerHTML;
       text[0].innerHTML = descripcion.substr(0,250)+"...";
       var descripcion =text[1].innerHTML;
       text[1].innerHTML = descripcion.substr(0,250)+"...";
+    });
+    $(window).on('load',function(){
+      $('.preloader').addClass('complete');
     });
   </script>
 </body>

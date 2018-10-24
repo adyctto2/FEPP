@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+.loader{
+    padding: auto;
+  background-attachment: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: black;
+  border: 3px solid #ff0000;
+  animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    20%{
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    40%{
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    60%{
+        transform: translate(-50%,-50%) rotate(180deg);
+    }
+    80%{
+        transform: translate(-50%,-50%) rotate(180deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.loader img{
+    margin: auto;
+    width: 60px;
+    padding-top: 30%;
+padding-left: 14%;
+}
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img src="feipobol.png" alt="">
+    </div>
+</body>
+</html>

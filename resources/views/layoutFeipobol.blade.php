@@ -26,12 +26,13 @@
         height: 80px;
         background-image: none;
     }
+    
   </style>
 </head>
 <body>
 <header>
 
-  <nav class="navbar navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
+  <nav class="navbar navbar2 navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="{{ route('feipobol') }}"">
         <img src="{{ asset('img/logos/feipobol.png')}}" height="35" class="d-inline-block align-top" alt="FEIPOBOL 2018">
@@ -217,8 +218,7 @@
   <!-- Copyright -->
 
 </footer>
-
-
+<div class="preloader"><div class="loader"><img src="{{asset('img/logos/feipobol.png')}}" alt=""></div></div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -232,29 +232,11 @@
   <script src="https://code.highcharts.com/highcharts.src.js"></script>
   <script src="{{ asset('js/graficos.js')}}"></script>
   <script>
-    new WOW().init();
-    var scroll = new SmoothScroll('a[href*="#"]',{
-      offset : 60
-    });
+    new WOW().init(); 
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
-    var video1 = "https://www.youtube.com/embed/2Vv-BfVoq4g";
-    var video2 = "https://www.youtube.com/embed/wDjeBNv6ip0";
-    var video3 = "https://www.youtube.com/embed/x4K6mLncJuc";
-
-
-    var principal = document.querySelector("#principal");
-    var v1 = document.querySelector("#video1");
-    console.log(v1)
-    var v2 = document.querySelector("#video2");
-    var v3 = document.querySelector("#video3");
-    v1.addEventListener(("click"), function(){
-      $("#principal iframe").attr("src",video1);
-    });
-    v2.addEventListener(("click"), function(){
-      $("#principal iframe").attr("src",video2);
-    });
-    v3.addEventListener(("click"), function(){
-      $("#principal iframe").attr("src",video3);
+      
+     $(window).on('load',function(){
+      $('.preloader').addClass('complete');
     });
   </script>
 

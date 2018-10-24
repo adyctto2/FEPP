@@ -4,6 +4,86 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+
+
+
+
+
+.preloader{
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  transform: 1s; 
+
+}
+.preloader:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  transition: 2s;
+}
+.preloader.complete:before{
+  left: -50%;
+}
+.preloader:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50%;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  transition: 1s;
+}
+.preloader.complete:after{
+  right: -50%;
+}
+.loader{
+  padding: auto;
+background-attachment: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background: rgb(0, 0, 0);
+animation: animate 1s linear infinite;
+z-index: 10000;
+}
+.preloader.complete{
+  opacity: 0.4 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+@keyframes animate{
+  0%{
+      transform: translate(-50%,-50%) rotate(0deg);
+  }
+  50%{
+      transform: translate(-50%,-50%) rotate(180deg);
+  }
+  100%{
+      transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+.loader img{
+  margin: auto;
+  width: 200px;
+  padding-top: 30%;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+
+
 .color{
     background: rgba(255, 255, 255, 0.089);
 }
@@ -52,7 +132,7 @@ header,
   body,
   header,
   .fondo {
-    height: 100vh;
+    height: 120vh;
     
   }
   .fondo .web{
@@ -85,6 +165,11 @@ header,
 
 .navbar:not(.top-nav-collapse) {
   background: rgba(0, 0, 0, 0.356) !important;
+}
+
+
+.navbar:not(.top-nav-collapse) {
+  background: rgb(0, 0, 0) !important;
 }
 
 

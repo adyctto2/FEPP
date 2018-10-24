@@ -728,16 +728,27 @@ header {
 .home-content button {
   margin-top: 20px;
 }
-.home-content a img{
-    width: 40%;
+.home-content div a  img{
+    width: 60%;
     transition: .5s ease;
 }
 .home-content a{
     color: white;
     font-size: 20px;
 }
-.home-content a img:hover{
-    width: 42%;
+.home-content div{
+    background: rgba(0, 0, 0, 0.644);
+    width: 50%;
+    padding: 20px;
+}
+@media only screen and (max-width: 767px) {
+    .home-content div{
+        width: 100%;
+        padding: 20px;
+    }
+}
+.home-content div a img:hover{
+    width: 62%;
 }
 .header-wrapper h2 {
     display: inline-block;
@@ -1718,7 +1729,7 @@ header {
 	}
 
   .home-content h1 {
-		font-size: 15px;
+		font-size: 18px;
 	}
 
   .header-wrapper h2 {
