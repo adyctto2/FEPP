@@ -69,7 +69,11 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class=" animated zoomIn">FEDERACIÓN DE EMPRESARIOS <br><strong>PRIVADOS DE POTOSÍ</strong></h1>
-							<a href="{{ route('feipobol')}}" target="_blank"> <img src="{{asset('img/logoPrincipal.png')}}" alt=""> 2018</a>
+							<br>
+								</div>
+						<div class="home-content animated pulse infinite">
+							<a href="{{ route('feipobol')}}" target="_blank"> <img class="" src="{{asset('img/logoPrincipal.png')}}" alt=""> 2018</a>
+
 						</div>
 					</div>
 					<!-- /home content -->

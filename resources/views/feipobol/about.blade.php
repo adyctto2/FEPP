@@ -10,7 +10,7 @@
 
     <div class="row">
       <div class="col-sm-4 blo ">
-        <div class="mensaje wow fadeInLeft ">
+        <div class="mensaje wow fadeInLeft  #c62828 red darken-3">
           <div class="box-blue" ><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">VISIÓN</h4><hr></div>
 
           <p class="oculta h6-responsive font-italic" ALIGN="justify">Ser una feria con crecimiento sostenible generadora
@@ -20,9 +20,8 @@
                           desarrollo regional y nacional.</p>
         </div>
       </div>
-
       <div class="col-sm-4 blo">
-        <div class="mensaje wow fadeInUp">
+        <div class="mensaje wow fadeInUp #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center" >MISIÓN</h4><hr></div>
 
           <p class="oculta h6-responsive font-italic" ALIGN="justify">La  FEIPOBOL  se  constituirá  en  el  principal  escenario
@@ -36,7 +35,7 @@
         </div>
       </div>
       <div class="col-sm-4 blo">
-        <div class="mensaje wow fadeInRight">
+        <div class="mensaje wow fadeInRight #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">OBJETIVOS</h4><hr></div>
 
           <p class="oculta h6-responsive font-italic" ALIGN="justify">- Generar  oportunidades  de  negocio  para  todos los sectores productivos y de servicio.</p>
@@ -67,7 +66,7 @@
 
     <div class="row">
       <div class="col-sm-6 blo">
-        <div class="mensaje wow fadeInLeft">
+        <div class="mensaje wow fadeInLeft #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">VENTAJAS DE PARTICIPACIÓN </h4><hr></div>
               <ul class="oculta h6-responsive font-italic">
                 <li>Más clientes, en menor tiempo.</li>
@@ -83,7 +82,7 @@
         </div>
       </div>
       <div class="col-sm-6 blo">
-        <div class="mensaje wow fadeInRight">
+        <div class="mensaje wow fadeInRight #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">OPORTUNIDADES PARA EXPOSITORES</h4><hr></div>
               <ul class="oculta h6-responsive font-italic">
                 <li>Posicionar la marca de su empresa y/o producto.</li>
@@ -105,7 +104,7 @@
 
     <div class="row">
       <div class="col-sm-4 blo">
-        <div class="mensaje wow fadeInLeft">
+        <div class="mensaje wow fadeInLeft #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">SECTORIZACIÓN</h4><hr></div>
 
           <p class="oculta h6-responsive font-italic" ALIGN="justify">Por otra parte se estructuro el armado de stands por
@@ -127,7 +126,7 @@
         </div>
       </div>
       <div class="col-sm-4 blo">
-        <div class="mensaje wow fadeInUp">
+        <div class="mensaje wow fadeInUp #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">ACTIVIDADES COMPLEMENTARIAS</h4><hr></div>
 
           <ul class="oculta h6-responsive font-italic" align="justify">
@@ -140,7 +139,7 @@
         </div>
       </div>
       <div class="col-sm-4 blo">
-        <div class="mensaje wow fadeInRight">
+        <div class="mensaje wow fadeInRight #c62828 red darken-3">
           <div class="box-blue"><h4 class="h5-responsive font-weight-bold text-center" ALIGN="center">SERVICIOS</h4><hr></div>
               <ul class="oculta h6-responsive font-italic" align="justify">
                 <li>Comunicaciones (teléfono, fax, internet, WIFI).</li>

@@ -32,7 +32,7 @@
 
       </div> -->
 
-      <div class="col-sm-4 blo">
+      <div class="col-sm-4">
         <div class="form-group row wow slideInRight" data-wow-delay="0.2s">
           <div id="globaln" >
             <div id="mensajes">

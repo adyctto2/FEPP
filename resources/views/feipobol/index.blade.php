@@ -84,14 +84,15 @@
       <!--Grid row-->
       <div class="row mt-5">
         <!--Grid column-->
-        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-          <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">FEIPOBOL 2018</h1>
-          <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-          <h6 class="mb-3 wow fadeInLeft web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
-          <h6 class="mb-3 wow fadeInLeft mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
+        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left wow fadeInLeft">
+          <h1 class="h1-responsive font-weight-bold " data-wow-delay="0.3s">FEIPOBOL 2018</h1>
+          <hr class="hr-light " data-wow-delay="0.3s">
+          <h6 class="mb-3  web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
+          <h6 class="mb-3 mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
+    
+            <a class=" example hoverable btn btn-outline-white  animated pulse infinite rgba-black-strong" data-wow-delay="0.3s"  data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal">Ver Video Promocional   <i class="fa fa-play-circle" aria-hidden="true"></i></a>
 
-          <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s" href="{{ route('feipobolAbout')}}">Saber mas</a>
-        </div>
+      </div>
         <!--Grid column-->
         <!--Grid column-->
         <div class="col-md-6 col-xl-5 mb-4">
@@ -108,10 +109,11 @@
                 <h4> 9 al 18 de noviembre</h4>
               </div>
               <div class="md-form">
-                  <a href=""><i class="fa fa-map-marker prefix white-text active"></i>
+                  <a href="#" ><i class="fa fa-map-marker prefix white-text active"></i>
                 <h4>Campo Ferial Multipropósito (Av. Sevilla)
                     Ciudad Potosi, Potosi, Bolivia</h4></a>
               </div>
+
               <div class="text-center mt-4">
                 <hr class="hr-light mb-3 mt-4">
                 <div class="inline-ul text-center d-flex justify-content-center">
@@ -129,8 +131,9 @@
                   </a>
                 </div>
               </div>
-            </div>
+                </div>
           </div>
+
           <!--/.Form-->
         </div>
         <!--Grid column-->
@@ -144,6 +147,7 @@
 </header>
 <!--/.Navbar-->
 <!-- carousel expositores con ordenadores -->
+
 <div class="" id="expositores">
   <div class=" expositor-web container wow fadeInUp" data-wow-delay="0.3s"><br>
     <h2 class="h1-responsive font-weight-bold text-center my-5">EXPOSITORES <hr></h2>
@@ -866,13 +870,13 @@
 
 
 
-
+<!--
 <div class="modal fade right" id="modalRelatedContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true" data-backdrop="false">
   <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-    <!--Content-->
+
     <div class="modal-content">
-      <!--Header-->
+
       <div class="modal-header">
         <p class="heading">Video Sugerido</p>
 
@@ -881,7 +885,6 @@
         </button>
       </div>
 
-      <!--Body-->
       <div class="modal-body">
 
         <div class="row">
@@ -898,14 +901,13 @@
         </div>
       </div>
     </div>
-    <!--/.Content-->
   </div>
-</div>
+</div> -->
 <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content ">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Spot Publicitario FEIPOBOL 2018</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Spot FEIPOBOL 2018</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close">
             <span aria-hidden="true">&times;</span>
           </button>
