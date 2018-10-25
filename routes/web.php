@@ -83,3 +83,28 @@ Route::get('/feipobol/videos', 'videosController@index')
 ->name('videos');
 
 
+
+Route::get('/adcf', 'AdminController@index')
+->name('adcf');
+
+
+
+Route::get('/adcf/adcfNoticia', 'NoticiasController@indexCreate')
+->name('adcfNoticia');
+
+Route::post('/nuevoNoticiaf', 'NoticiasController@store')
+->name('crearnoticia');
+
+Route::get('/adcf/nuevo', 'NoticiasController@create')
+->name('nuevo');
+
+Route::get('/adcf/adcfStands', 'ExpositoresController@indexCreate')
+->name('adcfStands');
+
+Route::get('/adcf/nuevoExp', 'ExpositoresController@create')
+->name('nuevoExp');
+
+Route::post('/nuevoExpositorf', 'ExpositoresController@store')
+->name('nexp');
+
+

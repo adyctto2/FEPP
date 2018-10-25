@@ -83,15 +83,15 @@
       <!--Grid row-->
       <div class="row mt-5">
         <!--Grid column-->
-        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-          <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">FEIPOBOL 2018</h1>
-          <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-          <h6 class="mb-3 wow fadeInLeft web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
-          <h6 class="mb-3 wow fadeInLeft mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
+        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left wow fadeInLeft">
+          <h1 class="h1-responsive font-weight-bold " data-wow-delay="0.3s">FEIPOBOL 2018</h1>
+          <hr class="hr-light " data-wow-delay="0.3s">
+          <h6 class="mb-3  web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
+          <h6 class="mb-3 mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
+    
+            <a class=" example hoverable btn btn-outline-white  animated pulse infinite rgba-black-strong wow fadeInLeft" data-wow-delay="0.3s"  data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal">Ver Video Promocional   <i class="fa fa-play-circle" aria-hidden="true"></i></a>
 
           <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s" href="{{ route('feipobolAbout')}}">Saber mas</a>
-          <button type="button" class="btn btn-info wow fadeInLeft"  data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal">Ver Video</button>
-
         </div>
         <!--Grid column-->
         <!--Grid column-->
@@ -109,10 +109,11 @@
                 <h4> 9 al 18 de noviembre</h4>
               </div>
               <div class="md-form">
-                  <a href=""><i class="fa fa-map-marker prefix white-text active"></i>
+                  <a href="#" ><i class="fa fa-map-marker prefix white-text active"></i>
                 <h4>Campo Ferial Multipropósito (Av. Sevilla)
                     Ciudad Potosi, Potosi, Bolivia</h4></a>
               </div>
+
               <div class="text-center mt-4">
                 <hr class="hr-light mb-3 mt-4">
                 <div class="inline-ul text-center d-flex justify-content-center">
@@ -130,8 +131,9 @@
                   </a>
                 </div>
               </div>
-            </div>
+                </div>
           </div>
+
           <!--/.Form-->
         </div>
         <!--Grid column-->
@@ -145,9 +147,10 @@
 </header>
 <!--/.Navbar-->
 <!-- carousel expositores con ordenadores -->
+
 <div class="" id="expositores">
-  <div class=" expositor-web container wow fadeInUp" data-wow-delay="0.3s">
-    <h2 class="h1-responsive font-weight-bold text-center my-5">Expositores</h2>
+  <div class=" expositor-web container wow fadeInUp" data-wow-delay="0.3s"><br>
+    <h2 class="h1-responsive font-weight-bold text-center my-5">EXPOSITORES <hr></h2>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -220,8 +223,7 @@
     </div>
   </div>
   <div class="container expositor-mobil">
-
-    <h2 class="h1-responsive font-weight-bold text-center my-5">Expositores</h2>
+    <h2 class="h1-responsive font-weight-bold text-center my-5">EXPOSITORES <hr>  </h2>
     <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
@@ -387,6 +389,7 @@
 <div id="estadisticas" >
   <div class="container">
       <h2 class="h1-responsive font-weight-bold text-center ">RESULTADOS FEIPOBOL 2017</h2>
+      <hr>
       <div  class="row">
         <div class="col-md-4 wow zoomIn" data-wow-delay="0.3s">
           <h3>Expositores y stands que participaron</h3>
@@ -530,7 +533,7 @@
 
 
     <div class="contenido">
-        <h2 class="h1-responsive font-weight-bold text-center ">Noches de Feria</h2>
+        <h2 class="h1-responsive font-weight-bold text-center ">NOCHES DE FERIA</h2>
         <p>Muy pronto</p>
     </div>
   </div>
@@ -544,7 +547,7 @@
     <!-- Section heading -->
     <h2 class="h1-responsive font-weight-bold text-center ">NOTICIAS</h2>
     <!-- Section description -->
-
+    <hr>
     <!-- Grid row -->
     <div class="row wow fadeInLeft">
 
@@ -564,7 +567,7 @@
 
       <!-- Grid column -->
       <div class="col-lg-7 contenido">
-        <h3 class="font-weight-bold mb-3"><strong>{{$not1->titulo}}</strong></h3>
+        <h3 class="font-weight-bold mb-3" ALIGN="justify"><strong>{{$not1->titulo}}</strong></h3>
         <!-- Excerpt -->
         <p class="desc-noticia">{{$not1->descripcion}}</p>
         <!-- Post data -->
@@ -586,7 +589,7 @@
       <!-- Grid column -->
       <div class="col-lg-7 contenido">
 
-        <h3 class="font-weight-bold mb-3"><strong>{{$not2->titulo}}</strong></h3>
+        <h3 class="font-weight-bold mb-3" ALIGN="justify"><strong>{{$not2->titulo}}</strong></h3>
         <!-- Excerpt -->
         <p class="desc-noticia">{{$not2->descripcion}}</p>
         <!-- Post data -->
@@ -622,7 +625,7 @@
           <div class="">
               <h2 class="h1-responsive font-weight-bold text-center ">GALERIA DE FOTOS</h2>
           </div>
-
+          <hr>
           <div class="row no-gutters">
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -701,7 +704,9 @@
 
 <div id="Videos">
   <div class="container">
-    <h2 class="h1-responsive font-weight-bold text-center wow zoomIn" data-wow-delay="0.3s">Galeria de Videos</h2>
+    <h2 class="h1-responsive font-weight-bold text-center wow zoomIn" data-wow-delay="0.3s">GALERIA DE VIDEOS</h2>
+    <hr>
+    <br>
     <div class="row">
       <div class="col-md-12 wow zoomIn" data-wow-delay="0.3s" id="principal">
         <iframe  src="https://www.youtube.com/embed/x4K6mLncJuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -714,8 +719,10 @@
 <footer class="page-footer font-small special-color" id="contacto">
 
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
 
+  <div class="container text-center text-md-left">
+    <br>
+    <br>
     <!-- Grid row -->
     <div class="row">
 
@@ -726,9 +733,11 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
         <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s">
-
+          <a href="{{route('principal')}}" target="_blank" class="organiza">
+            <img src="{{asset('img/icon.png')}}" alt="">
+          </a>
             <a href="{{route('principal')}}" target="_blank" class="organiza">
-              <img src="{{asset('img/icon.png')}}" alt="">
+
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
             </a>
         </ul>
@@ -775,11 +784,13 @@
             </i><br> Campo Ferial Multipropósito (Av. Sevilla)
             Ciudad Potosi, Potosi, Bolivia</a>
           </li>
+          <br>
           <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-phone" aria-hidden="true"></i>
               <br> (+591) 2-62-22625
             </a>
           </li>
+          <br>
           <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>
               <br> feipobol@gmail.com
@@ -823,10 +834,10 @@
 
   </div>
   <!-- Footer Links -->
-
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <br>
+  <div class="footer-copyright text-center py-3"><small>© 2018 Copyright:
       Todos los derechos reservados Federación de Empresarios Privados de Potosí <br>
-      desarrollado por <a href="">I S & T</a>
+      desarrollado por <a href="">I S & T </small></a>
   </div>
   <!-- Copyright -->
 
@@ -836,12 +847,11 @@
 
 <div class="preloader"><div class="loader"><img src="{{asset('img/logos/feipobol.png')}}" alt=""></div></div>
 
-
 <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content ">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Spot Publicitario FEIPOBOL 2018</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Spot FEIPOBOL 2018</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close">
             <span aria-hidden="true">&times;</span>
           </button>

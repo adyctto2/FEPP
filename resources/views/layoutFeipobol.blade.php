@@ -98,7 +98,8 @@
 
 
 <footer class="page-footer font-small special-color" id="contacto">
-
+<br>
+<br>
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
 
@@ -112,10 +113,12 @@
 
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">ORGANIZA</h5>
 
-        <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s">
+        <ul class="list-unstyled wow zoomIn" data-wow-delay="0.3s" align="center">
+          <a href="{{route('principal')}}" class="organiza">
+              <img src="{{asset('img/icon.png')}}" alt="" >
 
+          </a>
             <a href="{{route('principal')}}" class="organiza">
-              <img src="{{asset('img/icon.png')}}" alt="">
               <H1>FEDERACION DE EMPRESARIOS PRIVADOS DE POTOSI</H1>
             </a>
         </ul>
@@ -133,15 +136,25 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
+
           <li class="wow zoomIn" data-wow-delay="0.3s">
-            <a href="{{asset('https://www.facebook.com/GobiernoAutonomoDepartamentalDePotosi/')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
+            <a href="{{asset('https://www.facebook.com/GobiernoAutonomoDepartamentalDePotosi/')}}" class="organiza">
+                <img src="{{ asset('img/gadp.png')}}" alt="">
+
+            </a>
           </li>
           <li class="wow zoomIn" data-wow-delay="0.3s">
-              <a href="{{ asset('http://www.potosina.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
+            <a href="{{asset('http://www.potosina.bo')}}" class="organiza">
+                <img src="{{ asset('img/cp.jpg')}}" alt="">
+
+            </a>
+          </li><li class="wow zoomIn" data-wow-delay="0.3s">
+            <a href="{{asset('http://www.potosi.bo')}}" class="organiza">
+                <img src="{{ asset('img/gamp.jpg')}}" alt="">
+
+            </a>
           </li>
-          <li class="wow zoomIn" data-wow-delay="0.3s">
-              <a href="{{ asset('http://www.potosi.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
-          </li>
+          
         </ul>
 
       </div>
@@ -162,11 +175,13 @@
             </i><br> Campo Ferial Multipropósito (Av. Sevilla)
             Ciudad Potosi, Potosi, Bolivia</a>
           </li>
+          <br>
           <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-phone" aria-hidden="true"></i>
               <br> (+591) 2-62-22625
             </a>
           </li>
+          <br>
           <li class="wow zoomIn" data-wow-delay="0.3s">
             <a href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>
               <br> feipobol@gmail.com
@@ -209,11 +224,12 @@
     <!-- Grid row -->
 
   </div>
+    <br>
   <!-- Footer Links -->
 
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+  <div class="footer-copyright text-center py-3"><small>© 2018 Copyright:
       Todos los derechos reservados Federación de Empresarios Privados de Potosí <br>
-      desarrollado por <a href="">I S & T</a>
+      desarrollado por <a href="">I S & T</small></a>
   </div>
   <!-- Copyright -->
 

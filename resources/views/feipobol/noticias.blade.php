@@ -7,7 +7,7 @@
   <div class=" container ">
     <div class="contenido">
       <p></p>
-        <h2 class="h1-responsive font-weight-bold text-center ">NOTICIAS FEIPOBOL</h2>
+        <h2 class="h1-responsive font-weight-bold text-center ">NOTICIAS FEIPOBOL <hr>  </h2>
         <p></p>
         <p></p>
     </div>
@@ -28,18 +28,18 @@
             </div>
 
       </div>
-      <!-- <div class="col-sm-">
+      <div class="col-sm-1">
 
-      </div> -->
+      </div>
 
-      <div class="col-sm-4 blo">
+      <div class="col-sm-3">
         <div class="form-group row wow slideInRight" data-wow-delay="0.2s">
-          <div id="globaln">
-            <div id="mensajes">
+          <div id="globaln" >
+            <div id="mensajes" >
               @foreach($notis as $noti)
                 <a href="{{ route('fnoticias', ['id' =>  $noti->id]) }}">
-                  <div class="card-body titulo">
-                    <img class="card-img-top" src="{{asset('img/noticias/'.$noti->imagen)}}" alt="Card image cap">
+                  <div class="card-body titulo der" >
+                    <img class="card-img-top" src="{{asset('img/noticias/'.$noti->imagen)}}" alt="Card image cap" >
                       <h1></h1>
                       <h6 class="font-weight-bold" ALIGN="justify">{{$noti->titulo}} </h6>
                         <hr>

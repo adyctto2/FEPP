@@ -21,10 +21,10 @@ class FeipobolController extends Controller
   {
      $not1 = Noticias::where('titulo','like','%feipobol%')->get()->first();
       $not2 = Noticias::where('titulo','like','%feipobol%')->get()->last();
-        $expositores = Expositores::latest()
+        $expositores1 = Expositores::latest('id')
                       ->take(3)
                       ->get();
-        $expositores1 = Expositores::latest('id')
+        $expositores = Expositores::first()
                       ->take(3)
                       ->get();
 
@@ -32,7 +32,7 @@ class FeipobolController extends Controller
         $exp3 = Expositores::find(2);
         $exp4= Expositores::find(3);
         $exp5 =Expositores::find(4);
-        $exp6 = Expositores::find(5);
+        $exp6 = Expositores::find(8);
         $exp7= Expositores::find(6);
 
         $f1 = Fotos::find(1);

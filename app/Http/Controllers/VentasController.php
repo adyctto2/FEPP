@@ -9,7 +9,7 @@ class VentasController extends Controller
   public function index()
   {
 
-    $titulo = "Venta de Stands";
+    $titulo = "VENTA DE STANDS";
 
     return view('feipobol.venta', compact('titulo'));
   }
