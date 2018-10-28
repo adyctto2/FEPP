@@ -114,9 +114,6 @@ ul li div a:hover{
     margin-top: 10%;
 }
 
-html,
-body,
-header,
 .fondo {
   
   background: #f1f1f1;
@@ -128,11 +125,8 @@ header,
   display: none;
 }
 @media (max-width: 740px) {
-  html,
-  body,
-  header,
   .fondo {
-    height: 120vh;
+    height: 140vh;
     
   }
   .fondo .web{
@@ -153,11 +147,8 @@ header,
   }
 }
 @media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
   .view {
-    height: 100vh;
+    height: 140vh;
   }
   
 }
@@ -291,65 +282,80 @@ h6 {
 }
 
 #NFeria{
-  	
-  height: 100vh;
-  overflow:hidden;
-}
-#NFeria .trasparente{
-  background: url("../img/eventos/evento1.jpg") no-repeat ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  
-  transition:all .5s ease-in-out;
-  padding-top: 10%; 
-  padding-left: 25%;
-  padding-right: 25%; 
-}
+  overflow: hidden;
+  background: url("../img/eventos/fondo.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 
-#NFeria .trasparente .contenido{
-  height: 50vh;
-  background: rgba(0, 0, 0, 0.507) !important;
-  border: 2px solid #fff;
+}
+#NFeria .evento-principal{
+  padding: 100px;
+
+}
+#NFeria .evento-principal h2{
   text-align: center;
-  padding-top: 15%;
-}
-#NFeria .trasparente .contenido h2{
-  font-size: 60px;
   color: white;
+
+}
+#NFeria .evento-principal .opcion{
+  text-align: center;
+  color: white;
+
+}
+#NFeria .evento-principal hr{
+  border: 1px solid rgb(82, 81, 81);
+
 }
 
-#NFeria .trasparente .contenido p{
+#NFeria .evento-principal .row .col-md-6 p{
   font-size: 40px;
+  background: rgba(247, 0, 0, 0.548);
   color: white;
+  text-align: center;
+
 }
-#NFeria .trasparente:hover{
-  
-  -webkit-transform:scale(1.1);transform:scale(1.1);
+#NFeria .evento-principal .row .col-md-6 p span{
+  font-size: 20Px;
+  color: rgb(165, 161, 161);
+  text-align: center;
+
+}
+#NFeria .evento-principal h3{
+  font-size: 17px;
+  text-align: center;
+  color:  white;  
+}
+.auspicio{
+  font-size: 20px;
+  color: white;
 }
 @media (max-width: 740px) {
-
-  #NFeria .trasparente{
-    padding-top: 30%; 
-    padding-left: 10%;
-    padding-right: 10%; 
-  }
-  #NFeria .trasparente .contenido h2{
-    font-size: 50px;
-  }
-  #NFeria .trasparente .contenido p{
-    font-size: 30px;
-  }
-  #NFeria .trasparente .contenido{
-    padding-top: 25%;
+  #NFeria .evento-principal{
+    padding: 30px;
+  
   }
 }
+#NFeria .evento-principal img{
+  width: 100%;
+}
 
+#NFeria .evento-secundario{
+  padding-bottom: 20px; 
+}
+.quitar{
+  margin: 0;
+  padding: 0;
+}
+.quitar h5{
+  font-size: 20px;
+  color: rgb(194, 194, 194);
+}
 
-
-
+.hovers:hover{
+  background: rgba(255, 0, 0, 0.281);
+}
 
 
 .gallery-block{

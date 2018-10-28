@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
             'cursos',
             'expositores',
             'fotos',
+            'eventos',
+            'artistas',
         ]);
 
         $this->call(entidadesSeeder::class);
@@ -24,6 +26,8 @@ class DatabaseSeeder extends Seeder
         $this->call(CursosSeeder::class);
         $this->call(ExpositoresSeeder::class);
           $this->call(FotosSeeder::class);
+          $this->call(EventoSeeder::class);
+          $this->call(ArtistaSeeder::class);
     }
 
     public function truncateTables(array $tables)

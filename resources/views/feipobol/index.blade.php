@@ -529,12 +529,57 @@
 
 
 <div id="NFeria">
-  <div class="trasparente">
+  <div class="evento-principal">
+    <div class="container">
+      
+        <p class="opcion">{{ $mensaje }}</p>
+      <div class="row ">
+        <div class="col-md-6">
+          <h2><strong> {{ $importante->nombre}}</strong></h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-2">
 
-
-    <div class="contenido">
-        <h2 class="h1-responsive font-weight-bold text-center ">NOCHES DE FERIA</h2>
-        <p>Muy pronto</p>
+               <p> <span>Dia</span> {{ \Carbon\Carbon::parse($importante->fecha)->format('d') }}</p>
+               <p> <span>Mes</span> {{ \Carbon\Carbon::parse($importante->fecha)->format('m') }}</p>
+               <p><span>Año</span> {{ \Carbon\Carbon::parse($importante->fecha)->format('y') }}</p>
+            </div>
+            <div class="col-md-10 grupos">
+              <div class="row">
+                  
+                 @foreach($grupos as $grupo)
+                 <div class="col-md-6">
+                    <h3>{{$grupo->nombre}}</h3>
+                    <img src="{{ asset('img/eventos/'.$grupo->img)}}" alt=""> 
+                 </div>
+                 
+                  @endforeach
+              </div>
+            </div>
+          </div>
+          @if(strlen($importante->auspiciador)>0)
+          <div class="auspicio">Auspiciador: <strong> {{ $importante->auspiciador }}</strong></div>
+          @endif
+        </div>
+        <div class="col-md-6">
+            <img src="{{asset('img/eventos/'.$importante->img)}}" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="evento-secundario container">
+    <div class="row">
+      @foreach($todo as  $td)
+         <div class="card col-md-3 quitar" style="padding: 10px;"><a class="hovers" href="">
+            <img class="card-img-top" src="{{asset('img/eventos/'.$td->img)}}" alt="{{$td->nombre}}">
+            <div class="card-body">
+              <h5 class="card-title">{{$td->nombre}}</h5>
+              <p class="card-text">fecha: <strong>{{ \Carbon\Carbon::parse($td->fecha)->format('d')}} de {{ $fecha[\Carbon\Carbon::parse($td->fecha)->format('m')-1]}}</strong></p>
+              {{--  <p class="card-text">costo: <strong>{{$td->costo}} Bs.</strong></p>  --}}
+            </div>
+          </a> </div>
+      @endforeach
     </div>
   </div>
 </div>
