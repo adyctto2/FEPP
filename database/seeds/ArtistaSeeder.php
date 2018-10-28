@@ -221,8 +221,7 @@ class ArtistaSeeder extends Seeder
             'evento_id' => '8',
             'red_social' => 'https://www.facebook.com/alcoholika/'
           ]);
-
-
+      
           Artista::create([
             'nombre' => 'COCO AGUILAR Y LOS T-CUAS',
             'img' => '91.jpg',

@@ -34,7 +34,7 @@
 
   <nav class="navbar navbar2 navbar-expand-lg navbar-dark color fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="{{ route('feipobol') }}"">
+      <a class="navbar-brand" href="{{ route('feipobol') }}">
         <img src="{{ asset('img/logos/feipobol.png')}}" height="35" class="d-inline-block align-top" alt="FEIPOBOL 2018">
       </a>
       <!-- Collapse button -->
