@@ -43,11 +43,14 @@ class NferiaController extends Controller
     $mensaje = "";
     if(count($evento) > '0'){
       $mensaje = "Hoy en la feria";
-      $importante = Eventos::where('id','=',$evento->id)->find($id);
+      $importante = Eventos::where('id','=',$evento->id)->findOrFail($id);
+
+
     }
     else{
       $mensaje = "Proximamente";
-       $importante = Eventos::where('id','=',$id)->find($id);
+       $importante = Eventos::where('id','=',$id)->findOrFail($id);
+
     }
     $grupos = Artista::where('evento_id','=',$id)->get();
     // dd($grupos);
