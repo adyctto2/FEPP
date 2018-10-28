@@ -73,6 +73,9 @@ Route::get('/feipobol/resultados', 'ResultadosController@index')
 Route::get('/feipobol/noches-de-feria', 'NferiaController@index')
 ->name('nferia');
 
+Route::get('/feipobol/noches-de-feria/{id}', 'NferiaController@show')
+->name('nferiashow');
+
 
 Route::get('/feipobol/fotos', 'FotosController@index')
 ->name('fotos');
@@ -106,5 +109,3 @@ Route::get('/adcf/nuevoExp', 'ExpositoresController@create')
 
 Route::post('/nuevoExpositorf', 'ExpositoresController@store')
 ->name('nexp');
-
-

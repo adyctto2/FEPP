@@ -26,7 +26,7 @@
         height: 80px;
         background-image: none;
     }
-    
+
   </style>
 </head>
 <body>
@@ -154,7 +154,7 @@
 
             </a>
           </li>
-          
+
         </ul>
 
       </div>
@@ -229,7 +229,7 @@
 
   <div class="footer-copyright text-center py-3"><small>© 2018 Copyright:
       Todos los derechos reservados Federación de Empresarios Privados de Potosí <br>
-      desarrollado por <a href="">I S & T</small></a>
+      desarrollado por <a href="https://www.IS&T.com.bo">I S & T</small></a>
   </div>
   <!-- Copyright -->
 
@@ -248,9 +248,9 @@
   <script src="https://code.highcharts.com/highcharts.src.js"></script>
   <script src="{{ asset('js/graficos.js')}}"></script>
   <script>
-    new WOW().init(); 
+    new WOW().init();
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
-      
+
      $(window).on('load',function(){
       $('.preloader').addClass('complete');
     });

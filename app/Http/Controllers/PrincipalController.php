@@ -42,6 +42,9 @@ class PrincipalController extends Controller
     $ent2 = Entidades::find(2);
     $ent3 = Entidades::find(7);
     $ent4 = Entidades::find(12);
+    $entidades = Entidades::where('id','<>','2')->get();
+    // $users = DB::table('users')->where('status', '<>', 'active')->get();
+
 
     $not1 = Noticias::find(1);
     $not2 = Noticias::find(2);
@@ -63,7 +66,7 @@ class PrincipalController extends Controller
     //   }
 
     // $titulo="Entidades Afiliadas";
-    return view('index', compact('ent1', 'ent2','ent3','ent4','not1', 'not2','not3','not4','curso1','curso2','curso3','curso4', 'count'));
+    return view('index', compact('ent1', 'ent2','ent3','ent4','not1', 'not2','not3','not4','curso1','curso2','curso3','curso4', 'count', 'entidades'));
   }
   public function getHome()
   {

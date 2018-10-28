@@ -13,7 +13,7 @@ class EventoSeeder extends Seeder
     public function run()
     {
         Eventos::create([
-            'nombre' => 'SERENETA POTOSÍNA',
+            'nombre' => 'SERENATA POTOSINA',
             'img' => '1.jpg',
             'auspiciador' => 'GOBIERNO AUTÓNOMO DEPARTAMENTAL DE POTOSÍ',
             'costo' => '0',
@@ -26,7 +26,7 @@ class EventoSeeder extends Seeder
             'costo' => '30',
             'fecha' => '2018-11-10'
           ]);
-          
+
           Eventos::create([
             'nombre' => 'NOCHE POPULAR',
             'img' => '3.jpg',

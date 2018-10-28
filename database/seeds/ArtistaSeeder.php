@@ -48,7 +48,7 @@ class ArtistaSeeder extends Seeder
           Artista::create([
             'nombre' => 'CUMBIA DE LA CRUZ',
             'img' => '23.jpg',
-            'trabajo1' => 'https://www.youtube.com/watch?v=Mskja4Zp3z4',
+            'trabajo1' => 'https://www.youtube.com/watch?v=emjSz-pVaDc',
             'trabajo2' => 'https://www.youtube.com/watch?v=_-cE_Vdb0pc',
             'evento_id' => '2',
             'red_social' => 'https://www.facebook.com/cumbiadelacruzbolivia/'
@@ -130,7 +130,7 @@ class ArtistaSeeder extends Seeder
             'red_social' => 'https://www.facebook.com/pity.zapataramirez'
           ]);
 
-          
+
           Artista::create([
             'nombre' => 'ODA',
             'img' => '61.jpg',
@@ -221,16 +221,8 @@ class ArtistaSeeder extends Seeder
             'evento_id' => '8',
             'red_social' => 'https://www.facebook.com/alcoholika/'
           ]);
-          Artista::create([
-            'nombre' => 'ALCOHOLIKA L.C.',
-            'img' => '84.jpg',
-            'trabajo1' => 'https://www.youtube.com/watch?v=lfMsDi1e4i8',
-            'trabajo2' => 'https://www.youtube.com/watch?v=U9V8qe298G0',
-            'evento_id' => '8',
-            'red_social' => 'https://www.facebook.com/alcoholika/'
-          ]);
 
-          
+
           Artista::create([
             'nombre' => 'COCO AGUILAR Y LOS T-CUAS',
             'img' => '91.jpg',
@@ -255,7 +247,7 @@ class ArtistaSeeder extends Seeder
             'evento_id' => '9',
             'red_social' => 'https://www.facebook.com/Jambaodeargentinaoficial/'
           ]);
-          
+
           Artista::create([
             'nombre' => 'RIGOR SAMSA',
             'img' => '101.jpg',

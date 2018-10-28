@@ -88,7 +88,7 @@
           <hr class="hr-light " data-wow-delay="0.3s">
           <h6 class="mb-3  web" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio, se ha consolidado como protagonista activa para el intercambio comercial y la movilización del desarrollo productivo, comercial y de servicios a nivel local, nacional e internacional.</h6>
           <h6 class="mb-3 mobil" data-wow-delay="0.3s">La FEIPOBOL, uno de los eventos multisectoriales de negocios más importantes de Bolivia, bajo el modelo de internacionalización del negocio.</h6>
-    
+
             <a class=" example hoverable btn btn-outline-white  animated pulse infinite rgba-black-strong wow fadeInLeft" data-wow-delay="0.3s"  data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal">Ver Video Promocional   <i class="fa fa-play-circle" aria-hidden="true"></i></a>
 
           <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s" href="{{ route('feipobolAbout')}}">Saber mas</a>
@@ -529,53 +529,19 @@
 
 
 <div id="NFeria">
-  <div class="evento-principal">
-    <div class="container">
-      
-        <p class="opcion">{{ $mensaje }}</p>
-      <div class="row ">
-        <div class="col-md-6">
-          <h2><strong> {{ $importante->nombre}}</strong></h2>
-          <hr>
-          <div class="row">
-            <div class="col-md-2">
-
-               <p> <span>Dia</span> {{ \Carbon\Carbon::parse($importante->fecha)->format('d') }}</p>
-               <p> <span>Mes</span> {{ \Carbon\Carbon::parse($importante->fecha)->format('m') }}</p>
-               <p><span>Año</span> {{ \Carbon\Carbon::parse($importante->fecha)->format('y') }}</p>
-            </div>
-            <div class="col-md-10 grupos">
-              <div class="row">
-                  
-                 @foreach($grupos as $grupo)
-                 <div class="col-md-6">
-                    <h3>{{$grupo->nombre}}</h3>
-                    <img src="{{ asset('img/eventos/'.$grupo->img)}}" alt=""> 
-                 </div>
-                 
-                  @endforeach
-              </div>
-            </div>
-          </div>
-          @if(strlen($importante->auspiciador)>0)
-          <div class="auspicio">Auspiciador: <strong> {{ $importante->auspiciador }}</strong></div>
-          @endif
-        </div>
-        <div class="col-md-6">
-            <img src="{{asset('img/eventos/'.$importante->img)}}" alt="">
-        </div>
-      </div>
-      
-    </div>
+  <div class="contenido">
+    <br><br>
+      <h2 class="h1-responsive  text-center text-white">NOCHES DE FERIA</h2>
+      <br><hr>
   </div>
-  <div class="evento-secundario container">
+  <div class="evento-secundario container wow fadeInLeft">
     <div class="row">
       @foreach($todo as  $td)
-         <div class="card col-md-3 quitar" style="padding: 10px;"><a class="hovers" href="">
+         <div class="card col-md-3 quitar" style="padding: 10px;"><a class="hovers" href="{{ route('nferiashow',['id' =>  $td->id])}}">
             <img class="card-img-top" src="{{asset('img/eventos/'.$td->img)}}" alt="{{$td->nombre}}">
             <div class="card-body">
-              <h5 class="card-title">{{$td->nombre}}</h5>
-              <p class="card-text">fecha: <strong>{{ \Carbon\Carbon::parse($td->fecha)->format('d')}} de {{ $fecha[\Carbon\Carbon::parse($td->fecha)->format('m')-1]}}</strong></p>
+              <h5 class="card-title" ALIGN="center">{{$td->nombre}}</h5>
+              <p align="center" class="card-text"><strong>{{ \Carbon\Carbon::parse($td->fecha)->format('d')}} de {{ $fecha[\Carbon\Carbon::parse($td->fecha)->format('m')-1]}}</strong></p>
               {{--  <p class="card-text">costo: <strong>{{$td->costo}} Bs.</strong></p>  --}}
             </div>
           </a> </div>
@@ -800,15 +766,25 @@
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4 titulo-footer">AUSPICIADORES</h5>
 
         <ul class="list-unstyled">
+
           <li class="wow zoomIn" data-wow-delay="0.3s">
-            <a href="{{asset('https://www.facebook.com/GobiernoAutonomoDepartamentalDePotosi/')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gadp.png')}}" alt=""></a>
+            <a href="{{asset('https://www.facebook.com/GobiernoAutonomoDepartamentalDePotosi/')}}" class="organiza">
+                <img src="{{ asset('img/gadp.png')}}" alt="">
+
+            </a>
           </li>
           <li class="wow zoomIn" data-wow-delay="0.3s">
-              <a href="{{ asset('http://www.potosina.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/cp.jpg')}}" alt=""></a>
+            <a href="{{asset('http://www.potosina.bo')}}" class="organiza">
+                <img src="{{ asset('img/cp.jpg')}}" alt="">
+
+            </a>
+          </li><li class="wow zoomIn" data-wow-delay="0.3s">
+            <a href="{{asset('http://www.potosi.bo')}}" class="organiza">
+                <img src="{{ asset('img/gamp.jpg')}}" alt="">
+
+            </a>
           </li>
-          <li class="wow zoomIn" data-wow-delay="0.3s">
-              <a href="{{ asset('http://www.potosi.bo')}}"  target="_blank" class="organiza"><img src="{{ asset('img/gamp.jpg')}}" alt=""></a>
-          </li>
+
         </ul>
 
       </div>
@@ -882,7 +858,7 @@
     <br>
   <div class="footer-copyright text-center py-3"><small>© 2018 Copyright:
       Todos los derechos reservados Federación de Empresarios Privados de Potosí <br>
-      desarrollado por <a href="">I S & T </small></a>
+      desarrollado por <a href="https://www.IS&T.com.bo">I S & T </small></a>
   </div>
   <!-- Copyright -->
 
@@ -933,7 +909,7 @@
     });
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
 
-  
+
     window.addEventListener('load', function(){
       var text= document.querySelectorAll(".desc-noticia");
       var descripcion =text[0].innerHTML;

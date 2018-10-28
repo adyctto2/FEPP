@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
 	<link type="text/css" rel="stylesheet" href="{{asset('css/styleNoticias.css')}}" />
+		<link type="text/css" rel="stylesheet" href="{{asset('css/caroussel.css')}}" />
 </head>
 
 <body>
@@ -94,7 +95,7 @@
 
                         <!-- footer copyright -->
                         <div class="footer-copyright">
-                            <p>Copyright © 2018. Todos los derechos reservados F.E.P.P. desarrollado por <a href="https://adyctto.com" target="_blank">I S & T</a></p>
+                            <p>Copyright © 2018. Todos los derechos reservados F.E.P.P. desarrollado por <a href="https://www.IS&T.com.bo" target="_blank">I S & T</a></p>
                         </div>
                         <!-- /footer copyright -->
 
@@ -130,5 +131,6 @@
         <script type="text/javascript" src="{{asset('js/owl.carousel.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/jquery.magnific-popup.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+				<script type="text/javascript" src="{{asset('js/caroussel.js')}}">		</script>
 </body>
 </html>

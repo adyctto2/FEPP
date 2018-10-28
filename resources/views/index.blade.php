@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
 	<link type="text/css" rel="stylesheet" href="{{asset('css/animate.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('css/caroussel.css')}}" />
+
 </head>
 
 <body>
@@ -249,96 +251,58 @@
 	<div id="portfolio" class="section md-padding bg-grey">
 		<div class="container">
 
-			<!-- Row -->
 			<div class="row">
 				<div class="section-header text-center">
 					<h2 class="title">CONSEJO DIRECTIVO</h2>
 				</div>
+				<br><br><br><br>
+					<div class="col-md-10 col-md-offset-1">
+							<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousell">
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="col-md-2 col-sm-6 col-xs-12">
+											<div class="team-img">
+														<a class="as" href="#"><img src="{{asset('img/entidades/'. $ent2->img)}}" class="img-responsive"></a>
+											</div>
 
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="{{asset('img/entidades/'. $ent2->img)}}" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a target="_blank" href="{{$ent2->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-									<a target="_blank" href="{{$ent2->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-									<a target="_blank" href="{{$ent2->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-									<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<a href="{{ route('entidadeshow', ['id' =>  $ent2->id]) }}"><h3>{{ $ent2->nombre}}</h3></a>
-						</div>
-					</div>
-				</div>
-					<div class="col-sm-3">
-						<div class="team">
-							<div class="team-img">
-								<img class="img-responsive" src="{{asset('img/entidades/'. $ent4->img)}}" alt="">
-								<div class="overlay">
-									<div class="team-social">
-										<a target="_blank" href="{{$ent4->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a target="_blank" href="{{$ent4->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<atarget="_blank" href="{{$ent4->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+											<div class="team-content">
+												<a href="{{ route('entidadeshow', ['id' =>  $ent2->id]) }}"><h6 align="center">{{ $ent2->nombre}}</h6></a>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="team-content">
-								<a href="{{ route('entidadeshow', ['id' =>  $ent4->id]) }}"><h3>{{ $ent4->nombre}}</h3></a>
-							</div>
-						</div>
-					</div>
+									@foreach($entidades as $entidad)
+									<div class="item">
+										<div class="col-md-2 col-sm-6 col-xs-12">
+											<div class="team-img">
+												<a class="as" href="{{ route('entidadeshow', ['id' =>  $entidad->id]) }}"><img ALIGN="center" src="{{asset('img/entidades/'. $entidad->img)}}" class="img-responsive"></a>
+											</div>
 
-					<div class="col-sm-3">
-						<div class="team">
-							<div class="team-img">
-								<img class="img-responsive" src="{{asset('img/entidades/'. $ent3->img)}}" alt="">
-								<div class="overlay">
-									<div class="team-social">
-										<a target="_blank" href="{{$ent3->facebook}}" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a target="_blank" href="{{$ent3->website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a target="_blank" href="{{$ent3->twitter}}" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a target="_blank" 	style="background-color: #cc181e;"><i class="fa fa-youtube"></i></a>
+											<div class="team-content">
+												<a href="{{ route('entidadeshow', ['id' =>  $entidad->id]) }}"><h6 class="h5-responsive font-weight-bold text-center" align="center">{{ $entidad->nombre}}</h6></a>
+											</div>
+										</div>
 									</div>
+
+									@endforeach
+
 								</div>
-							</div>
-							<div class="team-content">
-								<a href="{{ route('entidadeshow', ['id' =>  $ent3->id]) }}"><h3>{{ $ent3->nombre}}</h3></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="team">
-							<div class="team-img">
-									<img class="img-responsive" src="{{asset('img/entidades/'. $ent1->img)}}" alt="">
-								<div class="overlay">
-									<div class="team-social">
-										<a  href="{{$ent1->facebook}}" target="_blank" style="background-color: #3b5998;"><i class="fa fa-facebook " ></i></a>
-										<a  href="{{$ent1->website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a  href="{{$ent1->twitter}}" target="_blank" style="background-color: #00aced;"><i class="fa fa-twitter" ></i></a>
-										<a style="background-color: #cc181e;" target="_blank"><i class="fa fa-youtube"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="team-content">
-								<a href="{{ route('entidadeshow', ['id' =>  $ent1->id]) }}"><h3>{{ $ent1->nombre}}</h3></a>
-									<a href="{{ route('entidades')}}"><small>Ver todos >> </small></a>
+								<a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+								<a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 							</div>
 
-						</div>
 					</div>
 
 			</div>
-
+			<br><br><br><br>
 
 
 		</div>
 
 	</div>
-	<!-- Cursos -->
+
+
+
+<!-- Cursos -->
 	<div id="myCarousel" class="carousel slide curso" >
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -588,7 +552,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2018. Todos los derechos reservados F.E.P.P. desarrollado por <a href="https://adyctto.com" target="_blank">I S & T</a></p>
+						<p>Copyright © 2018. Todos los derechos reservados F.E.P.P. desarrollado por <a href="https://www.IS&T.com.bo" target="_blank">I S & T</a></p>
 					</div>
 					<!-- /footer copyright -->
 
@@ -636,6 +600,7 @@
 			dat[2].innerHTML = texto+" ...";
 		});
 	</script>
+		<script type="text/javascript" src="{{asset('js/caroussel.js')}}">		</script>
 
 </body>
 

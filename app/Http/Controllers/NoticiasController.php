@@ -28,13 +28,13 @@ class NoticiasController extends Controller
     return view('noticias.create', compact('titulo','noticias'));
   }
   public function create(){
-    
+
     $titulo = "Crear Noticia";
     return view('noticias.nuevo', compact('titulo'));
   }
   public function store(Request $request)
   {
-    
+
       $dta = new DateTime();
       $dt=$dta->format('Y-m-d');
       if($request->hasfile('imagen'))
@@ -49,10 +49,10 @@ class NoticiasController extends Controller
       $noticia->descripcion = $request->input('descripcion');
       $noticia->total_visitas = '0';
       $noticia->fecha = $dt;
-      
+
       $noticia->imagen=$name;
       $noticia->save();
-      
+
       return redirect('/adcf/adcfNoticia')->with('success', 'correcto');
   }
   public function show($id)
